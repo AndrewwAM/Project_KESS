@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b3cxabd2gqxm" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dgbvtkj62qp0i" path="res://entities/player/player.gd" id="1_dovo2"]
+[ext_resource type="PackedScene" uid="uid://b22exnoxwavq5" path="res://entities/player/chorro.tscn" id="3_sglur"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 
@@ -12,9 +13,11 @@ script = ExtResource("1_dovo2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=88689275]
 shape = SubResource("RectangleShape2D_dovo2")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1452454401]
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1452454401]
 position = Vector2(0, 1.4901161e-08)
 scale = Vector2(0.17578125, 0.17578125)
 texture = ExtResource("1_8afob")
 
-[node name="Node2D" type="Node2D" parent="." unique_id=1187079156]
+[node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
+
+[node name="Chorro" parent="WeaponPivot" unique_id=2025990940 instance=ExtResource("3_sglur")]
