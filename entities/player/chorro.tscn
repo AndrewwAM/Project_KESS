@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b22exnoxwavq5"]
 
-[ext_resource type="Script" uid="uid://cubttoq83b2ao" path="res://scripts/player/chorro.gd" id="1_r32te"]
+[ext_resource type="Script" uid="uid://cubttoq83b2ao" path="res://entities/player/chorro.gd" id="1_r32te"]
 [ext_resource type="Texture2D" uid="uid://b3cxabd2gqxm" path="res://icon.svg" id="2_1m1ie"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6dimv"]
