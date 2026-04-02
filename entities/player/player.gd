@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 150
 
-var chorro = preload("res://scenes/player/chorro.tscn")
+#var chorro = preload("res://scenes/player/chorro.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,6 +19,6 @@ func _process(delta: float) -> void:
 	move_and_slide()
 	pass
 
-func shoot() -> void:
-	var new_chorro = chorro.instantiate()
+#func shoot() -> void:
+#	var new_chorro = chorro.instantiate()
 	
