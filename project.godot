@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Project_KESS"
-run/main_scene="uid://damwgv7rhwr8r"
+run/main_scene="uid://cmywpe60sf3vd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameManager="*uid://djd4lhhssfn2t"
 
 [display]
 
@@ -21,6 +25,12 @@ window/size/viewport_width=480
 window/size/viewport_height=270
 window/size/initial_position_type=0
 window/stretch/mode="viewport"
+
+[importer_defaults]
+
+animation_library={
+&"nodes/root_script": null
+}
 
 [input]
 

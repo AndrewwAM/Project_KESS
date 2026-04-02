@@ -1,0 +1,71 @@
+extends Node
+
+# Acá se trackea el estado de juego, por default será PLAYING :)))
+enum GameState { PLAYING, GAME_OVER, WIN }
+var state: GameState = GameState.PLAYING
+
+# Variables genéricas para trackear mas leseras :)
+var damage_taken: int = 0 # pal gameover
+var health: int = 5
+var max_health: int = 5
+var score: int = 0 # pal gameover
+var water_amount: float = 50.0 # Partes sin tanque lleno pq estabas regando obviamente.
+var water_max: float = 100.0 
+var current_wave: int = 1 # pal gamover
+
+# --- Señales ---
+# Por lo que sé, estas cosas son ANUNCIOS de cambios de variables.
+signal health_changed(new_health: int)
+signal water_changed(new_amount: float) 
+signal score_changed(new_score: int)
+signal wave_changed(new_wave: int)
+signal damage_changed(new_damage: int)
+signal game_over()
+signal game_won()
+
+# --- Agua ---
+# Acá es donde se pone divertida la cosa.
+func consume_water(amount: float) -> void:
+	water_amount = clamp(water_amount - amount, 0.0, water_max)
+	emit_signal("water_changed", water_amount)
+	if water_amount <= 0.0:
+		trigger_game_over()
+
+func refill_water(amount: float) -> void:
+	water_amount = clamp(water_amount + amount, 0.0, water_max)
+	emit_signal("water_changed", water_amount)
+
+# --- Score ---
+func add_score(points: int) -> void:
+	score += points
+	emit_signal("score_changed", score)
+
+# --- Daño ---
+func take_damage(amount: int) -> void:
+	health = clamp(health - amount, 0, max_health)
+	emit_signal("health_changed", health)
+	damage_taken += 1
+	#if health <= 0:
+		#trigger_game_over()
+	
+func heal(amount: int) -> void:
+	health = clamp(health + amount, 0, max_health)
+	emit_signal("health_changed", health)
+
+
+# --- Oleadas ---
+func next_wave() -> void:
+	current_wave += 1
+	emit_signal("wave_changed", current_wave)
+
+# --- Transiciones ---
+func trigger_game_over() -> void:
+	state = GameState.GAME_OVER
+	emit_signal("game_over")
+
+func trigger_win() -> void:
+	state = GameState.WIN
+	emit_signal("game_won")
+
+func restart() -> void:
+	get_tree().reload_current_scene()

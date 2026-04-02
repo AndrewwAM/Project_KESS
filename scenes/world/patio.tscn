@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://cmywpe60sf3vd"]
+
+[ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="1_mcwhn"]
+[ext_resource type="Script" uid="uid://cb5yes8oe8bxk" path="res://scenes/world/patio.gd" id="1_whbu4"]
+[ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://scenes/ui/hud.tscn" id="3_aq5da"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6p6d6"]
+size = Vector2(33, 109)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mcwhn"]
+size = Vector2(33, 126)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhjio"]
+size = Vector2(506, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whbu4"]
+size = Vector2(20, 288)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aq5da"]
+size = Vector2(498.5, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gd8l3"]
+size = Vector2(19, 294)
+
+[node name="Patio" type="Node2D" unique_id=1762634537]
+script = ExtResource("1_whbu4")
+
+[node name="Basic Background" type="Control" parent="." unique_id=931642117]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Pasto1" type="ColorRect" parent="Basic Background" unique_id=1342113710]
+layout_mode = 0
+offset_right = 240.0
+offset_bottom = 270.0
+color = Color(0.28096095, 0.578064, 0.06699427, 1)
+
+[node name="Pasto2" type="ColorRect" parent="Basic Background" unique_id=1783677799]
+layout_mode = 0
+offset_left = 273.0
+offset_right = 480.0
+offset_bottom = 270.0
+color = Color(0.28235295, 0.5764706, 0.06666667, 1)
+
+[node name="Puente" type="ColorRect" parent="Basic Background" unique_id=1018607511]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 109.0
+offset_right = 273.0
+offset_bottom = 144.0
+color = Color(0.78196394, 0.3524292, 0.029750003, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Basic Background" unique_id=1569543955]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 144.0
+offset_right = 273.0
+offset_bottom = 270.0
+color = Color(0.039215688, 1, 1, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Basic Background" unique_id=1634360630]
+layout_mode = 0
+offset_left = 240.0
+offset_right = 273.0
+offset_bottom = 109.0
+color = Color(0.039215688, 1, 1, 1)
+
+[node name="Bordes" type="StaticBody2D" parent="." unique_id=887010946]
+
+[node name="Colision RioNorte" type="CollisionShape2D" parent="Bordes" unique_id=1757269506]
+position = Vector2(256.5, 54.5)
+shape = SubResource("RectangleShape2D_6p6d6")
+
+[node name="Colision RioSur" type="CollisionShape2D" parent="Bordes" unique_id=1320164013]
+position = Vector2(256.5, 207)
+shape = SubResource("RectangleShape2D_mcwhn")
+
+[node name="BordeNorte" type="CollisionShape2D" parent="Bordes" unique_id=1577937575]
+position = Vector2(231, -10.5)
+shape = SubResource("RectangleShape2D_yhjio")
+
+[node name="BordeOeste" type="CollisionShape2D" parent="Bordes" unique_id=1936836690]
+position = Vector2(-10, 144)
+shape = SubResource("RectangleShape2D_whbu4")
+
+[node name="BordeSur" type="CollisionShape2D" parent="Bordes" unique_id=1519937262]
+position = Vector2(249.75, 280)
+shape = SubResource("RectangleShape2D_aq5da")
+
+[node name="BordeEste" type="CollisionShape2D" parent="Bordes" unique_id=957782696]
+position = Vector2(489.5, 126)
+shape = SubResource("RectangleShape2D_gd8l3")
+
+[node name="CharacterBody2D" parent="." unique_id=1288290645 instance=ExtResource("1_mcwhn")]
+position = Vector2(120, 135)
+safe_margin = 0.1
+
+[node name="Hud" parent="." unique_id=360316666 instance=ExtResource("3_aq5da")]
