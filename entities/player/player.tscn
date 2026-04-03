@@ -20,5 +20,9 @@ scale = Vector2(0.17578125, 0.17578125)
 texture = ExtResource("1_8afob")
 
 [node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
+rotation = -8.3986
 
 [node name="Chorro" parent="WeaponPivot" unique_id=2025990940 instance=ExtResource("3_sglur")]
+cone_angle_degrees = 90.0
+cone_particle_speed = 600.0
+cone_particle_lifetime_ratio = 0.9

@@ -6,64 +6,45 @@
 particle_flag_disable_z = true
 emission_shape = 3
 emission_box_extents = Vector3(1, 1, 1)
-spread = 15.0
-initial_velocity_min = 200.0
-initial_velocity_max = 200.0
+initial_velocity_min = 600.0
+initial_velocity_max = 600.0
 gravity = Vector3(0, 0, 0)
+scale_min = 2.0
+scale_max = 3.0
 color = Color(0.44705883, 0.7019608, 1, 1)
-collision_mode = 1
-collision_friction = 0.0
-collision_bounce = 0.0
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_a6rhb"]
-particle_flag_disable_z = true
-emission_shape = 3
-emission_box_extents = Vector3(1, 5, 1)
-spread = 0.0
-initial_velocity_min = 2000.0
-initial_velocity_max = 2000.0
-gravity = Vector3(0, 0, 0)
-scale_max = 4.0
-color = Color(0.47058824, 1, 1, 1)
-collision_mode = 1
-collision_friction = 0.0
-collision_bounce = 0.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gq7y"]
-size = Vector2(400, 10)
+size = Vector2(500, 10)
 
 [node name="Chorro" type="Node2D" unique_id=2025990940]
 script = ExtResource("1_r32te")
-laser_rotation_speed = 1.0
+ray_count = 9
+cone_angle_degrees = 70.0
+cone_particle_speed = 1500.0
+laser_length = 500.0
+laser_particle_amount = 200
+laser_particle_speed = 10000.0
+laser_particle_lifetime_ratio = 0.85
 
 [node name="ConeWaterParticles" type="GPUParticles2D" parent="." unique_id=1703005110]
-amount = 500
+position = Vector2(4, -1)
+amount = 300
+lifetime = 0.1
+preprocess = 0.5
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_7gq7y")
 
-[node name="LaserWaterParticles" type="GPUParticles2D" parent="." unique_id=1269828676]
-emitting = false
-amount = 500
-process_material = SubResource("ParticleProcessMaterial_a6rhb")
-
 [node name="ConeMode" type="Node2D" parent="." unique_id=1939255602]
-
-[node name="RayCenter" type="RayCast2D" parent="ConeMode" unique_id=628851923]
-target_position = Vector2(150, 0)
-collision_mask = 4
-
-[node name="RayLeft1" type="RayCast2D" parent="ConeMode" unique_id=1137738126]
-rotation = -0.2617994
-target_position = Vector2(150, 0)
-collision_mask = 4
-
-[node name="RayRight1" type="RayCast2D" parent="ConeMode" unique_id=692728766]
-rotation = 0.2617994
-target_position = Vector2(150, 0)
-collision_mask = 4
 
 [node name="LaserMode" type="Area2D" parent="." unique_id=195597451]
 collision_mask = 4
 
 [node name="LaserHitbox" type="CollisionShape2D" parent="LaserMode" unique_id=1920722050]
-position = Vector2(200, 0)
+position = Vector2(250, 0)
 shape = SubResource("RectangleShape2D_7gq7y")
+
+[node name="LaserLine" type="Line2D" parent="." unique_id=1965263996]
+points = PackedVector2Array(0, 0, 500, 0)
+default_color = Color(0.2960622, 0.71259385, 0.992544, 1)
+begin_cap_mode = 2
+end_cap_mode = 2
