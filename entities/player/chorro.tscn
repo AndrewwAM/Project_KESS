@@ -49,16 +49,20 @@ process_material = SubResource("ParticleProcessMaterial_a6rhb")
 
 [node name="RayCenter" type="RayCast2D" parent="ConeMode" unique_id=628851923]
 target_position = Vector2(150, 0)
+collision_mask = 4
 
 [node name="RayLeft1" type="RayCast2D" parent="ConeMode" unique_id=1137738126]
 rotation = -0.2617994
 target_position = Vector2(150, 0)
+collision_mask = 4
 
 [node name="RayRight1" type="RayCast2D" parent="ConeMode" unique_id=692728766]
 rotation = 0.2617994
 target_position = Vector2(150, 0)
+collision_mask = 4
 
 [node name="LaserMode" type="Area2D" parent="." unique_id=195597451]
+collision_mask = 4
 
 [node name="LaserHitbox" type="CollisionShape2D" parent="LaserMode" unique_id=1920722050]
 position = Vector2(200, 0)
