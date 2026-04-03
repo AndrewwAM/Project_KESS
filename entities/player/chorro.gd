@@ -15,9 +15,12 @@ var is_shooting: bool = false
 var is_switching: bool = false
 var keep_shooting: bool = false
 var switch_cooldown = 1.0
+var cone_water_consume = 10.0
+var laser_water_consume = 25.0
 
 @export var cone_rotation_speed: float = 6.0
 @export var laser_rotation_speed: float = 1.5
+@export var tanque: Node
 var current_rotation_speed = cone_rotation_speed
 
 var damage_cone: float = 20.0
@@ -144,7 +147,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	# Disparar con clic izquierdo (mantener)
 	if event.is_action_pressed("shoot_main"):
 		print("trying to shoot!")
-		start_shooting()
+		if tanque.has_water():
+			start_shooting()
 	elif event.is_action_released("shoot_main"):
 		stop_shooting()
 		
@@ -178,11 +182,11 @@ func toggle_mode() -> void:
 	
 
 func start_shooting() -> void:
+	keep_shooting = true
 	if is_switching or is_shooting:
 		return
 
 	is_shooting = true
-	keep_shooting = true
 
 	if current_mode == PressureMode.CONE:
 		cone_water_particles.restart()
@@ -228,20 +232,36 @@ func set_cone_enabled(enabled: bool) -> void:
 	for ray in cone_mode.get_children():
 		if ray is RayCast2D:
 			ray.enabled = enabled
-			
+
+
 func apply_water_damage(delta: float) -> void:
-	if current_mode == PressureMode.CONE:
-		var current_damage = damage_cone * delta
-		for ray in cone_mode.get_children():
-			if ray is RayCast2D and ray.is_colliding():
-				var collider = ray.get_collider()
-				if collider and collider.has_method("mojar"):
-					collider.mojar(current_damage)
+	if tanque and tanque.has_water():
+		var current_damage = 0.0
+		var consumo = 0.0
+		
+		if current_mode == PressureMode.CONE:
+			current_damage = damage_cone * delta
+
+			consumo = cone_water_consume * delta 
+			
+			var hit_this_frame: Array = []
+			for ray in cone_mode.get_children():
+				if ray is RayCast2D and ray.is_colliding():
+					var collider = ray.get_collider()
+					if collider and collider.has_method("mojar") and not hit_this_frame.has(collider):
+						collider.mojar(current_damage)
+						hit_this_frame.append(collider)
+						
+		elif current_mode == PressureMode.LASER:
+			current_damage = damage_laser * delta
+			consumo = laser_water_consume * delta 
+			
+			var bodies = laser_mode.get_overlapping_bodies()
+			for body in bodies:
+				if body.has_method("mojar"):
+					body.mojar(current_damage)
 					
-	elif current_mode == PressureMode.LASER:
-		var current_damage = damage_laser * delta
-		# get_overlapping_bodies obtiene TODOS los enemigos atravesados por el laser
-		var bodies = laser_mode.get_overlapping_bodies()
-		for body in bodies:
-			if body.has_method("mojar"):
-				body.mojar(current_damage)
+		tanque.consume(consumo)
+		
+	else:
+		stop_shooting()

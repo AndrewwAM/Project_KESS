@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b3cxabd2gqxm" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dgbvtkj62qp0i" path="res://entities/player/player.gd" id="1_dovo2"]
 [ext_resource type="PackedScene" uid="uid://b22exnoxwavq5" path="res://entities/player/chorro.tscn" id="3_sglur"]
+[ext_resource type="PackedScene" uid="uid://cfq6xat4qb66f" path="res://entities/player/tanque_agua.tscn" id="4_bls4j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 
@@ -20,9 +21,17 @@ scale = Vector2(0.17578125, 0.17578125)
 texture = ExtResource("1_8afob")
 
 [node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
-rotation = -8.3986
+rotation = -14.573627
 
-[node name="Chorro" parent="WeaponPivot" unique_id=2025990940 instance=ExtResource("3_sglur")]
+[node name="Chorro" parent="WeaponPivot" unique_id=2025990940 node_paths=PackedStringArray("tanque") instance=ExtResource("3_sglur")]
+tanque = NodePath("../../TanqueAgua")
 cone_angle_degrees = 90.0
 cone_particle_speed = 600.0
 cone_particle_lifetime_ratio = 0.9
+
+[node name="Sprite2D" type="Sprite2D" parent="WeaponPivot" unique_id=601655912]
+position = Vector2(150, 0)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("1_8afob")
+
+[node name="TanqueAgua" parent="." unique_id=1596794547 instance=ExtResource("4_bls4j")]

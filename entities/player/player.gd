@@ -14,11 +14,7 @@ func _process(delta: float) -> void:
 	var direction = Input.get_vector("player_move_left", "player_move_right", "player_move_up", "player_move_down")
 	var current_speed = speed
 
-	direction
 	velocity = direction * current_speed
 
 	move_and_slide()
-	pass
-
-#func shoot() -> void:
-#	var new_chorro = chorro.instantiate()
+	

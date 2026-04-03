@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cfq6xat4qb66f"]
+
+[ext_resource type="Script" uid="uid://b8bknc7feeegm" path="res://entities/player/tanque_agua.gd" id="1_utj5h"]
+
+[node name="TanqueAgua" type="Node2D" unique_id=1596794547]
+script = ExtResource("1_utj5h")
