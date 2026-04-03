@@ -15,6 +15,7 @@ offset_left = 9.0
 offset_top = 9.0
 offset_right = 120.0
 offset_bottom = 29.0
+mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="background" type="ColorRect" parent="WaterBar" unique_id=1891489357]
@@ -71,6 +72,7 @@ offset_left = 9.0
 offset_top = 40.0
 offset_right = 100.0
 offset_bottom = 55.0
+mouse_filter = 2
 
 [node name="ColorRect" type="ColorRect" parent="Health" unique_id=1915739787]
 custom_minimum_size = Vector2(15, 15)
