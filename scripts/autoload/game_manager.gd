@@ -29,6 +29,7 @@ func consume_water(amount: float) -> void:
 	water_amount = clamp(water_amount - amount, 0.0, water_max)
 	emit_signal("water_changed", water_amount)
 	if water_amount <= 0.0:
+		print("triggering game over")
 		trigger_game_over()
 
 func refill_water(amount: float) -> void:

@@ -31,17 +31,18 @@ func _ready() -> void:
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Cambiar modo con clic derecho
-	if event.is_action_pressed("shoot_alt"):
+	if event.is_action_pressed("shoot_alt") and !is_switching:
 		print("switching")
-		stop_shooting()
 		is_switching = true
+		pause_shooting()
 		await get_tree().create_timer(switch_cooldown).timeout
 		print("switched")
 		is_switching=false
 		toggle_mode()
 	
 	# Disparar con clic izquierdo (mantener)
-	if event.is_action_pressed("shoot_main") and !is_switching:
+	if event.is_action_pressed("shoot_main"):
+		print("trying to shoot!")
 		start_shooting()
 	elif event.is_action_released("shoot_main"):
 		stop_shooting()
@@ -71,17 +72,15 @@ func toggle_mode() -> void:
 		# Volver al azul claro
 		#cone_water_particles.process_material.color = Color(0.6, 0.9, 1.0) 
 	
-	# Si cambiamos de arma mientras ya estamos presionando el gatillo, actualizamos las hitboxes
-	if is_shooting:
-		start_shooting()
 
 func start_shooting() -> void:
 	is_shooting = true
-	
+	if is_switching:
+		return
+
 	if current_mode == PressureMode.CONE:
 		cone_water_particles.emitting = true
 		set_cone_enabled(true)
-		# En Godot, cambiar colisiones físicas debe hacerse de forma diferida (segura)
 		laser_hitbox.set_deferred("disabled", true) 
 	elif current_mode == PressureMode.LASER:
 		laser_water_particles.emitting = true
@@ -90,12 +89,31 @@ func start_shooting() -> void:
 
 func stop_shooting() -> void:
 	is_shooting = false
-	if current_mode == PressureMode.CONE:
-		cone_water_particles.emitting = false
-	else:
-		laser_water_particles.emitting = false
+	#if current_mode == PressureMode.CONE:
+	#	cone_water_particles.emitting = false
+	#else:
+	#	laser_water_particles.emitting = false
+
+	# Se apaga tanto partículas como hitboxes
+	laser_water_particles.emitting = false
+	cone_water_particles.emitting = false
 	set_cone_enabled(false)
 	laser_hitbox.set_deferred("disabled", true)
+
+func pause_shooting() -> void:
+	is_shooting = false
+
+	laser_water_particles.emitting = false
+	cone_water_particles.emitting = false
+	set_cone_enabled(false)
+	laser_hitbox.set_deferred("disabled", true)
+
+	while is_switching:
+		await get_tree().create_timer(0.1).timeout
+	
+	print("Resuming")
+	start_shooting()
+
 	
 func set_cone_enabled(enabled: bool) -> void:
 	for ray in cone_mode.get_children():

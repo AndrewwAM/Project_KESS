@@ -21,4 +21,3 @@ func _process(delta: float) -> void:
 
 #func shoot() -> void:
 #	var new_chorro = chorro.instantiate()
-

@@ -36,5 +36,5 @@ func _process(delta: float) -> void:
         queue_free()
 
 func mojar(damage: float) -> void:
-    print("Enemy hit! Damage: ", damage)
+    #print("Enemy hit! Damage: ", damage)
     life -= damage
