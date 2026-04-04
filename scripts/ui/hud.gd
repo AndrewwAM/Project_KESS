@@ -4,10 +4,13 @@ extends Node2D
 const MAX_HEALTH = 5
 
 func _ready() -> void:
-	# Conectar señales del GameManager a funciones de este script
-	GameManager.water_changed.connect(_on_water_changed)
+	# Conectar señales
+	var player = get_tree().get_first_node_in_group("Player")
+	player.get_node("TanqueAgua").water_changed.connect(_on_water_changed)
 	GameManager.score_changed.connect(_on_score_changed)
 	GameManager.health_changed.connect(_on_health_changed)
+	
+	
 	
 	# Inicializar valores visuales con los valores actuales del GameManager
 	$WaterBar/ProgressBar.max_value = GameManager.water_max

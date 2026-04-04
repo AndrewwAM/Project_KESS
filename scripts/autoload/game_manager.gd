@@ -9,7 +9,7 @@ var damage_taken: int = 0 # pal gameover
 var health: int = 5
 var max_health: int = 5
 var score: int = 0 # pal gameover
-var water_amount: float = 50.0 # Partes sin tanque lleno pq estabas regando obviamente.
+var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
 var water_max: float = 100.0 
 var current_wave: int = 1 # pal gamover
 
@@ -28,9 +28,6 @@ signal game_won()
 func consume_water(amount: float) -> void:
 	water_amount = clamp(water_amount - amount, 0.0, water_max)
 	emit_signal("water_changed", water_amount)
-	if water_amount <= 0.0:
-		print("triggering game over")
-		trigger_game_over()
 
 func refill_water(amount: float) -> void:
 	water_amount = clamp(water_amount + amount, 0.0, water_max)
