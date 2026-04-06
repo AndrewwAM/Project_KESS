@@ -5,6 +5,9 @@ extends CharacterBody2D
 @export var wobble_angle: float = 15.0
 @export var wobble_speed: float = 0.15
 
+@export var immune_to_cone: bool = false
+@export var immune_to_laser: bool = false
+
 @export var path_update_interval: float = 0.2
 var path_update_timer: float = 0.0
 
@@ -13,6 +16,7 @@ var path_update_timer: float = 0.0
 
 var player: Node2D = null
 var time_passed: float = 0.0
+var hit_tween: Tween
 
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("Player")
@@ -57,5 +61,19 @@ func _process(delta: float) -> void:
 		emit_signal("enemy_defeated") # Para contador de enemigos derrotados y para generar oleadas nuevas.
 		queue_free()
 
-func mojar(damage: float) -> void:
+func mojar(damage: float, weapon_type: String) -> void:
+	if weapon_type == "cone" and immune_to_cone:
+		return
+	elif weapon_type == "laser" and immune_to_laser:
+		return
+
 	life -= damage
+	_flash_damage()
+
+func _flash_damage() -> void:
+	if hit_tween and hit_tween.is_valid():
+		hit_tween.kill()
+
+	hit_tween = create_tween()
+	sprite.modulate = Color(0.8, 0.1, 0.1, 1.0)
+	hit_tween.tween_property(sprite, "modulate", Color.WHITE, 0.15)

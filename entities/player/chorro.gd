@@ -99,7 +99,7 @@ func actualizar_cono() -> void:
 	var angle_rad = deg_to_rad(cone_angle_degrees)
 	var start_angle = -angle_rad / 2.0
 	var angle_step = angle_rad / (ray_count - 1) if ray_count > 1 else 0.0
-	
+
 	for i in range(ray_count):
 		var ray = RayCast2D.new()
 		ray.target_position = Vector2.RIGHT * ray_length
@@ -110,7 +110,7 @@ func actualizar_cono() -> void:
 
 	var cone_material = cone_water_particles.process_material as ParticleProcessMaterial
 	if cone_material:
-		cone_material.spread = cone_angle_degrees / 2.0 
+		cone_material.spread = cone_angle_degrees / 2.0
 		cone_material.initial_velocity_min = cone_particle_speed
 		cone_material.initial_velocity_max = cone_particle_speed
 
@@ -131,7 +131,7 @@ func actualizar_laser() -> void:
 	if laser_line:
 			laser_line.clear_points()
 			laser_line.add_point(Vector2.ZERO)
-			laser_line.add_point(Vector2.RIGHT * laser_length) 
+			laser_line.add_point(Vector2.RIGHT * laser_length)
 
 func _unhandled_input(event: InputEvent) -> void:
 	# Cambiar modo con clic derecho
@@ -143,7 +143,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		print("switched")
 		is_switching=false
 		toggle_mode()
-	
+
 	# Disparar con clic izquierdo (mantener)
 	if event.is_action_pressed("shoot_main"):
 		print("trying to shoot!")
@@ -151,20 +151,20 @@ func _unhandled_input(event: InputEvent) -> void:
 			start_shooting()
 	elif event.is_action_released("shoot_main"):
 		stop_shooting()
-		
+
 func _physics_process(delta: float) -> void:
 	handle_rotation(delta)
-	
+
 	if is_shooting:
 		apply_water_damage(delta)
 
 func handle_rotation(delta: float) -> void:
 	if not pivot:
 		return
-		
+
 	var mouse_pos: Vector2 = get_global_mouse_position()
 	var target_angle: float = pivot.global_position.angle_to_point(mouse_pos)
-	
+
 	# Interpolar ??!!!
 	pivot.rotation = lerp_angle(pivot.rotation, target_angle, current_rotation_speed * delta)
 
@@ -173,13 +173,13 @@ func toggle_mode() -> void:
 		current_rotation_speed = laser_rotation_speed
 		current_mode = PressureMode.LASER
 		# (Opcional) Cambiar a un azul más oscuro para dar feedback visual
-		#cone_water_particles.process_material.color = Color(0.2, 0.4, 1.0) 
+		#cone_water_particles.process_material.color = Color(0.2, 0.4, 1.0)
 	else:
 		current_mode = PressureMode.CONE
 		current_rotation_speed = cone_rotation_speed
 		# Volver al azul claro
-		#cone_water_particles.process_material.color = Color(0.6, 0.9, 1.0) 
-	
+		#cone_water_particles.process_material.color = Color(0.6, 0.9, 1.0)
+
 
 func start_shooting() -> void:
 	keep_shooting = true
@@ -191,7 +191,7 @@ func start_shooting() -> void:
 	if current_mode == PressureMode.CONE:
 		cone_water_particles.restart()
 		set_cone_enabled(true)
-		laser_hitbox.set_deferred("disabled", true) 
+		laser_hitbox.set_deferred("disabled", true)
 	elif current_mode == PressureMode.LASER:
 		laser_line.visible = true
 		set_cone_enabled(false)
@@ -221,13 +221,13 @@ func pause_shooting() -> void:
 
 	while is_switching:
 		await get_tree().create_timer(0.1).timeout
-	
+
 	if !keep_shooting:
 		return
 	print("Resuming")
 	start_shooting()
 
-	
+
 func set_cone_enabled(enabled: bool) -> void:
 	for ray in cone_mode.get_children():
 		if ray is RayCast2D:
@@ -238,30 +238,30 @@ func apply_water_damage(delta: float) -> void:
 	if tanque and tanque.has_water():
 		var current_damage = 0.0
 		var consumo = 0.0
-		
+
 		if current_mode == PressureMode.CONE:
 			current_damage = damage_cone * delta
 
-			consumo = cone_water_consume * delta 
-			
+			consumo = cone_water_consume * delta
+
 			var hit_this_frame: Array = []
 			for ray in cone_mode.get_children():
 				if ray is RayCast2D and ray.is_colliding():
 					var collider = ray.get_collider()
 					if collider and collider.has_method("mojar") and not hit_this_frame.has(collider):
-						collider.mojar(current_damage)
+						collider.mojar(current_damage, "cone")
 						hit_this_frame.append(collider)
-						
+
 		elif current_mode == PressureMode.LASER:
 			current_damage = damage_laser * delta
-			consumo = laser_water_consume * delta 
-			
+			consumo = laser_water_consume * delta
+
 			var bodies = laser_mode.get_overlapping_bodies()
 			for body in bodies:
 				if body.has_method("mojar"):
-					body.mojar(current_damage)
-					
+					body.mojar(current_damage, "laser")
+
 		tanque.consume(consumo)
-		
+
 	else:
 		stop_shooting()

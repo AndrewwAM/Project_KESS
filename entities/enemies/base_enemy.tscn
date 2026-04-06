@@ -21,10 +21,10 @@ script = ExtResource("1_nwpjw")
 wobble_speed = 0.1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=929592925]
-modulate = Color(1, 0.3019608, 0.3019608, 1)
 texture = ExtResource("1_20vb3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=679577638]
+visible = false
 shape = SubResource("CircleShape2D_nwpjw")
 
 [node name="Hurtbox" type="Area2D" parent="." unique_id=756368317]
