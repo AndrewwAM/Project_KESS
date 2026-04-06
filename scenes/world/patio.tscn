@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cmywpe60sf3vd"]
 
-[ext_resource type="Script" uid="uid://dphvr7ijr7lcv" path="res://scenes/world/water.gd" id="1_aq5da"]
+[ext_resource type="Script" uid="uid://dphvr7ijr7lcv" path="res://scripts/world/water.gd" id="1_aq5da"]
+[ext_resource type="PackedScene" uid="uid://ddm8ymoleugj3" path="res://scenes/world/spawner.tscn" id="1_gd8l3"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="1_mcwhn"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://scenes/ui/hud.tscn" id="3_aq5da"]
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="3_whbu4"]
@@ -30,6 +31,9 @@ size = Vector2(498.5, 20)
 size = Vector2(19, 294)
 
 [node name="Patio" type="Node2D" unique_id=1762634537]
+
+[node name="Spawner" parent="." unique_id=1968834125 instance=ExtResource("1_gd8l3")]
+spawn_points = Array[Vector2]([Vector2(350, 90), Vector2(380, 100), Vector2(400, 130)])
 
 [node name="Basic Background" type="Node2D" parent="." unique_id=1706732138]
 

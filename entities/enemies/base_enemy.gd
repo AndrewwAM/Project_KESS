@@ -33,6 +33,7 @@ func _process(delta: float) -> void:
 		time_passed = 0.0
 
 	if life <= 0:
+		emit_signal("enemy_defeated") # Para contador de enemigos derrotados y para generar oleadas nuevas.
 		queue_free()
 
 func mojar(damage: float) -> void:

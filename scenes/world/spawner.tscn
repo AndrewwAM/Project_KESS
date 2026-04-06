@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ddm8ymoleugj3"]
+
+[ext_resource type="Script" uid="uid://u0lam501t2l2" path="res://scripts/world/spawner.gd" id="1_sm5lk"]
+
+[node name="Spawner" type="Node2D" unique_id=1968834125]
+script = ExtResource("1_sm5lk")
+spawn_points = Array[Vector2]([Vector2(0, 0)])

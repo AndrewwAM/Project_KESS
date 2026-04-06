@@ -45,7 +45,7 @@ func reload(amount: float) -> void:
 	current_water = clamp(current_water, 0.0, max_water)
 	emit_signal("water_changed", current_water)
 	
-	print("Recarga en curso:", current_water)
+	#print("Recarga en curso:", current_water)
 	
 	if current_water == max_water:
 		emit_signal("full")
