@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="1_mcwhn"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://scenes/ui/hud.tscn" id="3_aq5da"]
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="3_whbu4"]
+[ext_resource type="PackedScene" uid="uid://1f6kkn87hfqv" path="res://entities/enemies/speed_enemy.tscn" id="4_cl03m"]
+[ext_resource type="PackedScene" uid="uid://fpw4f0fa5yqx" path="res://entities/enemies/tank_enemy.tscn" id="6_w1q3l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1q3l"]
 size = Vector2(33, 109)
@@ -80,28 +82,26 @@ offset_bottom = 109.0
 mouse_filter = 2
 color = Color(0.039215688, 1, 1, 1)
 
-[node name="Area2D" type="Area2D" parent="." unique_id=905874008 groups=["Agua"]]
+[node name="RechargeZones" type="Area2D" parent="." unique_id=905874008 groups=["Agua"]]
 collision_mask = 2
 script = ExtResource("1_aq5da")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1306109417]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RechargeZones" unique_id=1306109417]
 position = Vector2(256.5, 54.5)
 shape = SubResource("RectangleShape2D_w1q3l")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=863552801]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RechargeZones" unique_id=863552801]
 position = Vector2(256.5, 207)
 shape = SubResource("RectangleShape2D_cl03m")
 
 [node name="BaseEnemy" parent="." unique_id=1803823621 instance=ExtResource("3_whbu4")]
-position = Vector2(351, 136)
+position = Vector2(358, 130)
 
-[node name="BaseEnemy2" parent="." unique_id=537823383 instance=ExtResource("3_whbu4")]
-position = Vector2(372, 181)
-speed = 100.0
+[node name="SpeedEnemy" parent="." unique_id=982902031 instance=ExtResource("4_cl03m")]
+position = Vector2(386, 202)
 
-[node name="BaseEnemy3" parent="." unique_id=1123174946 instance=ExtResource("3_whbu4")]
-position = Vector2(385, 85)
-speed = 25.0
+[node name="TankEnemy" parent="." unique_id=457871494 instance=ExtResource("6_w1q3l")]
+position = Vector2(415, 100)
 
 [node name="Player" parent="." unique_id=1288290645 instance=ExtResource("1_mcwhn")]
 position = Vector2(130, 120)
@@ -109,6 +109,7 @@ position = Vector2(130, 120)
 [node name="Hud" parent="." unique_id=360316666 instance=ExtResource("3_aq5da")]
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=935810259]
+visible = false
 navigation_polygon = SubResource("NavigationPolygon_gd8l3")
 
 [node name="Agua" type="StaticBody2D" parent="NavigationRegion2D" unique_id=1441662832]

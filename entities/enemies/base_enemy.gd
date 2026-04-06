@@ -2,14 +2,18 @@ extends CharacterBody2D
 
 @export var life: float = 100.0
 @export var speed: float = 50.0
+@export var path_update_interval: float = 0.2
+var path_update_timer: float = 0.0
+
+@export_group("Wobble")
 @export var wobble_angle: float = 15.0
 @export var wobble_speed: float = 0.15
 
+@export_group("Immunities")
 @export var immune_to_cone: bool = false
 @export var immune_to_laser: bool = false
 
-@export var path_update_interval: float = 0.2
-var path_update_timer: float = 0.0
+
 
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
