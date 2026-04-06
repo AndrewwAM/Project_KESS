@@ -25,10 +25,6 @@ func _physics_process(_delta: float) -> void:
 	if player == null:
 		return
 
-<<<<<<< Updated upstream
-    var direction: Vector2 = global_position.direction_to(player.global_position)
-    velocity = direction * speed
-=======
 	# mejor pathfinding
 	path_update_timer += _delta
 	if path_update_timer >= path_update_interval:
@@ -44,7 +40,6 @@ func _physics_process(_delta: float) -> void:
 	# movimiento a player
 	var direction: Vector2 = global_position.direction_to(next_path_position)
 	velocity = direction * speed
->>>>>>> Stashed changes
 
 	move_and_slide()
 
@@ -63,5 +58,4 @@ func _process(delta: float) -> void:
 		queue_free()
 
 func mojar(damage: float) -> void:
-	#print("Enemy hit! Damage: ", damage)
 	life -= damage
