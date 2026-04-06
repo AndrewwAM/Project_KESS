@@ -4,78 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://dxebtgqpxwvja" path="res://scenes/world/Tiles/Tileset_Road.png" id="2_mqsvg"]
 [ext_resource type="Texture2D" uid="uid://b6jo2trbvnhsy" path="res://scenes/world/Tiles/Tileset_Water.png" id="3_khace"]
 [ext_resource type="Texture2D" uid="uid://kqftstrwkeod" path="res://scenes/world/Tiles/Tileset_Shadow.png" id="4_4am2k"]
-[ext_resource type="Texture2D" uid="uid://bmxm7m4ao07iu" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x16_Flat_Black.png" id="5_6pr64"]
-[ext_resource type="Texture2D" uid="uid://d04sgi5t4bw0o" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x24_Long_Black.png" id="6_p53y3"]
-[ext_resource type="Texture2D" uid="uid://bshhpap5tf7l3" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x24_Medium_Black.png" id="7_2667m"]
-[ext_resource type="Texture2D" uid="uid://buc4eqnykevjr" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x24_Short_Black.png" id="8_2idnh"]
-[ext_resource type="Texture2D" uid="uid://d0njbxwo26m2v" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x48_Flat_Black.png" id="9_feel0"]
-[ext_resource type="Texture2D" uid="uid://su4lvy7xc2jy" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x48_Long_Black.png" id="10_pwbwe"]
-[ext_resource type="Texture2D" uid="uid://ctbsakktfrcmy" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x48_Medium_Black.png" id="11_jvvra"]
-[ext_resource type="Texture2D" uid="uid://d7obisd88mck" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x48_Short_Black.png" id="12_fcadg"]
-[ext_resource type="Texture2D" uid="uid://bb0ypfseqbnk1" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x16_Flat_Black.png" id="13_mwq7s"]
-[ext_resource type="Texture2D" uid="uid://dyjb6gnory0c2" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x16_Long_Black.png" id="14_oasvj"]
-[ext_resource type="Texture2D" uid="uid://4isnqnru8tyb" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x16_Medium_Black.png" id="15_flahx"]
-[ext_resource type="Texture2D" uid="uid://csaw48ordrnmg" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x16_Long_Black.png" id="16_3ct4r"]
-[ext_resource type="Texture2D" uid="uid://c80v5bonh5d72" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x16_Short_Black.png" id="17_oi262"]
-[ext_resource type="Texture2D" uid="uid://divfuidg84e0b" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x32_Flat_Black.png" id="18_nn06f"]
-[ext_resource type="Texture2D" uid="uid://b0tbpjccybao7" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x32_Long_Black.png" id="19_7a0lc"]
-[ext_resource type="Texture2D" uid="uid://qce1wed21jcr" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x32_Medium_Black.png" id="20_vn3uh"]
-[ext_resource type="Texture2D" uid="uid://fn5cpv6hx52" path="res://scenes/world/Tiles/Shadows/Shadow_Round_32x32_Short_Black.png" id="21_iywwg"]
-[ext_resource type="Texture2D" uid="uid://bc3cjyiqqncj5" path="res://scenes/world/Tiles/Shadows/Shadow_Round_40x40_Flat_Black.png" id="22_lp0cp"]
-[ext_resource type="Texture2D" uid="uid://d3xewfpo62weh" path="res://scenes/world/Tiles/Shadows/Shadow_Round_40x40_Long_Black.png" id="23_71thh"]
-[ext_resource type="Texture2D" uid="uid://brva274ubqhyl" path="res://scenes/world/Tiles/Shadows/Shadow_Round_40x40_Medium_Black.png" id="24_n06vp"]
-[ext_resource type="Texture2D" uid="uid://gqw5dedka4ml" path="res://scenes/world/Tiles/Shadows/Shadow_Round_40x40_Short_Black.png" id="25_6vqtm"]
-[ext_resource type="Texture2D" uid="uid://dxth52pkd1r8p" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x24_Flat_Black.png" id="26_mrbjj"]
-[ext_resource type="Texture2D" uid="uid://dslo2xvjn3hj5" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x16_Medium_Black.png" id="27_nghyq"]
-[ext_resource type="Texture2D" uid="uid://dae64vgf44nfh" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x24_Long_Black.png" id="28_3lwjk"]
-[ext_resource type="Texture2D" uid="uid://cs7mw4oyks2xf" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x24_Medium_Black.png" id="29_sgnvj"]
-[ext_resource type="Texture2D" uid="uid://i5r2on0qiq7a" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x24_Short_Black.png" id="30_bel7p"]
-[ext_resource type="Texture2D" uid="uid://cpor36xm6jh17" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x48_Flat_Black.png" id="31_3vcaj"]
-[ext_resource type="Texture2D" uid="uid://c00ma2s5h0rdv" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x48_Long_Black.png" id="32_qyer0"]
-[ext_resource type="Texture2D" uid="uid://cm6dxga0k267x" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x48_Medium_Black.png" id="33_f7ohm"]
-[ext_resource type="Texture2D" uid="uid://bmwv0vc6g5ocr" path="res://scenes/world/Tiles/Shadows/Shadow_Round_48x48_Short_Black.png" id="34_nb2d8"]
-[ext_resource type="Texture2D" uid="uid://ctipwvdxo7jlq" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x16_Flat_Black.png" id="35_l2ksu"]
-[ext_resource type="Texture2D" uid="uid://dhqegig4lpjxb" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x16_Long_Black.png" id="36_wj8vw"]
-[ext_resource type="Texture2D" uid="uid://c3uopue2n5a5g" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x16_Medium_Black.png" id="37_8xqiv"]
-[ext_resource type="Texture2D" uid="uid://kuf3jap8qsbi" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x16_Short_Black.png" id="38_pgk1y"]
-[ext_resource type="Texture2D" uid="uid://ct1w5v3fxuncq" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x16_Short_Black.png" id="39_nq8oj"]
-[ext_resource type="Texture2D" uid="uid://ubmswcl85nm4" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x32_Flat_Black.png" id="40_h674b"]
-[ext_resource type="Texture2D" uid="uid://bkduhairhxsq5" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x32_Long_Black.png" id="41_qr5xu"]
-[ext_resource type="Texture2D" uid="uid://bmntftvaih5vq" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x32_Medium_Black.png" id="42_3gj1o"]
-[ext_resource type="Texture2D" uid="uid://drexvoi2a3utq" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_16x32_Short_Black.png" id="43_e7e7f"]
-[ext_resource type="Texture2D" uid="uid://cdd7om205pcsc" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x24_Flat_Black.png" id="44_gn0n6"]
-[ext_resource type="Texture2D" uid="uid://mk4lq40ybwa6" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x24_Long_Black.png" id="45_xbfdi"]
-[ext_resource type="Texture2D" uid="uid://78o0bk58mtmq" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x24_Medium_Black.png" id="46_0s4gn"]
-[ext_resource type="Texture2D" uid="uid://c3h5cp05r0gtw" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x24_Short_Black.png" id="47_y2t1h"]
-[ext_resource type="Texture2D" uid="uid://d1c3aaxuf8rw3" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x48_Flat_Black.png" id="48_eomqb"]
-[ext_resource type="Texture2D" uid="uid://bjkul8gypl8d2" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x32_Flat_Black.png" id="49_8q5uj"]
-[ext_resource type="Texture2D" uid="uid://4ou62p8lsrmy" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x48_Long_Black.png" id="50_6w4yu"]
-[ext_resource type="Texture2D" uid="uid://dqxll5jdq7o25" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x48_Medium_Black.png" id="51_fbnmn"]
-[ext_resource type="Texture2D" uid="uid://yj5iv58xbhy3" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_24x48_Short_Black.png" id="52_kd83n"]
-[ext_resource type="Texture2D" uid="uid://cdg1o3ugyojuk" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x16_Flat_Black.png" id="53_upyb7"]
-[ext_resource type="Texture2D" uid="uid://cmxyicy7uo6pi" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x16_Long_Black.png" id="54_1a001"]
-[ext_resource type="Texture2D" uid="uid://ds0e1kx4h2kgm" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x16_Medium_Black.png" id="55_pm4iy"]
-[ext_resource type="Texture2D" uid="uid://bhjs5a47rdias" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x16_Short_Black.png" id="56_re6s4"]
-[ext_resource type="Texture2D" uid="uid://c0evlybt2ilvw" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x32_Flat_Black.png" id="57_dem84"]
-[ext_resource type="Texture2D" uid="uid://cqvasob0e5bja" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x32_Long_Black.png" id="58_e88a1"]
-[ext_resource type="Texture2D" uid="uid://bsh47mis4d31g" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x32_Medium_Black.png" id="59_nfk52"]
-[ext_resource type="Texture2D" uid="uid://d2pbeujsl0ox7" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x32_Long_Black.png" id="60_5mkkk"]
-[ext_resource type="Texture2D" uid="uid://bol1ru8nvolwm" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_32x32_Short_Black.png" id="61_pcowl"]
-[ext_resource type="Texture2D" uid="uid://cff7jx1iipig2" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_40x40_Flat_Black.png" id="62_kkrmn"]
-[ext_resource type="Texture2D" uid="uid://3a23oeo7hv78" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_40x40_Long_Black.png" id="63_irqx2"]
-[ext_resource type="Texture2D" uid="uid://dh6cobii3nr2q" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_40x40_Medium_Black.png" id="64_tm6ka"]
-[ext_resource type="Texture2D" uid="uid://bufhydi6tc60j" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_40x40_Short_Black.png" id="65_uvfkb"]
-[ext_resource type="Texture2D" uid="uid://cr0jnp0jhv4h6" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x24_Flat_Black.png" id="66_g8mar"]
-[ext_resource type="Texture2D" uid="uid://14yw15ph0nua" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x24_Long_Black.png" id="67_l8lh8"]
-[ext_resource type="Texture2D" uid="uid://qo6pt7sxkyeb" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x24_Medium_Black.png" id="68_5y80r"]
-[ext_resource type="Texture2D" uid="uid://bevqohdrcqwej" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x24_Short_Black.png" id="69_r61sg"]
-[ext_resource type="Texture2D" uid="uid://ct6h15pclviqc" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x48_Flat_Black.png" id="70_bftif"]
-[ext_resource type="Texture2D" uid="uid://cuya7bx317af2" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x32_Medium_Black.png" id="71_ya4lk"]
-[ext_resource type="Texture2D" uid="uid://c06k8nlcn806f" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x48_Long_Black.png" id="72_e8xj7"]
-[ext_resource type="Texture2D" uid="uid://dgt4o4br7y5fn" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x48_Medium_Black.png" id="73_qubhh"]
-[ext_resource type="Texture2D" uid="uid://b8gqe0y1yw8on" path="res://scenes/world/Tiles/Shadows/Shadow_Sqare_48x48_Short_Black.png" id="74_hh8sk"]
-[ext_resource type="Texture2D" uid="uid://c4hd1wlc6wbm8" path="res://scenes/world/Tiles/Shadows/Shadow_Round_16x32_Short_Black.png" id="75_mssmt"]
-[ext_resource type="Texture2D" uid="uid://bdjki2aonn1t8" path="res://scenes/world/Tiles/Shadows/Shadow_Round_24x24_Flat_Black.png" id="76_86fly"]
 [ext_resource type="Texture2D" uid="uid://dsx6wwi6355es" path="res://scenes/world/Tiles/Trees_Bushes.png" id="77_uonvw"]
 [ext_resource type="Texture2D" uid="uid://rhsi5sphno63" path="res://scenes/world/Tiles/Rocks.png" id="78_luh8l"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="79_6pr64"]
@@ -906,36 +834,54 @@ texture = ExtResource("4_4am2k")
 3:7/0 = 0
 4:7/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ulsyr"]
+load_path = "res://.godot/imported/Shadow_Round_16x16_Flat_Black.png-b33811803214da20e3b776815d65927c.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i8u4m"]
-texture = ExtResource("5_6pr64")
+texture = SubResource("CompressedTexture2D_ulsyr")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uqrni"]
+load_path = "res://.godot/imported/Shadow_Round_24x24_Long_Black.png-b730a28d6f1a58775883c71b844d2ecb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_it618"]
-texture = ExtResource("6_p53y3")
+texture = SubResource("CompressedTexture2D_uqrni")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s05km"]
+load_path = "res://.godot/imported/Shadow_Round_24x24_Medium_Black.png-7e6e98b62f0b611a426cee7d74717291.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjx1r"]
-texture = ExtResource("7_2667m")
+texture = SubResource("CompressedTexture2D_s05km")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xnoy0"]
+load_path = "res://.godot/imported/Shadow_Round_24x24_Short_Black.png-46fc607fc59a03b345c7a5b0a2453767.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eb6mn"]
-texture = ExtResource("8_2idnh")
+texture = SubResource("CompressedTexture2D_xnoy0")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q37vj"]
+load_path = "res://.godot/imported/Shadow_Round_24x48_Flat_Black.png-3ee28f053ba324408bce90ee3e86ec52.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6ban"]
-texture = ExtResource("9_feel0")
+texture = SubResource("CompressedTexture2D_q37vj")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fagex"]
+load_path = "res://.godot/imported/Shadow_Round_24x48_Long_Black.png-d91f193f77e41bf5704217e3494af643.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2gcu6"]
-texture = ExtResource("10_pwbwe")
+texture = SubResource("CompressedTexture2D_fagex")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -944,62 +890,89 @@ texture = ExtResource("10_pwbwe")
 1:2/0 = 0
 0:3/0 = 0
 1:3/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f8hry"]
+load_path = "res://.godot/imported/Shadow_Round_24x48_Medium_Black.png-6e41c7fa59b456d8c4d869a86ecebc5f.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nlqy2"]
-texture = ExtResource("11_jvvra")
+texture = SubResource("CompressedTexture2D_f8hry")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2m2eu"]
+load_path = "res://.godot/imported/Shadow_Round_24x48_Short_Black.png-8381285fb59b97b3f46be44c3d85d6fe.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mmf0m"]
-texture = ExtResource("12_fcadg")
+texture = SubResource("CompressedTexture2D_2m2eu")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tsy8m"]
+load_path = "res://.godot/imported/Shadow_Round_32x16_Flat_Black.png-f85332990755e1995581c90c4aba3d96.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ksh1"]
-texture = ExtResource("13_mwq7s")
+texture = SubResource("CompressedTexture2D_tsy8m")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nwk5n"]
+load_path = "res://.godot/imported/Shadow_Round_32x16_Long_Black.png-13a50c0e88df42657feb92f19b634ee4.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phn1o"]
-texture = ExtResource("14_oasvj")
+texture = SubResource("CompressedTexture2D_nwk5n")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vdtgh"]
+load_path = "res://.godot/imported/Shadow_Round_32x16_Medium_Black.png-0ff8392788ca8948a40f4327877773cf.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uubcr"]
-texture = ExtResource("15_flahx")
+texture = SubResource("CompressedTexture2D_vdtgh")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_caqm6"]
+load_path = "res://.godot/imported/Shadow_Round_16x16_Long_Black.png-8efbb98ef05204db0f7815cf0b5dff70.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3yn1"]
-texture = ExtResource("16_3ct4r")
+texture = SubResource("CompressedTexture2D_caqm6")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4e3xi"]
+load_path = "res://.godot/imported/Shadow_Round_32x16_Short_Black.png-219e928c0e45eeb934f7dac5da4d1dde.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfqg2"]
-texture = ExtResource("17_oi262")
+texture = SubResource("CompressedTexture2D_4e3xi")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_olgxq"]
+load_path = "res://.godot/imported/Shadow_Round_32x32_Flat_Black.png-ca410680dc2beee5d16ed5d2dab10a53.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wspe"]
-texture = ExtResource("18_nn06f")
+texture = SubResource("CompressedTexture2D_olgxq")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b7578"]
+load_path = "res://.godot/imported/Shadow_Round_32x32_Long_Black.png-bda8a04adfee1ef3ea5715b603f7ec63.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsqxh"]
-texture = ExtResource("19_7a0lc")
+texture = SubResource("CompressedTexture2D_b7578")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1009,30 +982,42 @@ texture = ExtResource("19_7a0lc")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_avj5j"]
+load_path = "res://.godot/imported/Shadow_Round_32x32_Medium_Black.png-11815184c5aac7d5d85872596e9f683b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wcl5"]
-texture = ExtResource("20_vn3uh")
+texture = SubResource("CompressedTexture2D_avj5j")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u6pl3"]
+load_path = "res://.godot/imported/Shadow_Round_32x32_Short_Black.png-f019c33750b5f05d037d7c0c9f372fc2.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_20t14"]
-texture = ExtResource("21_iywwg")
+texture = SubResource("CompressedTexture2D_u6pl3")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h7urt"]
+load_path = "res://.godot/imported/Shadow_Round_40x40_Flat_Black.png-432c5df7bcc84217b8929b82b85d5a33.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7amty"]
-texture = ExtResource("22_lp0cp")
+texture = SubResource("CompressedTexture2D_h7urt")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_38io0"]
+load_path = "res://.godot/imported/Shadow_Round_40x40_Long_Black.png-8f88a81dd8b5bdc40a2bb564adf09b63.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tccwb"]
-texture = ExtResource("23_71thh")
+texture = SubResource("CompressedTexture2D_38io0")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1042,9 +1027,12 @@ texture = ExtResource("23_71thh")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cn6i6"]
+load_path = "res://.godot/imported/Shadow_Round_40x40_Medium_Black.png-f60bc2c577fa67bb0e822b04d505b9ed.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mjaoy"]
-texture = ExtResource("24_n06vp")
+texture = SubResource("CompressedTexture2D_cn6i6")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1054,26 +1042,38 @@ texture = ExtResource("24_n06vp")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sr5gv"]
+load_path = "res://.godot/imported/Shadow_Round_40x40_Short_Black.png-ab0fba22b562c31786a8940a6ec65db4.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g6d16"]
-texture = ExtResource("25_6vqtm")
+texture = SubResource("CompressedTexture2D_sr5gv")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_62wi3"]
+load_path = "res://.godot/imported/Shadow_Round_48x24_Flat_Black.png-3e9752712d899ea85bf7a8a8783af9fb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sw7q7"]
-texture = ExtResource("26_mrbjj")
+texture = SubResource("CompressedTexture2D_62wi3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xs2kf"]
+load_path = "res://.godot/imported/Shadow_Round_16x16_Medium_Black.png-922d74fe042f334a657a7a5d9e214483.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_55mij"]
-texture = ExtResource("27_nghyq")
+texture = SubResource("CompressedTexture2D_xs2kf")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2aynt"]
+load_path = "res://.godot/imported/Shadow_Round_48x24_Long_Black.png-54d51544479ab8bc3df52b44d90127e7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50q8n"]
-texture = ExtResource("28_3lwjk")
+texture = SubResource("CompressedTexture2D_2aynt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1082,24 +1082,33 @@ texture = ExtResource("28_3lwjk")
 1:1/0 = 0
 2:1/0 = 0
 3:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_slyej"]
+load_path = "res://.godot/imported/Shadow_Round_48x24_Medium_Black.png-c3ef49f0a92955b0fabd2757ad19da96.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_owen3"]
-texture = ExtResource("29_sgnvj")
+texture = SubResource("CompressedTexture2D_slyej")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oj80f"]
+load_path = "res://.godot/imported/Shadow_Round_48x24_Short_Black.png-75eea60cce88d6c9f2bd6a3fb8f30100.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t82wp"]
-texture = ExtResource("30_bel7p")
+texture = SubResource("CompressedTexture2D_oj80f")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rwf27"]
+load_path = "res://.godot/imported/Shadow_Round_48x48_Flat_Black.png-a3db6bfd09fe4f47fd9b82562c1f733b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr0ra"]
-texture = ExtResource("31_3vcaj")
+texture = SubResource("CompressedTexture2D_rwf27")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1109,9 +1118,12 @@ texture = ExtResource("31_3vcaj")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvmg2"]
+load_path = "res://.godot/imported/Shadow_Round_48x48_Long_Black.png-d58bb11e3888881bb8072963dce37e53.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_723x1"]
-texture = ExtResource("32_qyer0")
+texture = SubResource("CompressedTexture2D_cvmg2")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1128,9 +1140,12 @@ texture = ExtResource("32_qyer0")
 1:3/0 = 0
 2:3/0 = 0
 3:3/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0r01h"]
+load_path = "res://.godot/imported/Shadow_Round_48x48_Medium_Black.png-1169f4d3b4189631591a2bf38e509098.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew85m"]
-texture = ExtResource("33_f7ohm")
+texture = SubResource("CompressedTexture2D_0r01h")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1140,9 +1155,12 @@ texture = ExtResource("33_f7ohm")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ksatf"]
+load_path = "res://.godot/imported/Shadow_Round_48x48_Short_Black.png-5d297e24e518bcfaa9509f5e41f39f2b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_guodx"]
-texture = ExtResource("34_nb2d8")
+texture = SubResource("CompressedTexture2D_ksatf")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1153,36 +1171,57 @@ texture = ExtResource("34_nb2d8")
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ij4sd"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x16_Flat_Black.png-8d0da18ddd43e2a127ec3bada881373f.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_paiow"]
-texture = ExtResource("35_l2ksu")
+texture = SubResource("CompressedTexture2D_ij4sd")
 0:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0odlm"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x16_Long_Black.png-36abd35ce2be1274f4f4f75c460eae7b.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1v18n"]
-texture = ExtResource("36_wj8vw")
+texture = SubResource("CompressedTexture2D_0odlm")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_31nij"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x16_Medium_Black.png-0f69261b264ee9d6f73b0c0df4f53658.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y3oq7"]
-texture = ExtResource("37_8xqiv")
+texture = SubResource("CompressedTexture2D_31nij")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_husu1"]
+load_path = "res://.godot/imported/Shadow_Round_16x16_Short_Black.png-da54cf03c107e752a515f06e0c0b1020.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aca25"]
-texture = ExtResource("38_pgk1y")
+texture = SubResource("CompressedTexture2D_husu1")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7atfi"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x16_Short_Black.png-5fb20854c68e1b5b98d57f1aa7a071f0.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f3d7q"]
-texture = ExtResource("39_nq8oj")
+texture = SubResource("CompressedTexture2D_7atfi")
 0:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0uw28"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x32_Flat_Black.png-508bd91f0825e5a8a862a0dbfc2ad690.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k5004"]
-texture = ExtResource("40_h674b")
+texture = SubResource("CompressedTexture2D_0uw28")
 0:0/0 = 0
 0:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n6gvj"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x32_Long_Black.png-9a873bc861ba33ab98bd61d2acd2555d.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gf2w"]
-texture = ExtResource("41_qr5xu")
+texture = SubResource("CompressedTexture2D_n6gvj")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -1190,51 +1229,78 @@ texture = ExtResource("41_qr5xu")
 0:2/0 = 0
 1:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bke31"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x32_Medium_Black.png-637b0b47dd99512da5dab83251875fe3.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sxuw3"]
-texture = ExtResource("42_3gj1o")
+texture = SubResource("CompressedTexture2D_bke31")
 0:0/0 = 0
 0:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ieac6"]
+load_path = "res://.godot/imported/Shadow_Sqare_16x32_Short_Black.png-4eec40d464931f494d7921d7230c64cb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf7s8"]
-texture = ExtResource("43_e7e7f")
+texture = SubResource("CompressedTexture2D_ieac6")
 0:0/0 = 0
 0:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2hp6"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x24_Flat_Black.png-2a847ae42b88ff3be08d729bfe330911.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0akhc"]
-texture = ExtResource("44_gn0n6")
+texture = SubResource("CompressedTexture2D_h2hp6")
 0:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pplgn"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x24_Long_Black.png-19ed51039515e3022750f44b7b0c90be.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l41lo"]
-texture = ExtResource("45_xbfdi")
+texture = SubResource("CompressedTexture2D_pplgn")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hvmia"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x24_Medium_Black.png-7f635aeb815ec0de323b98788efb60d5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bnfos"]
-texture = ExtResource("46_0s4gn")
+texture = SubResource("CompressedTexture2D_hvmia")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qmwpi"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x24_Short_Black.png-b79748e0568da1ca219af210797a8355.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t46mh"]
-texture = ExtResource("47_y2t1h")
+texture = SubResource("CompressedTexture2D_qmwpi")
 0:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_44gcj"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x48_Flat_Black.png-d1f7e1502410bbc1402b3b1faa53df65.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n0ndd"]
-texture = ExtResource("48_eomqb")
+texture = SubResource("CompressedTexture2D_44gcj")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ayt8x"]
+load_path = "res://.godot/imported/Shadow_Round_16x32_Flat_Black.png-8adc306b4e5ef7744ac526764643f51c.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iowh4"]
-texture = ExtResource("49_8q5uj")
+texture = SubResource("CompressedTexture2D_ayt8x")
 0:0/0 = 0
 0:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x6koe"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x48_Long_Black.png-cf147e9167faf2cbf516b8e2b406b752.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n4scv"]
-texture = ExtResource("50_6w4yu")
+texture = SubResource("CompressedTexture2D_x6koe")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
@@ -1244,54 +1310,78 @@ texture = ExtResource("50_6w4yu")
 0:3/0 = 0
 1:3/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h8s1p"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x48_Medium_Black.png-4a98cca9515b581118ce672e21c3b7da.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpqdj"]
-texture = ExtResource("51_fbnmn")
+texture = SubResource("CompressedTexture2D_h8s1p")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hcc67"]
+load_path = "res://.godot/imported/Shadow_Sqare_24x48_Short_Black.png-d0bda177afb7cc6ada7401672cf8fa66.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17xe2"]
-texture = ExtResource("52_kd83n")
+texture = SubResource("CompressedTexture2D_hcc67")
 0:0/0 = 0
 0:1/0 = 0
 0:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nn3ph"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x16_Flat_Black.png-54be99b26d93ee929ebe42dbfadd05e5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3y2kf"]
-texture = ExtResource("53_upyb7")
+texture = SubResource("CompressedTexture2D_nn3ph")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1d7i"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x16_Long_Black.png-4e12c8887673b3656d3dba9202c33007.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5s2ri"]
-texture = ExtResource("54_1a001")
+texture = SubResource("CompressedTexture2D_g1d7i")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 2:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ic4r"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x16_Medium_Black.png-cd4d4a0813edc054e0238cd776dd696d.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxkw0"]
-texture = ExtResource("55_pm4iy")
+texture = SubResource("CompressedTexture2D_8ic4r")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qmwns"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x16_Short_Black.png-fc887014cd7e7b4288866c80d2eb9dd7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oej81"]
-texture = ExtResource("56_re6s4")
+texture = SubResource("CompressedTexture2D_qmwns")
 0:0/0 = 0
 1:0/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n3vhq"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x32_Flat_Black.png-bd78857904378825388bc2d9df39b052.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2url6"]
-texture = ExtResource("57_dem84")
+texture = SubResource("CompressedTexture2D_n3vhq")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3uhv8"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x32_Long_Black.png-03e87fce1a121e6b38d8c725f5a9238e.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_diid1"]
-texture = ExtResource("58_e88a1")
+texture = SubResource("CompressedTexture2D_3uhv8")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1301,39 +1391,54 @@ texture = ExtResource("58_e88a1")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ci5xp"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x32_Medium_Black.png-b2dc44c9f6a1ce4ca99baf001565013c.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sb12c"]
-texture = ExtResource("59_nfk52")
+texture = SubResource("CompressedTexture2D_ci5xp")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2clt"]
+load_path = "res://.godot/imported/Shadow_Round_16x32_Long_Black.png-8e95a0abf60447425c0fa167a48b0326.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7r78"]
-texture = ExtResource("60_5mkkk")
+texture = SubResource("CompressedTexture2D_h2clt")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 0:2/0 = 0
 1:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rg78w"]
+load_path = "res://.godot/imported/Shadow_Sqare_32x32_Short_Black.png-c25919dc08ba2bee87a2993da92f9e03.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xlwxk"]
-texture = ExtResource("61_pcowl")
+texture = SubResource("CompressedTexture2D_rg78w")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ugnwl"]
+load_path = "res://.godot/imported/Shadow_Sqare_40x40_Flat_Black.png-426f00c55d853e551a1d6999e7bd9ba3.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lu0ie"]
-texture = ExtResource("62_kkrmn")
+texture = SubResource("CompressedTexture2D_ugnwl")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oftg5"]
+load_path = "res://.godot/imported/Shadow_Sqare_40x40_Long_Black.png-afc681e4ef37914e0530cee4db374f2d.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6esah"]
-texture = ExtResource("63_irqx2")
+texture = SubResource("CompressedTexture2D_oftg5")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1343,9 +1448,12 @@ texture = ExtResource("63_irqx2")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ie0sk"]
+load_path = "res://.godot/imported/Shadow_Sqare_40x40_Medium_Black.png-4f23f2c09be1adc4c546406436af1027.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tjxht"]
-texture = ExtResource("64_tm6ka")
+texture = SubResource("CompressedTexture2D_ie0sk")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1356,21 +1464,30 @@ texture = ExtResource("64_tm6ka")
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gc5qi"]
+load_path = "res://.godot/imported/Shadow_Sqare_40x40_Short_Black.png-5748f1ac01cb73c47d76dc7f9c4ed130.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lghx3"]
-texture = ExtResource("65_uvfkb")
+texture = SubResource("CompressedTexture2D_gc5qi")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xm8gu"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x24_Flat_Black.png-a92a446fc41b5373b4f0da91b8bb7900.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cyopv"]
-texture = ExtResource("66_g8mar")
+texture = SubResource("CompressedTexture2D_xm8gu")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2b3tt"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x24_Long_Black.png-0d434ce91f1e97bb51914e361d029e85.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1wk2"]
-texture = ExtResource("67_l8lh8")
+texture = SubResource("CompressedTexture2D_2b3tt")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1380,8 +1497,11 @@ texture = ExtResource("67_l8lh8")
 2:1/0 = 0
 3:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f3jvu"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x24_Medium_Black.png-ac3320e29009ad020128657a6b315e04.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4o23n"]
-texture = ExtResource("68_5y80r")
+texture = SubResource("CompressedTexture2D_f3jvu")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1389,14 +1509,20 @@ texture = ExtResource("68_5y80r")
 1:1/0 = 0
 2:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o2pry"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x24_Short_Black.png-9f3f06c1f6b74681a788dcc1d757d6f1.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io3er"]
-texture = ExtResource("69_r61sg")
+texture = SubResource("CompressedTexture2D_o2pry")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lofnj"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x48_Flat_Black.png-a744965df73606e5935421b1864579bb.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwysl"]
-texture = ExtResource("70_bftif")
+texture = SubResource("CompressedTexture2D_lofnj")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1407,13 +1533,19 @@ texture = ExtResource("70_bftif")
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yhihr"]
+load_path = "res://.godot/imported/Shadow_Round_16x32_Medium_Black.png-21f235cde2d391aa5713a3a2a32cb8f1.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oe7lw"]
-texture = ExtResource("71_ya4lk")
+texture = SubResource("CompressedTexture2D_yhihr")
 0:0/0 = 0
 0:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p3i03"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x48_Long_Black.png-7c76a5f6fe519e19436c4963be57a8dc.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwdsy"]
-texture = ExtResource("72_e8xj7")
+texture = SubResource("CompressedTexture2D_p3i03")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1431,8 +1563,11 @@ texture = ExtResource("72_e8xj7")
 2:3/0 = 0
 3:3/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ytoi"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x48_Medium_Black.png-0fcee7bf77f4265b5a895bbe76ab3fdd.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uob0g"]
-texture = ExtResource("73_qubhh")
+texture = SubResource("CompressedTexture2D_8ytoi")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1442,9 +1577,12 @@ texture = ExtResource("73_qubhh")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4am2k"]
+load_path = "res://.godot/imported/Shadow_Sqare_48x48_Short_Black.png-1fde20193f16cb0fd601e79acc991040.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_niut7"]
-texture = ExtResource("74_hh8sk")
+texture = SubResource("CompressedTexture2D_4am2k")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1455,13 +1593,19 @@ texture = ExtResource("74_hh8sk")
 1:2/0 = 0
 2:2/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6pr64"]
+load_path = "res://.godot/imported/Shadow_Round_16x32_Short_Black.png-201cfbd234817a09bd99df38d22761fa.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0em13"]
-texture = ExtResource("75_mssmt")
+texture = SubResource("CompressedTexture2D_6pr64")
 0:0/0 = 0
 0:1/0 = 0
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p53y3"]
+load_path = "res://.godot/imported/Shadow_Round_24x24_Flat_Black.png-537caa5cd199b97b2180c5de50ccb447.ctex"
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jhlhd"]
-texture = ExtResource("76_86fly")
+texture = SubResource("CompressedTexture2D_p53y3")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_34rg6"]
@@ -1538,6 +1682,108 @@ sources/69 = SubResource("TileSetAtlasSource_wwysl")
 sources/70 = SubResource("TileSetAtlasSource_nwdsy")
 sources/71 = SubResource("TileSetAtlasSource_uob0g")
 sources/72 = SubResource("TileSetAtlasSource_niut7")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ulsyr"]
+texture = ExtResource("77_uonvw")
+1:0/0 = 0
+2:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+16:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+20:0/0 = 0
+22:0/0 = 0
+23:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+16:1/0 = 0
+18:1/0 = 0
+19:1/0 = 0
+20:1/0 = 0
+22:1/0 = 0
+23:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+16:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+16:3/0 = 0
+22:3/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+22:4/0 = 0
+1:5/0 = 0
+3:5/0 = 0
+5:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+15:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_uqrni"]
+sources/0 = SubResource("TileSetAtlasSource_ulsyr")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ntkkj"]
+texture = ExtResource("78_luh8l")
+0:0/0 = 0
+1:0/0 = 0
+3:0/0 = 0
+5:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+7:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_y5wpv"]
+sources/0 = SubResource("TileSetAtlasSource_ntkkj")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_my0nq"]
 texture = ExtResource("77_uonvw")
@@ -1625,25 +1871,9 @@ texture = ExtResource("77_uonvw")
 [sub_resource type="TileSet" id="TileSet_3n7x1"]
 sources/0 = SubResource("TileSetAtlasSource_my0nq")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ntkkj"]
-texture = ExtResource("78_luh8l")
-0:0/0 = 0
-1:0/0 = 0
-3:0/0 = 0
-5:0/0 = 0
-7:0/0 = 0
-0:1/0 = 0
-1:1/0 = 0
-7:1/0 = 0
-9:1/0 = 0
-10:1/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_y5wpv"]
-sources/0 = SubResource("TileSetAtlasSource_ntkkj")
-
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_4am2k"]
-vertices = PackedVector2Array(535.75, 116.88281, 409, 71, 470.5, 70.75, 539.5, 70.75, 566.25, 116.88281, -240.90625, 573, -7, 457, 36.5, 455.5, 89.5, 455.5, 207.25, 474, 74, 261.0625, 203.03125, 248, 246, 246.52344, 298, 246.52344, 500, 259.8828, 500, 310.1328, 213, 278.25, 856, 215.74219, 856, 231.5, 824, 231.5, 712.1328, 229, 712.1328, 195.4375, -73, -89.47656, -41.523438, -89.47656, -71, -88.75781, 297, 485.5, 509.75, 474, 645.75, 469, 680, 469, 783.25, 506, 469, 116.88281, 469, 163.5, 435, 163.5, 171, 151.52344, 171, 102.47656, 340, 71, 631.28125, 367, 631.28125, 405.5, 596.5, 405.5, 322.71875, 392, 506, 372.1328, 503.5, 228, 503.5, 259.8828, 298, 197.47656, 435, 214.5, 473.5, -104.25, 495.28125, -98, 495.28125, -75.52344, 486, -75.52344, 382.75, -86, 404.5, -104.25, 38, 183, 119, 151.52344, 246, 197.47656, 114.96875, 248, 120, 295.5, 120, 327.5, 104, 327.5, -7, 313, -7, 267, 152, 437.5, 207.25, 437.5, 1039.0234, -156.03125, 1040.9688, 573, 985, 325.5, 985, 274.5, 830.75, 506, 259, 485.5, 942.75, 156, 942.75, 112, 964, 261.5, 948, 231.5, 884, 21.5, 884, -43.5, 895.25, 112, 891.03125, 111, 105, 116.0625, 105, 81.9375, 119, 102.47656, 656.25, 143, 707.28125, 55, 725.8828, 35.21875, 725.8828, 68.78125, 703.75, 143, 728, 20.5, 707.28125, 15, 727.75, -27.882813, 728, -27.882813, 38, 143, 53, 116.0625, -135, 427, -135, 375, -91, 411, -91, 457, 74, 226.9375, 114.96875, 202, 895.25, 156, 891.03125, 155, 260, 390.5, 279.28125, 352, 279.28125, 392, 259, 434.5, 254.75, 430, 260, 325.5, 680, 435.8828, 783.25, 462, 462.25, 474, 462.25, 430, 297, 434.5, 73.5, -57.5, 73.5, -106.5, 335.25, -86, 342, -75.52344, 342, -26.476563, 274.96875, 17.5, 245, 19.476563, 217, 21, 165, 21, 454, 372.1328, 322.71875, 352, 454, 338, 607.25, 315, 506, 338, 552, 310.1328, 509.75, 430, 596.5, 454.5, -7, 411, 36.5, 406.5, 203.03125, 202, 703.75, 187, 802.96875, 155, 887, 180.88281, 887, 214.97656, 837, -90.75, 825, -90.453125, 825, -110.0625, -10, -90.25, -23, -89.92969, -23, -138.52344, 20.5, -106.5, 165.5, 279.40625, 165.5, 275.7422, 614, 117.25, 566.25, 118.40625, 614, 70.5, 473.5, -141.75, 773, -110.0625, 773, -75.9375, 538.71875, -98, 677.8828, 195.4375, 661, 187, 661, 229.5, 677.8828, 229, 674.71875, 367, 538.71875, -58, 727.75, -60.132813, 409, 33.5, 470.5, 33.25, 868, -43.5, 868, -73.5, 837, -73.5, 776, -75.9375, 776, -73.5, 744, -73.5, 744, -60.132813, 394, -26.476563, 394, -75.52344, 486, -26.476563, 335.25, -130, 20.5, -73, -10, -73, -71, -73, -103, -73, -104, -74.52344, -103, -41, -104, -41, -154, -25.476563, -119, -25.476563, -119, 21, -156, 38, -103, 21, -103, 38, -103, 87, -103, 53, -74, 53, -74, 84.0625, -22, 84.0625, -22, 69, -11, 69, 53, 81.9375, -9.5, 143, -11, 53, 21, 53, 21, 22, 37, 22, 37, -43, 21, -43, 21, -57.5, 538, -26.476563, 538, -58, 663.84375, 15, 744, 20.5, 744, 35.21875, 663.84375, 21.5, 619.03125, 21.5, 619.03125, 15, 530.96875, 15, 530.96875, 33.25, 363.03125, 33.5, 363.03125, 17.5, 274.96875, 19.476563, 297, 68.52344, 297, 59, 340, 59, 217, 70, 245, 68.52344, 539.5, 59, 614, 59, 666, 70.5, 666, 55, 760.1328, 68.78125, 760.1328, 52.5, 776, 52.5, 776, 68.5, 836, 68.5, 836, 52.5, 868, 52.5, 868, 21.5, 802.96875, 111, 964, 274.5, 948, 261.5, 917, 231.5, 917, 231.13281, 939, 231.13281, 939, 180.88281, 656.25, 164.5, 645, 164.5, 645, 134.5, 614, 134.5, 535.75, 134.5, 521, 134.5, 521, 116.88281, 473, 214.5, 473, 167.13281, 505, 167.13281, 505, 228, 552, 260.5, 553, 260.5, 553, 276.5, 607.25, 276.5, 654.75, 271, 613, 271, 613, 260.5, 645, 260.5, 645, 229.5, 824, 263.5, 808, 263.5, 808, 325.5, 824, 325.5, 824, 355, 804, 355, 842, 406, 842, 357.5, 856, 357.5, 856, 373.5, 916, 373.5, 916, 357.5, 919, 357.5, 919, 391.1328, 971, 340.8828, 948, 340.8828, 948, 326.5, 964, 326.5, 964, 325.5, 971, 391.1328, 830.75, 462, 649.5, 435.8828, 649.5, 407, 674.71875, 407, 244, 325.5, 244, 295.5, 213, 295.5, 134.5, 275.7422, 134.5, 295.5, 22, 261.0625, -91, 267, -91, 277.47656, -137, 277.47656, -156, 87, -87, 326.52344, -87, 313, 104, 389.5, 120, 389.5, 120, 421.5, 89.5, 406.5, 135, 421.5, 135, 436.52344, 152, 436.52344, -161.25, 375, -161.25, 335, -137, 326.52344, -208.75, 379, -187, 379, -187, 427, 212, 430, 212, 421.5, 244, 421.5, 244, 390.5, 645.75, 454.5, 804, 406, 254.75, 474, 165, 70, -208.75, 335, -234.09375, -159.96094, 654.75, 315, -9.5, 183, -73, -138.52344, -154, -74.52344, 22, 226.9375, 404.5, -141.75, 382.75, -130)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8, 9), PackedInt32Array(10, 11, 12, 13, 14, 15, 16), PackedInt32Array(17, 18, 19, 20, 21), PackedInt32Array(22, 23, 24), PackedInt32Array(25, 26, 27, 28, 29, 5), PackedInt32Array(1, 30, 31, 32, 33, 34, 35), PackedInt32Array(36, 37, 38, 39, 40), PackedInt32Array(41, 42, 14, 13, 43, 44), PackedInt32Array(45, 46, 47, 48, 49, 50), PackedInt32Array(51, 52, 33, 32, 43, 53), PackedInt32Array(54, 11, 10), PackedInt32Array(55, 56, 57, 58, 59), PackedInt32Array(8, 60, 61, 9), PackedInt32Array(62, 63, 64, 65), PackedInt32Array(66, 63, 5, 29), PackedInt32Array(67, 25, 5), PackedInt32Array(68, 69, 62, 65, 70, 71), PackedInt32Array(72, 73, 62, 69, 74, 75), PackedInt32Array(76, 77, 78, 52), PackedInt32Array(79, 80, 81, 82, 83), PackedInt32Array(84, 81, 80, 85, 86, 87), PackedInt32Array(76, 52, 51, 88, 89), PackedInt32Array(90, 91, 92, 93), PackedInt32Array(54, 10, 94, 95), PackedInt32Array(74, 96, 97, 75), PackedInt32Array(98, 99, 100, 101, 102), PackedInt32Array(99, 98, 103), PackedInt32Array(28, 104, 105, 29), PackedInt32Array(106, 26, 25), PackedInt32Array(107, 106, 25, 108, 39), PackedInt32Array(109, 110, 111, 112, 113, 114, 115, 116, 117), PackedInt32Array(118, 40, 39), PackedInt32Array(118, 39, 119, 120), PackedInt32Array(121, 36, 40, 122, 123), PackedInt32Array(27, 26, 124, 125), PackedInt32Array(7, 6, 126, 127), PackedInt32Array(12, 11, 128, 53), PackedInt32Array(129, 83, 130, 131, 132, 17, 21), PackedInt32Array(133, 134, 135, 62), PackedInt32Array(136, 137, 138, 139), PackedInt32Array(16, 140, 141), PackedInt32Array(142, 143, 4, 144), PackedInt32Array(45, 145, 146, 147, 148), PackedInt32Array(129, 21, 149, 150), PackedInt32Array(151, 150, 149, 152, 153), PackedInt32Array(154, 148, 155, 86), PackedInt32Array(2, 1, 156, 157), PackedInt32Array(73, 158, 159, 62), PackedInt32Array(159, 160, 133, 62), PackedInt32Array(147, 161, 162, 163), PackedInt32Array(163, 164, 155, 148), PackedInt32Array(165, 166, 48, 167, 157, 156), PackedInt32Array(49, 48, 166), PackedInt32Array(49, 166, 112, 111), PackedInt32Array(168, 111, 110, 138), PackedInt32Array(139, 169, 170, 136), PackedInt32Array(22, 24, 171, 172, 173), PackedInt32Array(172, 174, 175, 173), PackedInt32Array(176, 177, 178, 179), PackedInt32Array(178, 180, 181, 179), PackedInt32Array(182, 183, 184, 185), PackedInt32Array(186, 187, 188, 189, 89, 88, 190), PackedInt32Array(188, 191, 192, 189), PackedInt32Array(192, 193, 194, 189), PackedInt32Array(195, 196, 197, 109), PackedInt32Array(198, 199, 154, 86, 85, 200), PackedInt32Array(84, 201, 202, 81), PackedInt32Array(200, 203, 204, 205), PackedInt32Array(198, 200, 205), PackedInt32Array(198, 205, 206, 167), PackedInt32Array(206, 207, 157, 167), PackedInt32Array(165, 156, 208, 209), PackedInt32Array(113, 165, 209, 114), PackedInt32Array(114, 210, 115), PackedInt32Array(211, 212, 213, 35), PackedInt32Array(211, 35, 34, 214, 215), PackedInt32Array(215, 214, 116, 115), PackedInt32Array(3, 216, 217, 144, 4), PackedInt32Array(218, 219, 80), PackedInt32Array(220, 221, 222, 223), PackedInt32Array(224, 225, 226), PackedInt32Array(226, 227, 72, 75), PackedInt32Array(226, 75, 228, 224), PackedInt32Array(223, 224, 228, 83, 220), PackedInt32Array(65, 229, 70), PackedInt32Array(70, 230, 71), PackedInt32Array(71, 231, 232, 233), PackedInt32Array(68, 71, 233, 234), PackedInt32Array(96, 68, 234, 131), PackedInt32Array(97, 96, 131, 130), PackedInt32Array(228, 130, 83), PackedInt32Array(82, 220, 83), PackedInt32Array(79, 235, 236, 237), PackedInt32Array(237, 238, 142), PackedInt32Array(0, 239, 240, 241), PackedInt32Array(242, 243, 244, 245, 41), PackedInt32Array(123, 246, 247, 248), PackedInt32Array(248, 249, 121, 123), PackedInt32Array(250, 251, 252, 253), PackedInt32Array(253, 254, 151, 250), PackedInt32Array(19, 255, 256, 20), PackedInt32Array(257, 258, 259, 260), PackedInt32Array(261, 262, 263, 264), PackedInt32Array(265, 266, 267, 268), PackedInt32Array(269, 270, 271, 272), PackedInt32Array(272, 273, 64, 269), PackedInt32Array(269, 64, 63, 274), PackedInt32Array(268, 274, 63, 66, 275), PackedInt32Array(104, 276, 277, 278), PackedInt32Array(103, 279, 280), PackedInt32Array(280, 281, 16), PackedInt32Array(10, 282, 283, 55, 59, 284), PackedInt32Array(285, 286, 287, 288), PackedInt32Array(126, 289, 290, 58, 127), PackedInt32Array(291, 292, 293, 294), PackedInt32Array(293, 295, 296), PackedInt32Array(296, 297, 60, 8), PackedInt32Array(296, 8, 294, 293), PackedInt32Array(91, 298, 299, 300, 289), PackedInt32Array(301, 302, 303, 5), PackedInt32Array(102, 304, 305, 306), PackedInt32Array(306, 307, 98, 102), PackedInt32Array(125, 308, 27), PackedInt32Array(38, 125, 124), PackedInt32Array(39, 38, 124, 107), PackedInt32Array(100, 39, 108, 101), PackedInt32Array(58, 57, 291, 294, 127), PackedInt32Array(289, 126, 92, 91), PackedInt32Array(264, 265, 268, 275, 261), PackedInt32Array(309, 261, 275, 105, 104, 278), PackedInt32Array(309, 278, 153, 260), PackedInt32Array(310, 102, 101, 67), PackedInt32Array(310, 67, 5, 9), PackedInt32Array(93, 6, 5), PackedInt32Array(90, 93, 5, 303), PackedInt32Array(20, 256, 257, 260, 153, 152), PackedInt32Array(218, 80, 79, 237), PackedInt32Array(144, 218, 237, 142), PackedInt32Array(1, 0, 241), PackedInt32Array(1, 241, 30), PackedInt32Array(311, 214, 34, 78, 77), PackedInt32Array(195, 109, 117, 311, 77, 189, 194), PackedInt32Array(287, 300, 299, 312, 313, 288), PackedInt32Array(250, 151, 153, 314), PackedInt32Array(314, 153, 36, 121), PackedInt32Array(15, 123, 122, 120), PackedInt32Array(182, 185, 186, 190, 315), PackedInt32Array(316, 22, 173, 317, 313), PackedInt32Array(120, 119, 99, 103, 280, 15), PackedInt32Array(59, 285, 288, 182, 315, 318, 284), PackedInt32Array(301, 5, 313, 312), PackedInt32Array(110, 139, 138), PackedInt32Array(51, 95, 94, 318, 315), PackedInt32Array(15, 280, 16), PackedInt32Array(10, 16, 141), PackedInt32Array(10, 141, 282), PackedInt32Array(44, 242, 41), PackedInt32Array(32, 44, 43), PackedInt32Array(51, 53, 128, 95), PackedInt32Array(179, 288, 313), PackedInt32Array(176, 179, 313, 317), PackedInt32Array(138, 316, 313, 62, 319), PackedInt32Array(62, 135, 146, 145), PackedInt32Array(147, 163, 148), PackedInt32Array(45, 148, 46), PackedInt32Array(50, 49, 320, 319), PackedInt32Array(319, 320, 168, 138), PackedInt32Array(319, 62, 145)])
+vertices = PackedVector2Array(535.75, 116.88281, 409, 71, 470.5, 70.75, 539.5, 70.75, 566.25, 116.88281, -240.90625, 573, -7, 457, 36.5, 455.5, 89.5, 455.5, 207.25, 474, 74, 261.0625, 203.03125, 248, 246, 246.52344, 298, 246.52344, 500, 259.8828, 500, 310.1328, 213, 278.25, 856, 215.74219, 856, 231.5, 824, 231.5, 712.1328, 229, 712.1328, 195.4375, -73, -89.47656, -41.523438, -89.47656, -71, -88.75781, 297, 485.5, 509.75, 474, 645.75, 469, 680, 469, 783.25, 506, 469, 116.88281, 469, 163.5, 435, 163.5, 171, 151.52344, 171, 102.47656, 340, 71, 631.28125, 367, 631.28125, 405.5, 596.5, 405.5, 322.71875, 392, 506, 372.1328, 503.5, 228, 503.5, 259.8828, 298, 197.47656, 435, 214.5, 473.5, -104.25, 495.28125, -98, 495.28125, -75.52344, 486, -75.52344, 382.75, -86, 404.5, -104.25, 38, 183, 119, 151.52344, 246, 197.47656, 114.96875, 248, 120, 295.5, 120, 327.5, 104, 327.5, -7, 313, -7, 267, 73.5, -57.5, 335.25, -86, 486, -26.476563, 470.5, 33.25, 363.03125, 17.5, 152, 437.5, 207.25, 437.5, 1039.0234, -156.03125, 1040.9688, 573, 985, 325.5, 985, 274.5, 830.75, 506, 259, 485.5, 942.75, 156, 942.75, 112, 964, 261.5, 948, 231.5, 884, 21.5, 884, -43.5, 895.25, 112, 891.03125, 111, 105, 116.0625, 105, 81.9375, 119, 102.47656, 656.25, 143, 707.28125, 55, 725.8828, 35.21875, 725.8828, 68.78125, 703.75, 143, 728, 20.5, 707.28125, 15, 727.75, -27.882813, 728, -27.882813, 38, 143, 53, 116.0625, -135, 427, -135, 375, -91, 411, -91, 457, 74, 226.9375, 114.96875, 202, 895.25, 156, 891.03125, 155, 73.5, -106.5, 335.25, -130, 260, 390.5, 279.28125, 352, 279.28125, 392, 259, 434.5, 254.75, 430, 260, 325.5, 680, 435.8828, 783.25, 462, 462.25, 474, 462.25, 430, 297, 434.5, 454, 372.1328, 322.71875, 352, 454, 338, 607.25, 315, 506, 338, 552, 310.1328, 509.75, 430, 596.5, 454.5, -7, 411, 36.5, 406.5, 203.03125, 202, 703.75, 187, 802.96875, 155, 887, 180.88281, 887, 214.97656, 837, -90.75, 825, -90.453125, 825, -110.0625, -10, -90.25, -23, -89.92969, -23, -138.52344, 20.5, -106.5, 165.5, 279.40625, 165.5, 275.7422, 614, 117.25, 566.25, 118.40625, 614, 70.5, 473.5, -141.75, 773, -110.0625, 773, -75.9375, 538.71875, -98, 677.8828, 195.4375, 661, 187, 661, 229.5, 677.8828, 229, 674.71875, 367, 538.71875, -58, 727.75, -60.132813, 409, 33.5, 868, -43.5, 868, -73.5, 837, -73.5, 776, -75.9375, 776, -73.5, 744, -73.5, 744, -60.132813, 20.5, -73, -10, -73, -71, -73, -103, -73, -104, -74.52344, -103, -41, -104, -41, -154, -25.476563, -119, -25.476563, -119, 21, -156, 38, -103, 21, -103, 38, -103, 87, -103, 53, -74, 53, -74, 84.0625, -22, 84.0625, -22, 69, -11, 69, -11, 53, 21, 53, 21, 22, 37, 22, 53, 81.9375, 37, -43, 21, -43, 21, -57.5, 538, -26.476563, 538, -58, 663.84375, 15, 744, 20.5, 744, 35.21875, 663.84375, 21.5, 619.03125, 21.5, 619.03125, 15, 530.96875, 15, 530.96875, 33.25, 363.03125, 33.5, 274.96875, 17.5, 274.96875, 19.476563, 245, 19.476563, 297, 68.52344, 297, 59, 340, 59, 217, 70, 245, 68.52344, 217, 21, 539.5, 59, 614, 59, 666, 70.5, 666, 55, 760.1328, 68.78125, 760.1328, 52.5, 776, 52.5, 776, 68.5, 836, 68.5, 836, 52.5, 868, 52.5, 868, 21.5, 802.96875, 111, 964, 274.5, 948, 261.5, 917, 231.5, 917, 231.13281, 939, 231.13281, 939, 180.88281, 656.25, 164.5, 645, 164.5, 645, 134.5, 614, 134.5, 535.75, 134.5, 521, 134.5, 521, 116.88281, 473, 214.5, 473, 167.13281, 505, 167.13281, 505, 228, 552, 260.5, 553, 260.5, 553, 276.5, 607.25, 276.5, 654.75, 271, 613, 271, 613, 260.5, 645, 260.5, 645, 229.5, 824, 263.5, 808, 263.5, 808, 325.5, 824, 325.5, 824, 355, 804, 355, 842, 406, 842, 357.5, 856, 357.5, 856, 373.5, 916, 373.5, 916, 357.5, 919, 357.5, 919, 391.1328, 971, 340.8828, 948, 340.8828, 948, 326.5, 964, 326.5, 964, 325.5, 971, 391.1328, 830.75, 462, 649.5, 435.8828, 649.5, 407, 674.71875, 407, 244, 325.5, 244, 295.5, 213, 295.5, 134.5, 275.7422, 134.5, 295.5, 22, 261.0625, -91, 267, -91, 277.47656, -137, 277.47656, -87, 326.52344, -87, 313, 104, 389.5, 120, 389.5, 120, 421.5, 89.5, 406.5, 135, 421.5, 135, 436.52344, 152, 436.52344, -161.25, 375, -161.25, 335, -137, 326.52344, -208.75, 379, -187, 379, -187, 427, 212, 430, 212, 421.5, 244, 421.5, 244, 390.5, 645.75, 454.5, 804, 406, 254.75, 474, 165, 70, 165, 21, -208.75, 335, -234.09375, -159.96094, -156, 87, 654.75, 315, -73, -138.52344, -154, -74.52344, -9.5, 143, 404.5, -141.75, 22, 226.9375, -9.5, 183, 382.75, -130)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 7, 8, 9), PackedInt32Array(10, 11, 12, 13, 14, 15, 16), PackedInt32Array(17, 18, 19, 20, 21), PackedInt32Array(22, 23, 24), PackedInt32Array(25, 26, 27, 28, 29, 5), PackedInt32Array(1, 30, 31, 32, 33, 34, 35), PackedInt32Array(36, 37, 38, 39, 40), PackedInt32Array(41, 42, 14, 13, 43, 44), PackedInt32Array(45, 46, 47, 48, 49, 50), PackedInt32Array(51, 52, 33, 32, 43, 53), PackedInt32Array(54, 11, 10), PackedInt32Array(55, 56, 57, 58, 59), PackedInt32Array(60, 61, 49, 48, 62, 63, 64), PackedInt32Array(8, 65, 66, 9), PackedInt32Array(67, 68, 69, 70), PackedInt32Array(71, 68, 5, 29), PackedInt32Array(72, 25, 5), PackedInt32Array(73, 74, 67, 70, 75, 76), PackedInt32Array(77, 78, 67, 74, 79, 80), PackedInt32Array(81, 82, 83, 52), PackedInt32Array(84, 85, 86, 87, 88), PackedInt32Array(89, 86, 85, 90, 91, 92), PackedInt32Array(81, 52, 51, 93, 94), PackedInt32Array(95, 96, 97, 98), PackedInt32Array(54, 10, 99, 100), PackedInt32Array(79, 101, 102, 80), PackedInt32Array(61, 60, 103, 104), PackedInt32Array(105, 106, 107, 108, 109), PackedInt32Array(106, 105, 110), PackedInt32Array(28, 111, 112, 29), PackedInt32Array(113, 26, 25), PackedInt32Array(114, 113, 25, 115, 39), PackedInt32Array(116, 40, 39), PackedInt32Array(116, 39, 117, 118), PackedInt32Array(119, 36, 40, 120, 121), PackedInt32Array(27, 26, 122, 123), PackedInt32Array(7, 6, 124, 125), PackedInt32Array(12, 11, 126, 53), PackedInt32Array(127, 88, 128, 129, 130, 17, 21), PackedInt32Array(131, 132, 133, 67), PackedInt32Array(134, 135, 136, 137), PackedInt32Array(16, 138, 139), PackedInt32Array(140, 141, 4, 142), PackedInt32Array(45, 143, 144, 145, 146), PackedInt32Array(127, 21, 147, 148), PackedInt32Array(149, 148, 147, 150, 151), PackedInt32Array(152, 146, 153, 91), PackedInt32Array(2, 1, 154, 63), PackedInt32Array(78, 155, 156, 67), PackedInt32Array(156, 157, 131, 67), PackedInt32Array(145, 158, 159, 160), PackedInt32Array(160, 161, 153, 146), PackedInt32Array(137, 162, 163, 134), PackedInt32Array(22, 24, 164, 165, 166), PackedInt32Array(165, 167, 168, 166), PackedInt32Array(169, 170, 171, 172), PackedInt32Array(171, 173, 174, 172), PackedInt32Array(175, 176, 177, 178), PackedInt32Array(179, 180, 181), PackedInt32Array(181, 182, 183), PackedInt32Array(183, 184, 185, 186), PackedInt32Array(187, 188, 189, 60), PackedInt32Array(190, 191, 152, 91, 90, 192), PackedInt32Array(89, 193, 194, 86), PackedInt32Array(192, 195, 196, 197), PackedInt32Array(190, 192, 197), PackedInt32Array(190, 197, 198, 62), PackedInt32Array(198, 199, 63, 62), PackedInt32Array(154, 200, 64, 63), PackedInt32Array(201, 202, 203, 60), PackedInt32Array(204, 205, 206, 35), PackedInt32Array(204, 35, 34, 207, 208), PackedInt32Array(208, 207, 209, 203), PackedInt32Array(3, 210, 211, 142, 4), PackedInt32Array(212, 213, 85), PackedInt32Array(214, 215, 216, 217), PackedInt32Array(218, 219, 220), PackedInt32Array(220, 221, 77, 80), PackedInt32Array(220, 80, 222, 218), PackedInt32Array(217, 218, 222, 88, 214), PackedInt32Array(70, 223, 75), PackedInt32Array(75, 224, 76), PackedInt32Array(76, 225, 226, 227), PackedInt32Array(73, 76, 227, 228), PackedInt32Array(101, 73, 228, 129), PackedInt32Array(102, 101, 129, 128), PackedInt32Array(222, 128, 88), PackedInt32Array(87, 214, 88), PackedInt32Array(84, 229, 230, 231), PackedInt32Array(231, 232, 140), PackedInt32Array(0, 233, 234, 235), PackedInt32Array(236, 237, 238, 239, 41), PackedInt32Array(121, 240, 241, 242), PackedInt32Array(242, 243, 119, 121), PackedInt32Array(244, 245, 246, 247), PackedInt32Array(247, 248, 149, 244), PackedInt32Array(19, 249, 250, 20), PackedInt32Array(251, 252, 253, 254), PackedInt32Array(255, 256, 257, 258), PackedInt32Array(259, 260, 261, 262), PackedInt32Array(263, 264, 265, 266), PackedInt32Array(266, 267, 69, 263), PackedInt32Array(263, 69, 68, 268), PackedInt32Array(262, 268, 68, 71, 269), PackedInt32Array(111, 270, 271, 272), PackedInt32Array(110, 273, 274), PackedInt32Array(274, 275, 16), PackedInt32Array(10, 276, 277, 55, 59, 278), PackedInt32Array(279, 280, 281), PackedInt32Array(124, 282, 283, 58, 125), PackedInt32Array(284, 285, 286, 287), PackedInt32Array(286, 288, 289), PackedInt32Array(289, 290, 65, 8), PackedInt32Array(289, 8, 287, 286), PackedInt32Array(96, 291, 292, 293, 282), PackedInt32Array(294, 295, 296, 5), PackedInt32Array(109, 297, 298, 299), PackedInt32Array(299, 300, 105, 109), PackedInt32Array(123, 301, 27), PackedInt32Array(38, 123, 122), PackedInt32Array(39, 38, 122, 114), PackedInt32Array(107, 39, 115, 108), PackedInt32Array(58, 57, 284, 287, 125), PackedInt32Array(282, 124, 97, 96), PackedInt32Array(258, 259, 262, 269, 255), PackedInt32Array(302, 255, 269, 112, 111, 272), PackedInt32Array(302, 272, 151, 254), PackedInt32Array(303, 109, 108, 72), PackedInt32Array(303, 72, 5, 9), PackedInt32Array(98, 6, 5), PackedInt32Array(95, 98, 5, 296), PackedInt32Array(20, 250, 251, 254, 151, 150), PackedInt32Array(212, 85, 84, 231), PackedInt32Array(142, 212, 231, 140), PackedInt32Array(1, 0, 235), PackedInt32Array(1, 235, 30), PackedInt32Array(304, 207, 34, 83, 82), PackedInt32Array(60, 305, 304, 82, 186, 185, 187), PackedInt32Array(281, 293, 292, 306, 307, 308), PackedInt32Array(244, 149, 151, 309), PackedInt32Array(309, 151, 36, 119), PackedInt32Array(15, 121, 120, 118), PackedInt32Array(310, 22, 166, 311, 307), PackedInt32Array(183, 186, 94, 93, 312, 179, 181), PackedInt32Array(118, 117, 106, 110, 274, 15), PackedInt32Array(294, 5, 307, 306), PackedInt32Array(104, 103, 137, 136, 313), PackedInt32Array(51, 100, 99, 314, 315), PackedInt32Array(15, 274, 16), PackedInt32Array(10, 16, 139), PackedInt32Array(10, 139, 276), PackedInt32Array(314, 278, 59, 279, 315), PackedInt32Array(44, 236, 41), PackedInt32Array(32, 44, 43), PackedInt32Array(51, 53, 126, 100), PackedInt32Array(312, 315, 279, 281, 175, 178, 179), PackedInt32Array(60, 64, 201), PackedInt32Array(60, 203, 209, 305), PackedInt32Array(308, 175, 281), PackedInt32Array(172, 308, 307), PackedInt32Array(169, 172, 307, 311), PackedInt32Array(136, 310, 307, 67, 313), PackedInt32Array(67, 133, 144, 143), PackedInt32Array(145, 160, 146), PackedInt32Array(45, 146, 46), PackedInt32Array(50, 49, 316, 313), PackedInt32Array(313, 316, 104), PackedInt32Array(313, 67, 143)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(1049, -166, 1051, 583, -251, 583, -244, -170)])
 parsed_geometry_type = 1
 parsed_collision_mask = 4294967041
@@ -1827,8 +2057,10 @@ size = Vector2(18, 31)
 size = Vector2(18, 31)
 
 [node name="BigYard" type="Node2D" unique_id=740542095]
+y_sort_enabled = true
 
 [node name="MAP" type="Node2D" parent="." unique_id=796414050]
+y_sort_enabled = true
 position = Vector2(-464, -44)
 
 [node name="Grass" type="TileMapLayer" parent="MAP" unique_id=1175885369]
@@ -1849,13 +2081,20 @@ tile_set = SubResource("TileSet_ruw1f")
 tile_map_data = PackedByteArray("AAAgACcAAAACAAIAAAAkACIAAAABAAIAAAAkACEAAAABAAEAAAAkACAAAAABAAEAAAAjACIAAAABAAIAAAAiACIAAAAAAAIAAAAiACEAAAAAAAEAAAAjACEAAAABAAEAAAA6AAwAAAAAAAEAAAA6AA0AAAAAAAIAAAA7AAwAAAABAAEAAAA7AA0AAAABAAIAAAA8AAsAAAABAAEAAAA8AAwAAAABAAEAAAA8AA0AAAABAAIAAAAQABQAAAAAAAEAAAAQABUAAAAAAAIAAAARABQAAAABAAEAAAARABUAAAABAAIAAAASABMAAAABAAEAAAASABQAAAABAAEAAAASABUAAAABAAIAAAAmAA0AAAACAAIAAAAlAA0AAAABAAIAAAAmAAwAAAACAAEAAAAmAAsAAAACAAAAAAAlAAoAAAACAAAAAAAkAAoAAAABAAAAAAAlAAsAAAADAAEAAAAkAAsAAAABAAEAAAAkAAwAAAABAAEAAAAlAAwAAAABAAEAAAA0AAoAAAABAAAAAAA0AAsAAAABAAEAAAA0AAwAAAABAAEAAAA1AAoAAAACAAAAAAA1AAsAAAADAAEAAAA1AAwAAAABAAEAAAA1AA0AAAABAAIAAAA2AAsAAAACAAAAAAA2AAwAAAACAAEAAAA2AA0AAAACAAIAAABFABAAAAABAAAAAABFABEAAAABAAEAAABFABIAAAABAAEAAABGABAAAAACAAAAAABGABEAAAADAAEAAABGABIAAAABAAEAAABGABMAAAABAAIAAABHABEAAAACAAAAAABHABIAAAACAAEAAABHABMAAAACAAIAAAANACMAAAABAAAAAAANACQAAAABAAEAAAANACUAAAABAAEAAAAOACMAAAACAAAAAAAOACQAAAADAAEAAAAOACUAAAABAAEAAAAOACYAAAABAAIAAAAPACQAAAACAAAAAAAPACUAAAACAAEAAAAPACYAAAACAAIAAAANABoAAAABAAAAAAANABsAAAABAAEAAAANABwAAAABAAEAAAAOABoAAAACAAAAAAAOABsAAAADAAEAAAAOABwAAAABAAEAAAAOAB0AAAABAAIAAAAPABsAAAACAAAAAAAPABwAAAACAAEAAAAPAB0AAAACAAIAAAAaABYAAAABAAAAAAAaABcAAAABAAEAAAAaABgAAAABAAEAAAAbABYAAAACAAAAAAAbABcAAAADAAEAAAAbABgAAAABAAEAAAAbABkAAAABAAIAAAAcABcAAAACAAAAAAAcABgAAAACAAEAAAAcABkAAAACAAIAAAA8ABQAAAACAAEAAAA7ABQAAAABAAEAAAA7ABUAAAABAAIAAAA8ABUAAAACAAIAAAA8ABIAAAACAAAAAAA8ABMAAAACAAEAAAA7ABIAAAABAAAAAAA7ABMAAAABAAEAAAA6ABUAAAAAAAIAAAA6ABQAAAAAAAEAAABJABIAAAAAAAEAAABJABMAAAAAAAIAAABKABAAAAABAAAAAABKABEAAAABAAEAAABKABIAAAABAAEAAABKABMAAAABAAIAAABLABAAAAACAAAAAABLABEAAAACAAEAAABLABIAAAACAAEAAABLABMAAAACAAIAAAAmAAMAAAAAAAEAAAAmAAQAAAAAAAIAAAAnAAEAAAABAAAAAAAnAAIAAAABAAEAAAAnAAMAAAABAAEAAAAnAAQAAAABAAIAAAAoAAEAAAACAAAAAAAoAAIAAAACAAEAAAAoAAMAAAACAAEAAAAoAAQAAAACAAIAAAAEACAAAAAAAAEAAAAEACEAAAAAAAIAAAAFAB4AAAABAAAAAAAFAB8AAAABAAEAAAAFACAAAAABAAEAAAAFACEAAAABAAIAAAAGAB4AAAACAAAAAAAGAB8AAAACAAEAAAAGACAAAAACAAEAAAAGACEAAAACAAIAAAAuACYAAAAAAAEAAAAuACcAAAAAAAIAAAAvACQAAAABAAAAAAAvACUAAAABAAEAAAAvACYAAAABAAEAAAAvACcAAAABAAIAAAAwACQAAAACAAAAAAAwACUAAAACAAEAAAAwACYAAAACAAEAAABCACgAAAAAAAEAAABCACkAAAAAAAIAAABDACYAAAABAAAAAABDACcAAAABAAEAAABDACgAAAABAAEAAABDACkAAAABAAIAAABEACYAAAACAAAAAABEACcAAAACAAEAAABEACgAAAACAAEAAABEACkAAAACAAIAAAA3ABwAAAAAAAEAAAA3AB0AAAAAAAIAAAA4ABoAAAABAAAAAAA4ABsAAAABAAEAAAA4ABwAAAABAAEAAAA4AB0AAAABAAIAAAA5ABoAAAACAAAAAAA5ABsAAAACAAEAAAA5ABwAAAACAAEAAAA5AB0AAAACAAIAAAAyAAUAAAACAAIAAAAyAAQAAAACAAEAAAAyAAMAAAACAAEAAAAyAAIAAAACAAEAAAAyAAEAAAACAAAAAAAxAAUAAAABAAIAAAAwAAUAAAAAAAIAAAAwAAQAAAABAAEAAAAxAAQAAAABAAEAAAAxAAMAAAABAAEAAAAxAAIAAAABAAEAAAAxAAEAAAABAAAAAAA5ACIAAAABAAEAAAA5ACMAAAABAAIAAAA6ACIAAAABAAEAAAA6ACMAAAABAAIAAAA7ACEAAAACAAEAAAA7ACIAAAACAAEAAAA7ACMAAAACAAIAAAA7ACAAAAACAAEAAAA7AB4AAAACAAAAAAA7AB8AAAACAAEAAAA6AB4AAAABAAAAAAA5AB4AAAAAAAAAAAA6AB8AAAABAAEAAAA6ACAAAAABAAEAAAA6ACEAAAABAAEAAAA5ACEAAAABAAEAAAA5ACAAAAABAAEAAAA5AB8AAAABAAEAAAA4ACMAAAAAAAIAAAA4ACIAAAAAAAEAAAA4ACEAAAAAAAEAAAA4ACAAAAAAAAEAAAA4AB8AAAAAAAEAAAAiAB4AAAAAAAEAAAAiAB8AAAAAAAEAAAAiACAAAAAAAAEAAAAjAB0AAAAAAAAAAAAjAB4AAAABAAEAAAAjAB8AAAABAAEAAAAjACAAAAABAAEAAAAkAB0AAAABAAAAAAAkAB4AAAABAAEAAAAkAB8AAAABAAEAAAAlAB0AAAACAAAAAAAlAB4AAAACAAEAAAAlAB8AAAACAAEAAAAlACAAAAACAAEAAAAlACEAAAACAAEAAAAlACIAAAACAAIAAAA6AAkAAAAAAAEAAAA6AAoAAAAAAAEAAAA6AAsAAAAAAAEAAAA7AAgAAAAAAAAAAAA7AAkAAAABAAEAAAA7AAoAAAABAAEAAAA7AAsAAAABAAEAAAA8AAgAAAABAAAAAAA8AAkAAAABAAEAAAA8AAoAAAABAAEAAAA9AAgAAAACAAAAAAA9AAkAAAACAAEAAAA9AAoAAAACAAEAAAA9AAsAAAACAAEAAAA9AAwAAAACAAEAAAA9AA0AAAACAAIAAAAQABEAAAAAAAEAAAAQABIAAAAAAAEAAAAQABMAAAAAAAEAAAARABAAAAAAAAAAAAARABEAAAABAAEAAAARABIAAAABAAEAAAARABMAAAABAAEAAAASABAAAAABAAAAAAASABEAAAABAAEAAAASABIAAAABAAEAAAATABAAAAACAAAAAAATABEAAAACAAEAAAATABIAAAACAAEAAAATABMAAAACAAEAAAATABQAAAACAAEAAAATABUAAAACAAIAAAAwACcAAAACAAIAAAAeACYAAAAAAAEAAAAeACcAAAAAAAIAAAAfACQAAAABAAAAAAAfACUAAAABAAEAAAAfACYAAAABAAEAAAAfACcAAAABAAIAAAAgACQAAAACAAAAAAAgACUAAAACAAEAAAAgACYAAAACAAEAAAAIAA4AAAAAAAAAAAAJAA4AAAACAAAAAAAIAA8AAAABAAIAAAAJAA8AAAACAAIAAAATAAUAAAAAAAAAAAATAAYAAAABAAIAAAAUAAUAAAACAAAAAAAUAAYAAAACAAIAAAAcAA0AAAAAAAAAAAAcAA4AAAABAAIAAAAdAA0AAAACAAAAAAAdAA4AAAACAAIAAAAvABMAAAAAAAAAAAAvABQAAAABAAIAAAAwABMAAAACAAAAAAAwABQAAAACAAIAAABJABcAAAAAAAAAAABJABgAAAABAAIAAABKABcAAAACAAAAAABKABgAAAACAAIAAABLACEAAAAAAAAAAABLACIAAAABAAIAAABMACEAAAACAAAAAABMACIAAAACAAIAAAA3ACUAAAAAAAAAAAA3ACYAAAABAAIAAAA4ACUAAAACAAAAAAA4ACYAAAACAAIAAAAUACUAAAAAAAAAAAAUACYAAAABAAIAAAAVACUAAAACAAAAAAAVACYAAAACAAIAAAAGACMAAAAAAAAAAAAGACQAAAABAAIAAAAHACMAAAACAAAAAAAHACQAAAACAAIAAAAJAB0AAAAAAAAAAAAJAB4AAAABAAIAAAAKAB0AAAACAAAAAAAKAB4AAAACAAIAAAAZABIAAAAAAAAAAAAZABMAAAABAAIAAAAaABIAAAACAAAAAAAaABMAAAACAAIAAAAhABgAAAAAAAAAAAAhABkAAAABAAIAAAAiABgAAAACAAAAAAAiABkAAAACAAIAAAAhAA0AAAAAAAAAAAAhAA4AAAABAAIAAAAiAA0AAAACAAAAAAAiAA4AAAACAAIAAAAwAAcAAAAAAAAAAAAwAAgAAAABAAIAAAAxAAcAAAACAAAAAAAxAAgAAAACAAIAAAAnAAcAAAAAAAAAAAAnAAgAAAABAAIAAAAoAAcAAAACAAAAAAAoAAgAAAACAAIAAAA4AA0AAAAAAAAAAAA4AA4AAAABAAIAAAA5AA0AAAACAAAAAAA5AA4AAAACAAIAAAAIAAcAAAAAAAAAAAAIAAgAAAABAAIAAAAJAAcAAAACAAAAAAAJAAgAAAACAAIAAAANAAMAAAAAAAAAAAANAAQAAAABAAIAAAAOAAMAAAACAAAAAAAOAAQAAAACAAIAAAAsABYAAAAAAAAAAAAtABYAAAACAAAAAAAtABcAAAACAAIAAAAsABcAAAAAAAIAAABMAB0AAAAAAAAAAABMAB4AAAAAAAIAAABNAB0AAAACAAAAAABNAB4AAAACAAIAAABDACIAAAAAAAAAAABDACMAAAAAAAIAAABEACIAAAACAAAAAABEACMAAAACAAIAAAAhACcAAAAAAAAAAAAhACgAAAAAAAIAAAAiACcAAAACAAAAAAAiACgAAAACAAIAAAA=")
 tile_set = SubResource("TileSet_34rg6")
 
-[node name="Trees&Bushes" type="TileMapLayer" parent="MAP" unique_id=1265674415]
-tile_map_data = PackedByteArray("AAAbABkAAAADAAMAAAAaABkAAAACAAMAAAAYABcAAAAAAAEAAAAYABgAAAAAAAIAAAAYABkAAAAAAAMAAAAZABYAAAABAAAAAAAZABcAAAABAAEAAAAZABgAAAABAAIAAAAZABkAAAABAAMAAAAaABYAAAACAAAAAAAaABcAAAACAAEAAAAaABgAAAACAAIAAAAbABcAAAADAAEAAAAbABgAAAADAAIAAAAyAAsAAAAAAAEAAAAyAAwAAAAAAAIAAAAyAA0AAAAAAAMAAAAzAAoAAAABAAAAAAAzAAsAAAABAAEAAAAzAAwAAAABAAIAAAAzAA0AAAABAAMAAAA0AAoAAAACAAAAAAA0AAsAAAACAAEAAAA0AAwAAAACAAIAAAA0AA0AAAACAAMAAAA1AAsAAAADAAEAAAA1AAwAAAADAAIAAAA1AA0AAAADAAMAAAAiAAsAAAAAAAEAAAAiAAwAAAAAAAIAAAAiAA0AAAAAAAMAAAAjAAoAAAABAAAAAAAjAAsAAAABAAEAAAAjAAwAAAABAAIAAAAjAA0AAAABAAMAAAAkAAoAAAACAAAAAAAkAAsAAAACAAEAAAAkAAwAAAACAAIAAAAkAA0AAAACAAMAAAAlAAsAAAADAAEAAAAlAAwAAAADAAIAAAAlAA0AAAADAAMAAABDABEAAAAAAAEAAABDABIAAAAAAAIAAABDABMAAAAAAAMAAABEABAAAAABAAAAAABEABEAAAABAAEAAABEABIAAAABAAIAAABEABMAAAABAAMAAABFABAAAAACAAAAAABFABEAAAACAAEAAABFABIAAAACAAIAAABFABMAAAACAAMAAABGABEAAAADAAEAAABGABIAAAADAAIAAABGABMAAAADAAMAAABIABAAAAAFAAAAAABIABEAAAAFAAEAAABIABIAAAAFAAIAAABIABMAAAAFAAMAAABJABAAAAAGAAAAAABJABEAAAAGAAEAAABJABIAAAAGAAIAAABJABMAAAAGAAMAAABKABAAAAAHAAAAAABKABEAAAAHAAEAAABKABIAAAAHAAIAAABKABMAAAAHAAMAAAA5AAkAAAAJAAEAAAA5AAoAAAAJAAIAAAA5AAsAAAAJAAMAAAA5AAwAAAAJAAQAAAA6AAgAAAAKAAAAAAA6AAkAAAAKAAEAAAA6AAoAAAAKAAIAAAA6AAsAAAAKAAMAAAA6AAwAAAAKAAQAAAA6AA0AAAAKAAUAAAA7AAgAAAALAAAAAAA7AAkAAAALAAEAAAA7AAoAAAALAAIAAAA7AAsAAAALAAMAAAA7AAwAAAALAAQAAAA7AA0AAAALAAUAAAA8AAgAAAAMAAAAAAA8AAkAAAAMAAEAAAA8AAoAAAAMAAIAAAA8AAsAAAAMAAMAAAA8AAwAAAAMAAQAAAAPABEAAAAJAAEAAAAPABIAAAAJAAIAAAAPABMAAAAJAAMAAAAPABQAAAAJAAQAAAAQABAAAAAKAAAAAAAQABEAAAAKAAEAAAAQABIAAAAKAAIAAAAQABMAAAAKAAMAAAAQABQAAAAKAAQAAAAQABUAAAAKAAUAAAARABAAAAALAAAAAAARABEAAAALAAEAAAARABIAAAALAAIAAAARABMAAAALAAMAAAARABQAAAALAAQAAAARABUAAAALAAUAAAASABAAAAAMAAAAAAASABEAAAAMAAEAAAASABIAAAAMAAIAAAASABMAAAAMAAMAAAASABQAAAAMAAQAAAAhAB4AAAAJAAEAAAAhAB8AAAAJAAIAAAAhACAAAAAJAAMAAAAhACEAAAAJAAQAAAAiAB0AAAAKAAAAAAAiAB4AAAAKAAEAAAAiAB8AAAAKAAIAAAAiACAAAAAKAAMAAAAiACEAAAAKAAQAAAAiACIAAAAKAAUAAAAjAB0AAAALAAAAAAAjAB4AAAALAAEAAAAjAB8AAAALAAIAAAAjACAAAAALAAMAAAAjACEAAAALAAQAAAAjACIAAAALAAUAAAAkAB0AAAAMAAAAAAAkAB4AAAAMAAEAAAAkAB8AAAAMAAIAAAAkACAAAAAMAAMAAAAkACEAAAAMAAQAAAA3AB8AAAAJAAEAAAA3ACAAAAAJAAIAAAA3ACEAAAAJAAMAAAA3ACIAAAAJAAQAAAA4AB4AAAAKAAAAAAA4AB8AAAAKAAEAAAA4ACAAAAAKAAIAAAA4ACEAAAAKAAMAAAA4ACIAAAAKAAQAAAA4ACMAAAAKAAUAAAA5AB4AAAALAAAAAAA5AB8AAAALAAEAAAA5ACAAAAALAAIAAAA5ACEAAAALAAMAAAA5ACIAAAALAAQAAAA5ACMAAAALAAUAAAA6AB4AAAAMAAAAAAA6AB8AAAAMAAEAAAA6ACAAAAAMAAIAAAA6ACEAAAAMAAMAAAA6ACIAAAAMAAQAAAA2ACUAAAAWAAAAAAA2ACYAAAAWAAEAAAA3ACUAAAAXAAAAAAA3ACYAAAAXAAEAAAATACUAAAAWAAAAAAATACYAAAAWAAEAAAAUACUAAAAXAAAAAAAUACYAAAAXAAEAAAAbAA0AAAAWAAAAAAAbAA4AAAAWAAEAAAAcAA0AAAAXAAAAAAAcAA4AAAAXAAEAAAASAAUAAAAWAAAAAAASAAYAAAAWAAEAAAATAAUAAAAXAAAAAAATAAYAAAAXAAEAAAAHAA4AAAAWAAAAAAAHAA8AAAAWAAEAAAAIAA4AAAAXAAAAAAAIAA8AAAAXAAEAAAAuABMAAAAWAAAAAAAuABQAAAAWAAEAAAAvABMAAAAXAAAAAAAvABQAAAAXAAEAAAAwABwAAAAWAAAAAAAwAB0AAAAWAAEAAAAxABwAAAAXAAAAAAAxAB0AAAAXAAEAAAAtACQAAAAFAAAAAAAtACUAAAAFAAEAAAAtACYAAAAFAAIAAAAtACcAAAAFAAMAAAAuACQAAAAGAAAAAAAuACUAAAAGAAEAAAAuACYAAAAGAAIAAAAuACcAAAAGAAMAAAAvACQAAAAHAAAAAAAvACUAAAAHAAEAAAAvACYAAAAHAAIAAAAvACcAAAAHAAMAAAAdACQAAAAFAAAAAAAdACUAAAAFAAEAAAAdACYAAAAFAAIAAAAdACcAAAAFAAMAAAAeACQAAAAGAAAAAAAeACUAAAAGAAEAAAAeACYAAAAGAAIAAAAeACcAAAAGAAMAAAAfACQAAAAHAAAAAAAfACUAAAAHAAEAAAAfACYAAAAHAAIAAAAfACcAAAAHAAMAAAA2ABoAAAAFAAAAAAA2ABsAAAAFAAEAAAA2ABwAAAAFAAIAAAA2AB0AAAAFAAMAAAA3ABoAAAAGAAAAAAA3ABsAAAAGAAEAAAA3ABwAAAAGAAIAAAA3AB0AAAAGAAMAAAA4ABoAAAAHAAAAAAA4ABsAAAAHAAEAAAA4ABwAAAAHAAIAAAA4AB0AAAAHAAMAAAA5ABIAAAAFAAAAAAA5ABMAAAAFAAEAAAA5ABQAAAAFAAIAAAA5ABUAAAAFAAMAAAA6ABIAAAAGAAAAAAA6ABMAAAAGAAEAAAA6ABQAAAAGAAIAAAA6ABUAAAAGAAMAAAA7ABIAAAAHAAAAAAA7ABMAAAAHAAEAAAA7ABQAAAAHAAIAAAA7ABUAAAAHAAMAAAAlAAEAAAAFAAAAAAAlAAIAAAAFAAEAAAAlAAMAAAAFAAIAAAAlAAQAAAAFAAMAAAAmAAEAAAAGAAAAAAAmAAIAAAAGAAEAAAAmAAMAAAAGAAIAAAAmAAQAAAAGAAMAAAAnAAEAAAAHAAAAAAAnAAIAAAAHAAEAAAAnAAMAAAAHAAIAAAAnAAQAAAAHAAMAAAAvAAEAAAAOAAAAAAAvAAIAAAAOAAEAAAAvAAMAAAAOAAIAAAAvAAQAAAAOAAMAAAAvAAUAAAAOAAQAAAAwAAEAAAAPAAAAAAAwAAIAAAAPAAEAAAAwAAMAAAAPAAIAAAAwAAQAAAAPAAMAAAAwAAUAAAAPAAQAAAAwAAYAAAAPAAUAAAAxAAEAAAAQAAAAAAAxAAIAAAAQAAEAAAAxAAMAAAAQAAIAAAAxAAQAAAAQAAMAAAAqAAMAAAASAAQAAAArAAMAAAATAAQAAAAsAAMAAAAUAAQAAAAmAA4AAAASAAQAAAAnAA4AAAATAAQAAAAoAA4AAAAUAAQAAAAuAA4AAAASAAQAAAAvAA4AAAATAAQAAAAwAA4AAAAUAAQAAAALACQAAAAAAAEAAAALACUAAAAAAAIAAAALACYAAAAAAAMAAAAMACMAAAABAAAAAAAMACQAAAABAAEAAAAMACUAAAABAAIAAAAMACYAAAABAAMAAAANACMAAAACAAAAAAANACQAAAACAAEAAAANACUAAAACAAIAAAANACYAAAACAAMAAAAOACQAAAADAAEAAAAOACUAAAADAAIAAAAOACYAAAADAAMAAAALABsAAAAAAAEAAAALABwAAAAAAAIAAAALAB0AAAAAAAMAAAAMABoAAAABAAAAAAAMABsAAAABAAEAAAAMABwAAAABAAIAAAAMAB0AAAABAAMAAAANABoAAAACAAAAAAANABsAAAACAAEAAAANABwAAAACAAIAAAANAB0AAAACAAMAAAAOABsAAAADAAEAAAAOABwAAAADAAIAAAAOAB0AAAADAAMAAAADAB4AAAAFAAAAAAADAB8AAAAFAAEAAAADACAAAAAFAAIAAAADACEAAAAFAAMAAAAEAB4AAAAGAAAAAAAEAB8AAAAGAAEAAAAEACAAAAAGAAIAAAAEACEAAAAGAAMAAAAFAB4AAAAHAAAAAAAFAB8AAAAHAAEAAAAFACAAAAAHAAIAAAAFACEAAAAHAAMAAABBACYAAAAFAAAAAABBACcAAAAFAAEAAABBACgAAAAFAAIAAABBACkAAAAFAAMAAABCACYAAAAGAAAAAABCACcAAAAGAAEAAABCACgAAAAGAAIAAABCACkAAAAGAAMAAABDACYAAAAHAAAAAABDACcAAAAHAAEAAABDACgAAAAHAAIAAABDACkAAAAHAAMAAAA=")
-tile_set = SubResource("TileSet_3n7x1")
+[node name="Troncos" type="TileMapLayer" parent="MAP" unique_id=638194169]
+tile_map_data = PackedByteArray("AAAbABkAAAADAAMAAAAaABkAAAACAAMAAAAYABkAAAAAAAMAAAAZABkAAAABAAMAAAAyAA0AAAAAAAMAAAAzAA0AAAABAAMAAAA0AA0AAAACAAMAAAA1AA0AAAADAAMAAAAiAA0AAAAAAAMAAAAjAA0AAAABAAMAAAAkAA0AAAACAAMAAAAlAA0AAAADAAMAAABDABMAAAAAAAMAAABEABMAAAABAAMAAABFABMAAAACAAMAAABGABMAAAADAAMAAABIABMAAAAFAAMAAABJABMAAAAGAAMAAABKABMAAAAHAAMAAAA5AAwAAAAJAAQAAAA6AAwAAAAKAAQAAAA6AA0AAAAKAAUAAAA7AAwAAAALAAQAAAA7AA0AAAALAAUAAAA8AAwAAAAMAAQAAAAPABQAAAAJAAQAAAAQABQAAAAKAAQAAAAQABUAAAAKAAUAAAARABQAAAALAAQAAAARABUAAAALAAUAAAASABAAAAAMAAAAAAASABQAAAAMAAQAAAAhACEAAAAJAAQAAAAiACEAAAAKAAQAAAAiACIAAAAKAAUAAAAjACEAAAALAAQAAAAjACIAAAALAAUAAAAkAB0AAAAMAAAAAAAkACEAAAAMAAQAAAA3ACIAAAAJAAQAAAA4ACIAAAAKAAQAAAA4ACMAAAAKAAUAAAA5ACIAAAALAAQAAAA5ACMAAAALAAUAAAA6ACIAAAAMAAQAAAA2ACUAAAAWAAAAAAA2ACYAAAAWAAEAAAA3ACUAAAAXAAAAAAA3ACYAAAAXAAEAAAATACUAAAAWAAAAAAATACYAAAAWAAEAAAAUACUAAAAXAAAAAAAUACYAAAAXAAEAAAAbAA4AAAAWAAEAAAAcAA4AAAAXAAEAAAASAAUAAAAWAAAAAAASAAYAAAAWAAEAAAATAAUAAAAXAAAAAAATAAYAAAAXAAEAAAAHAA4AAAAWAAAAAAAHAA8AAAAWAAEAAAAIAA4AAAAXAAAAAAAIAA8AAAAXAAEAAAAuABMAAAAWAAAAAAAuABQAAAAWAAEAAAAvABMAAAAXAAAAAAAvABQAAAAXAAEAAAAwABwAAAAWAAAAAAAwAB0AAAAWAAEAAAAxABwAAAAXAAAAAAAxAB0AAAAXAAEAAAAtACcAAAAFAAMAAAAuACcAAAAGAAMAAAAvACcAAAAHAAMAAAAdACcAAAAFAAMAAAAeACcAAAAGAAMAAAAfACcAAAAHAAMAAAA2AB0AAAAFAAMAAAA3AB0AAAAGAAMAAAA4AB0AAAAHAAMAAAA5ABUAAAAFAAMAAAA6ABUAAAAGAAMAAAA7ABUAAAAHAAMAAAAlAAQAAAAFAAMAAAAmAAQAAAAGAAMAAAAnAAQAAAAHAAMAAAAvAAUAAAAOAAQAAAAwAAUAAAAPAAQAAAAwAAYAAAAPAAUAAAAqAAMAAAASAAQAAAArAAMAAAATAAQAAAAsAAMAAAAUAAQAAAAmAA4AAAASAAQAAAAnAA4AAAATAAQAAAAoAA4AAAAUAAQAAAAuAA4AAAASAAQAAAAvAA4AAAATAAQAAAAwAA4AAAAUAAQAAAALACYAAAAAAAMAAAAMACYAAAABAAMAAAANACYAAAACAAMAAAAOACYAAAADAAMAAAALAB0AAAAAAAMAAAAMAB0AAAABAAMAAAANAB0AAAACAAMAAAAOAB0AAAADAAMAAAADACEAAAAFAAMAAAAEACEAAAAGAAMAAAAFACEAAAAHAAMAAABBACkAAAAFAAMAAABCACkAAAAGAAMAAABDACkAAAAHAAMAAAAbAA0AAAAWAAAAAAAcAA0AAAAXAAAAAAA=")
+tile_set = SubResource("TileSet_uqrni")
 
 [node name="Rocks" type="TileMapLayer" parent="MAP" unique_id=934566351]
+y_sort_enabled = true
 tile_map_data = PackedByteArray("AAAYABIAAAAAAAAAAAAYABMAAAAAAAEAAAAZABIAAAABAAAAAAAZABMAAAABAAEAAAAgAA0AAAAAAAAAAAAgAA4AAAAAAAEAAAAhAA0AAAABAAAAAAAhAA4AAAABAAEAAAA3AA0AAAAAAAAAAAA3AA4AAAAAAAEAAAA4AA0AAAABAAAAAAA4AA4AAAABAAEAAAA+AA4AAAADAAAAAAA7ABgAAAADAAAAAAA5ACcAAAADAAAAAAASABoAAAAJAAEAAAATABoAAAAKAAEAAAAUABEAAAAJAAEAAAAVABEAAAAKAAEAAAAFACMAAAAAAAAAAAAFACQAAAAAAAEAAAAGACMAAAABAAAAAAAGACQAAAABAAEAAAAIAB0AAAAAAAAAAAAIAB4AAAAAAAEAAAAJAB0AAAABAAAAAAAJAB4AAAABAAEAAAAHAAcAAAAAAAAAAAAHAAgAAAAAAAEAAAAIAAcAAAABAAAAAAAIAAgAAAABAAEAAAAMAAMAAAAAAAAAAAAMAAQAAAAAAAEAAAANAAMAAAABAAAAAAANAAQAAAABAAEAAABIABcAAAAAAAAAAABIABgAAAAAAAEAAABJABcAAAABAAAAAABJABgAAAABAAEAAABKACEAAAAAAAAAAABKACIAAAAAAAEAAABLACEAAAABAAAAAABLACIAAAABAAEAAABMAB0AAAAHAAAAAABMAB4AAAAHAAEAAABDACIAAAAHAAAAAABDACMAAAAHAAEAAABBAAUAAAAJAAEAAABCAAUAAAAKAAEAAAAMAA8AAAAJAAEAAAANAA8AAAAKAAEAAAA+AAgAAAAFAAAAAAAyABMAAAAFAAAAAAAwABoAAAAFAAAAAAAZAB0AAAAFAAAAAAAZACUAAAAFAAAAAAAmAAcAAAAAAAAAAAAmAAgAAAAAAAEAAAAnAAcAAAABAAAAAAAnAAgAAAABAAEAAAAvAAcAAAAAAAAAAAAvAAgAAAAAAAEAAAAwAAcAAAABAAAAAAAwAAgAAAABAAEAAAAgABgAAAAAAAAAAAAgABkAAAAAAAEAAAAhABgAAAABAAAAAAAhABkAAAABAAEAAAAsABYAAAAHAAAAAAAsABcAAAAHAAEAAAAtACEAAAAJAAEAAAAuACEAAAAKAAEAAAAhACcAAAAHAAAAAAAhACgAAAAHAAEAAAA=")
 tile_set = SubResource("TileSet_y5wpv")
+
+[node name="Trees&Bushes" type="TileMapLayer" parent="MAP" unique_id=1265674415]
+z_index = 1
+y_sort_enabled = true
+tile_map_data = PackedByteArray("AAAbABkAAAADAAMAAAAaABkAAAACAAMAAAAYABcAAAAAAAEAAAAYABgAAAAAAAIAAAAYABkAAAAAAAMAAAAZABYAAAABAAAAAAAZABcAAAABAAEAAAAZABgAAAABAAIAAAAZABkAAAABAAMAAAAaABYAAAACAAAAAAAaABcAAAACAAEAAAAaABgAAAACAAIAAAAbABcAAAADAAEAAAAbABgAAAADAAIAAAAyAAsAAAAAAAEAAAAyAAwAAAAAAAIAAAAyAA0AAAAAAAMAAAAzAAoAAAABAAAAAAAzAAsAAAABAAEAAAAzAAwAAAABAAIAAAAzAA0AAAABAAMAAAA0AAoAAAACAAAAAAA0AAsAAAACAAEAAAA0AAwAAAACAAIAAAA0AA0AAAACAAMAAAA1AAsAAAADAAEAAAA1AAwAAAADAAIAAAA1AA0AAAADAAMAAAAiAAsAAAAAAAEAAAAiAAwAAAAAAAIAAAAiAA0AAAAAAAMAAAAjAAoAAAABAAAAAAAjAAsAAAABAAEAAAAjAAwAAAABAAIAAAAjAA0AAAABAAMAAAAkAAoAAAACAAAAAAAkAAsAAAACAAEAAAAkAAwAAAACAAIAAAAkAA0AAAACAAMAAAAlAAsAAAADAAEAAAAlAAwAAAADAAIAAAAlAA0AAAADAAMAAABDABEAAAAAAAEAAABDABIAAAAAAAIAAABDABMAAAAAAAMAAABEABAAAAABAAAAAABEABEAAAABAAEAAABEABIAAAABAAIAAABEABMAAAABAAMAAABFABAAAAACAAAAAABFABEAAAACAAEAAABFABIAAAACAAIAAABFABMAAAACAAMAAABGABEAAAADAAEAAABGABIAAAADAAIAAABGABMAAAADAAMAAABIABAAAAAFAAAAAABIABEAAAAFAAEAAABIABIAAAAFAAIAAABIABMAAAAFAAMAAABJABAAAAAGAAAAAABJABEAAAAGAAEAAABJABIAAAAGAAIAAABJABMAAAAGAAMAAABKABAAAAAHAAAAAABKABEAAAAHAAEAAABKABIAAAAHAAIAAABKABMAAAAHAAMAAAA5AAkAAAAJAAEAAAA5AAoAAAAJAAIAAAA5AAsAAAAJAAMAAAA5AAwAAAAJAAQAAAA6AAgAAAAKAAAAAAA6AAkAAAAKAAEAAAA6AAoAAAAKAAIAAAA6AAsAAAAKAAMAAAA6AAwAAAAKAAQAAAA6AA0AAAAKAAUAAAA7AAgAAAALAAAAAAA7AAkAAAALAAEAAAA7AAoAAAALAAIAAAA7AAsAAAALAAMAAAA7AAwAAAALAAQAAAA7AA0AAAALAAUAAAA8AAgAAAAMAAAAAAA8AAkAAAAMAAEAAAA8AAoAAAAMAAIAAAA8AAsAAAAMAAMAAAA8AAwAAAAMAAQAAAAPABEAAAAJAAEAAAAPABIAAAAJAAIAAAAPABMAAAAJAAMAAAAPABQAAAAJAAQAAAAQABAAAAAKAAAAAAAQABEAAAAKAAEAAAAQABIAAAAKAAIAAAAQABMAAAAKAAMAAAAQABQAAAAKAAQAAAAQABUAAAAKAAUAAAARABAAAAALAAAAAAARABEAAAALAAEAAAARABIAAAALAAIAAAARABMAAAALAAMAAAARABQAAAALAAQAAAARABUAAAALAAUAAAASABAAAAAMAAAAAAASABEAAAAMAAEAAAASABIAAAAMAAIAAAASABMAAAAMAAMAAAASABQAAAAMAAQAAAAhAB4AAAAJAAEAAAAhAB8AAAAJAAIAAAAhACAAAAAJAAMAAAAhACEAAAAJAAQAAAAiAB0AAAAKAAAAAAAiAB4AAAAKAAEAAAAiAB8AAAAKAAIAAAAiACAAAAAKAAMAAAAiACEAAAAKAAQAAAAiACIAAAAKAAUAAAAjAB0AAAALAAAAAAAjAB4AAAALAAEAAAAjAB8AAAALAAIAAAAjACAAAAALAAMAAAAjACEAAAALAAQAAAAjACIAAAALAAUAAAAkAB0AAAAMAAAAAAAkAB4AAAAMAAEAAAAkAB8AAAAMAAIAAAAkACAAAAAMAAMAAAAkACEAAAAMAAQAAAA3AB8AAAAJAAEAAAA3ACAAAAAJAAIAAAA3ACEAAAAJAAMAAAA3ACIAAAAJAAQAAAA4AB4AAAAKAAAAAAA4AB8AAAAKAAEAAAA4ACAAAAAKAAIAAAA4ACEAAAAKAAMAAAA4ACIAAAAKAAQAAAA4ACMAAAAKAAUAAAA5AB4AAAALAAAAAAA5AB8AAAALAAEAAAA5ACAAAAALAAIAAAA5ACEAAAALAAMAAAA5ACIAAAALAAQAAAA5ACMAAAALAAUAAAA6AB4AAAAMAAAAAAA6AB8AAAAMAAEAAAA6ACAAAAAMAAIAAAA6ACEAAAAMAAMAAAA6ACIAAAAMAAQAAAA2ACUAAAAWAAAAAAA2ACYAAAAWAAEAAAA3ACUAAAAXAAAAAAA3ACYAAAAXAAEAAAATACUAAAAWAAAAAAATACYAAAAWAAEAAAAUACUAAAAXAAAAAAAUACYAAAAXAAEAAAAbAA0AAAAWAAAAAAAbAA4AAAAWAAEAAAAcAA0AAAAXAAAAAAAcAA4AAAAXAAEAAAASAAUAAAAWAAAAAAASAAYAAAAWAAEAAAATAAUAAAAXAAAAAAATAAYAAAAXAAEAAAAHAA4AAAAWAAAAAAAHAA8AAAAWAAEAAAAIAA4AAAAXAAAAAAAIAA8AAAAXAAEAAAAuABMAAAAWAAAAAAAuABQAAAAWAAEAAAAvABMAAAAXAAAAAAAvABQAAAAXAAEAAAAwABwAAAAWAAAAAAAwAB0AAAAWAAEAAAAxABwAAAAXAAAAAAAxAB0AAAAXAAEAAAAtACQAAAAFAAAAAAAtACUAAAAFAAEAAAAtACYAAAAFAAIAAAAtACcAAAAFAAMAAAAuACQAAAAGAAAAAAAuACUAAAAGAAEAAAAuACYAAAAGAAIAAAAuACcAAAAGAAMAAAAvACQAAAAHAAAAAAAvACUAAAAHAAEAAAAvACYAAAAHAAIAAAAvACcAAAAHAAMAAAAdACQAAAAFAAAAAAAdACUAAAAFAAEAAAAdACYAAAAFAAIAAAAdACcAAAAFAAMAAAAeACQAAAAGAAAAAAAeACUAAAAGAAEAAAAeACYAAAAGAAIAAAAeACcAAAAGAAMAAAAfACQAAAAHAAAAAAAfACUAAAAHAAEAAAAfACYAAAAHAAIAAAAfACcAAAAHAAMAAAA2ABoAAAAFAAAAAAA2ABsAAAAFAAEAAAA2ABwAAAAFAAIAAAA2AB0AAAAFAAMAAAA3ABoAAAAGAAAAAAA3ABsAAAAGAAEAAAA3ABwAAAAGAAIAAAA3AB0AAAAGAAMAAAA4ABoAAAAHAAAAAAA4ABsAAAAHAAEAAAA4ABwAAAAHAAIAAAA4AB0AAAAHAAMAAAA5ABIAAAAFAAAAAAA5ABMAAAAFAAEAAAA5ABQAAAAFAAIAAAA5ABUAAAAFAAMAAAA6ABIAAAAGAAAAAAA6ABMAAAAGAAEAAAA6ABQAAAAGAAIAAAA6ABUAAAAGAAMAAAA7ABIAAAAHAAAAAAA7ABMAAAAHAAEAAAA7ABQAAAAHAAIAAAA7ABUAAAAHAAMAAAAlAAEAAAAFAAAAAAAlAAIAAAAFAAEAAAAlAAMAAAAFAAIAAAAlAAQAAAAFAAMAAAAmAAEAAAAGAAAAAAAmAAIAAAAGAAEAAAAmAAMAAAAGAAIAAAAmAAQAAAAGAAMAAAAnAAEAAAAHAAAAAAAnAAIAAAAHAAEAAAAnAAMAAAAHAAIAAAAnAAQAAAAHAAMAAAAvAAEAAAAOAAAAAAAvAAIAAAAOAAEAAAAvAAMAAAAOAAIAAAAvAAQAAAAOAAMAAAAvAAUAAAAOAAQAAAAwAAEAAAAPAAAAAAAwAAIAAAAPAAEAAAAwAAMAAAAPAAIAAAAwAAQAAAAPAAMAAAAwAAUAAAAPAAQAAAAwAAYAAAAPAAUAAAAxAAEAAAAQAAAAAAAxAAIAAAAQAAEAAAAxAAMAAAAQAAIAAAAxAAQAAAAQAAMAAAAqAAMAAAASAAQAAAArAAMAAAATAAQAAAAsAAMAAAAUAAQAAAAmAA4AAAASAAQAAAAnAA4AAAATAAQAAAAoAA4AAAAUAAQAAAAuAA4AAAASAAQAAAAvAA4AAAATAAQAAAAwAA4AAAAUAAQAAAALACQAAAAAAAEAAAALACUAAAAAAAIAAAALACYAAAAAAAMAAAAMACMAAAABAAAAAAAMACQAAAABAAEAAAAMACUAAAABAAIAAAAMACYAAAABAAMAAAANACMAAAACAAAAAAANACQAAAACAAEAAAANACUAAAACAAIAAAANACYAAAACAAMAAAAOACQAAAADAAEAAAAOACUAAAADAAIAAAAOACYAAAADAAMAAAALABsAAAAAAAEAAAALABwAAAAAAAIAAAALAB0AAAAAAAMAAAAMABoAAAABAAAAAAAMABsAAAABAAEAAAAMABwAAAABAAIAAAAMAB0AAAABAAMAAAANABoAAAACAAAAAAANABsAAAACAAEAAAANABwAAAACAAIAAAANAB0AAAACAAMAAAAOABsAAAADAAEAAAAOABwAAAADAAIAAAAOAB0AAAADAAMAAAADAB4AAAAFAAAAAAADAB8AAAAFAAEAAAADACAAAAAFAAIAAAADACEAAAAFAAMAAAAEAB4AAAAGAAAAAAAEAB8AAAAGAAEAAAAEACAAAAAGAAIAAAAEACEAAAAGAAMAAAAFAB4AAAAHAAAAAAAFAB8AAAAHAAEAAAAFACAAAAAHAAIAAAAFACEAAAAHAAMAAABBACYAAAAFAAAAAABBACcAAAAFAAEAAABBACgAAAAFAAIAAABBACkAAAAFAAMAAABCACYAAAAGAAAAAABCACcAAAAGAAEAAABCACgAAAAGAAIAAABCACkAAAAGAAMAAABDACYAAAAHAAAAAABDACcAAAAHAAEAAABDACgAAAAHAAIAAABDACkAAAAHAAMAAAA=")
+tile_set = SubResource("TileSet_3n7x1")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=502783487]
 position = Vector2(-207, 135)
