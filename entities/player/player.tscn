@@ -21,7 +21,7 @@ scale = Vector2(0.17578125, 0.17578125)
 texture = ExtResource("1_8afob")
 
 [node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
-rotation = -24.560944
+rotation = -44.290302
 
 [node name="Chorro" parent="WeaponPivot" unique_id=2025990940 node_paths=PackedStringArray("tanque") instance=ExtResource("3_sglur")]
 tanque = NodePath("../../TanqueAgua")
@@ -35,3 +35,7 @@ scale = Vector2(0.08, 0.08)
 texture = ExtResource("1_8afob")
 
 [node name="TanqueAgua" parent="." unique_id=1596794547 instance=ExtResource("4_bls4j")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1083176454]
+position_smoothing_speed = 1.0
+rotation_smoothing_speed = 1.0

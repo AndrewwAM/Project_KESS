@@ -835,14 +835,12 @@ texture = ExtResource("4_4am2k")
 4:7/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ulsyr"]
-load_path = "res://.godot/imported/Shadow_Round_16x16_Flat_Black.png-b33811803214da20e3b776815d65927c.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i8u4m"]
 texture = SubResource("CompressedTexture2D_ulsyr")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uqrni"]
-load_path = "res://.godot/imported/Shadow_Round_24x24_Long_Black.png-b730a28d6f1a58775883c71b844d2ecb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_it618"]
 texture = SubResource("CompressedTexture2D_uqrni")
@@ -852,7 +850,6 @@ texture = SubResource("CompressedTexture2D_uqrni")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_s05km"]
-load_path = "res://.godot/imported/Shadow_Round_24x24_Medium_Black.png-7e6e98b62f0b611a426cee7d74717291.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hjx1r"]
 texture = SubResource("CompressedTexture2D_s05km")
@@ -862,14 +859,12 @@ texture = SubResource("CompressedTexture2D_s05km")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xnoy0"]
-load_path = "res://.godot/imported/Shadow_Round_24x24_Short_Black.png-46fc607fc59a03b345c7a5b0a2453767.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eb6mn"]
 texture = SubResource("CompressedTexture2D_xnoy0")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q37vj"]
-load_path = "res://.godot/imported/Shadow_Round_24x48_Flat_Black.png-3ee28f053ba324408bce90ee3e86ec52.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6ban"]
 texture = SubResource("CompressedTexture2D_q37vj")
@@ -878,7 +873,6 @@ texture = SubResource("CompressedTexture2D_q37vj")
 0:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fagex"]
-load_path = "res://.godot/imported/Shadow_Round_24x48_Long_Black.png-d91f193f77e41bf5704217e3494af643.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2gcu6"]
 texture = SubResource("CompressedTexture2D_fagex")
@@ -892,7 +886,6 @@ texture = SubResource("CompressedTexture2D_fagex")
 1:3/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f8hry"]
-load_path = "res://.godot/imported/Shadow_Round_24x48_Medium_Black.png-6e41c7fa59b456d8c4d869a86ecebc5f.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nlqy2"]
 texture = SubResource("CompressedTexture2D_f8hry")
@@ -904,7 +897,6 @@ texture = SubResource("CompressedTexture2D_f8hry")
 1:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2m2eu"]
-load_path = "res://.godot/imported/Shadow_Round_24x48_Short_Black.png-8381285fb59b97b3f46be44c3d85d6fe.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mmf0m"]
 texture = SubResource("CompressedTexture2D_2m2eu")
@@ -913,7 +905,6 @@ texture = SubResource("CompressedTexture2D_2m2eu")
 0:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tsy8m"]
-load_path = "res://.godot/imported/Shadow_Round_32x16_Flat_Black.png-f85332990755e1995581c90c4aba3d96.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ksh1"]
 texture = SubResource("CompressedTexture2D_tsy8m")
@@ -921,7 +912,6 @@ texture = SubResource("CompressedTexture2D_tsy8m")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nwk5n"]
-load_path = "res://.godot/imported/Shadow_Round_32x16_Long_Black.png-13a50c0e88df42657feb92f19b634ee4.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_phn1o"]
 texture = SubResource("CompressedTexture2D_nwk5n")
@@ -933,7 +923,6 @@ texture = SubResource("CompressedTexture2D_nwk5n")
 2:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vdtgh"]
-load_path = "res://.godot/imported/Shadow_Round_32x16_Medium_Black.png-0ff8392788ca8948a40f4327877773cf.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uubcr"]
 texture = SubResource("CompressedTexture2D_vdtgh")
@@ -941,7 +930,6 @@ texture = SubResource("CompressedTexture2D_vdtgh")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_caqm6"]
-load_path = "res://.godot/imported/Shadow_Round_16x16_Long_Black.png-8efbb98ef05204db0f7815cf0b5dff70.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3yn1"]
 texture = SubResource("CompressedTexture2D_caqm6")
@@ -951,7 +939,6 @@ texture = SubResource("CompressedTexture2D_caqm6")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4e3xi"]
-load_path = "res://.godot/imported/Shadow_Round_32x16_Short_Black.png-219e928c0e45eeb934f7dac5da4d1dde.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfqg2"]
 texture = SubResource("CompressedTexture2D_4e3xi")
@@ -959,7 +946,6 @@ texture = SubResource("CompressedTexture2D_4e3xi")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_olgxq"]
-load_path = "res://.godot/imported/Shadow_Round_32x32_Flat_Black.png-ca410680dc2beee5d16ed5d2dab10a53.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wspe"]
 texture = SubResource("CompressedTexture2D_olgxq")
@@ -969,7 +955,6 @@ texture = SubResource("CompressedTexture2D_olgxq")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_b7578"]
-load_path = "res://.godot/imported/Shadow_Round_32x32_Long_Black.png-bda8a04adfee1ef3ea5715b603f7ec63.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fsqxh"]
 texture = SubResource("CompressedTexture2D_b7578")
@@ -984,7 +969,6 @@ texture = SubResource("CompressedTexture2D_b7578")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_avj5j"]
-load_path = "res://.godot/imported/Shadow_Round_32x32_Medium_Black.png-11815184c5aac7d5d85872596e9f683b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8wcl5"]
 texture = SubResource("CompressedTexture2D_avj5j")
@@ -994,7 +978,6 @@ texture = SubResource("CompressedTexture2D_avj5j")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_u6pl3"]
-load_path = "res://.godot/imported/Shadow_Round_32x32_Short_Black.png-f019c33750b5f05d037d7c0c9f372fc2.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_20t14"]
 texture = SubResource("CompressedTexture2D_u6pl3")
@@ -1004,7 +987,6 @@ texture = SubResource("CompressedTexture2D_u6pl3")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h7urt"]
-load_path = "res://.godot/imported/Shadow_Round_40x40_Flat_Black.png-432c5df7bcc84217b8929b82b85d5a33.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7amty"]
 texture = SubResource("CompressedTexture2D_h7urt")
@@ -1014,7 +996,6 @@ texture = SubResource("CompressedTexture2D_h7urt")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_38io0"]
-load_path = "res://.godot/imported/Shadow_Round_40x40_Long_Black.png-8f88a81dd8b5bdc40a2bb564adf09b63.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tccwb"]
 texture = SubResource("CompressedTexture2D_38io0")
@@ -1029,7 +1010,6 @@ texture = SubResource("CompressedTexture2D_38io0")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cn6i6"]
-load_path = "res://.godot/imported/Shadow_Round_40x40_Medium_Black.png-f60bc2c577fa67bb0e822b04d505b9ed.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mjaoy"]
 texture = SubResource("CompressedTexture2D_cn6i6")
@@ -1044,7 +1024,6 @@ texture = SubResource("CompressedTexture2D_cn6i6")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_sr5gv"]
-load_path = "res://.godot/imported/Shadow_Round_40x40_Short_Black.png-ab0fba22b562c31786a8940a6ec65db4.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g6d16"]
 texture = SubResource("CompressedTexture2D_sr5gv")
@@ -1054,7 +1033,6 @@ texture = SubResource("CompressedTexture2D_sr5gv")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_62wi3"]
-load_path = "res://.godot/imported/Shadow_Round_48x24_Flat_Black.png-3e9752712d899ea85bf7a8a8783af9fb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sw7q7"]
 texture = SubResource("CompressedTexture2D_62wi3")
@@ -1063,14 +1041,12 @@ texture = SubResource("CompressedTexture2D_62wi3")
 2:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xs2kf"]
-load_path = "res://.godot/imported/Shadow_Round_16x16_Medium_Black.png-922d74fe042f334a657a7a5d9e214483.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_55mij"]
 texture = SubResource("CompressedTexture2D_xs2kf")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2aynt"]
-load_path = "res://.godot/imported/Shadow_Round_48x24_Long_Black.png-54d51544479ab8bc3df52b44d90127e7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50q8n"]
 texture = SubResource("CompressedTexture2D_2aynt")
@@ -1084,7 +1060,6 @@ texture = SubResource("CompressedTexture2D_2aynt")
 3:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_slyej"]
-load_path = "res://.godot/imported/Shadow_Round_48x24_Medium_Black.png-c3ef49f0a92955b0fabd2757ad19da96.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_owen3"]
 texture = SubResource("CompressedTexture2D_slyej")
@@ -1096,7 +1071,6 @@ texture = SubResource("CompressedTexture2D_slyej")
 2:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oj80f"]
-load_path = "res://.godot/imported/Shadow_Round_48x24_Short_Black.png-75eea60cce88d6c9f2bd6a3fb8f30100.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t82wp"]
 texture = SubResource("CompressedTexture2D_oj80f")
@@ -1105,7 +1079,6 @@ texture = SubResource("CompressedTexture2D_oj80f")
 2:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rwf27"]
-load_path = "res://.godot/imported/Shadow_Round_48x48_Flat_Black.png-a3db6bfd09fe4f47fd9b82562c1f733b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kr0ra"]
 texture = SubResource("CompressedTexture2D_rwf27")
@@ -1120,7 +1093,6 @@ texture = SubResource("CompressedTexture2D_rwf27")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cvmg2"]
-load_path = "res://.godot/imported/Shadow_Round_48x48_Long_Black.png-d58bb11e3888881bb8072963dce37e53.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_723x1"]
 texture = SubResource("CompressedTexture2D_cvmg2")
@@ -1142,7 +1114,6 @@ texture = SubResource("CompressedTexture2D_cvmg2")
 3:3/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0r01h"]
-load_path = "res://.godot/imported/Shadow_Round_48x48_Medium_Black.png-1169f4d3b4189631591a2bf38e509098.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ew85m"]
 texture = SubResource("CompressedTexture2D_0r01h")
@@ -1157,7 +1128,6 @@ texture = SubResource("CompressedTexture2D_0r01h")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ksatf"]
-load_path = "res://.godot/imported/Shadow_Round_48x48_Short_Black.png-5d297e24e518bcfaa9509f5e41f39f2b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_guodx"]
 texture = SubResource("CompressedTexture2D_ksatf")
@@ -1172,14 +1142,12 @@ texture = SubResource("CompressedTexture2D_ksatf")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ij4sd"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x16_Flat_Black.png-8d0da18ddd43e2a127ec3bada881373f.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_paiow"]
 texture = SubResource("CompressedTexture2D_ij4sd")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0odlm"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x16_Long_Black.png-36abd35ce2be1274f4f4f75c460eae7b.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1v18n"]
 texture = SubResource("CompressedTexture2D_0odlm")
@@ -1189,28 +1157,24 @@ texture = SubResource("CompressedTexture2D_0odlm")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_31nij"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x16_Medium_Black.png-0f69261b264ee9d6f73b0c0df4f53658.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y3oq7"]
 texture = SubResource("CompressedTexture2D_31nij")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_husu1"]
-load_path = "res://.godot/imported/Shadow_Round_16x16_Short_Black.png-da54cf03c107e752a515f06e0c0b1020.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aca25"]
 texture = SubResource("CompressedTexture2D_husu1")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7atfi"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x16_Short_Black.png-5fb20854c68e1b5b98d57f1aa7a071f0.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f3d7q"]
 texture = SubResource("CompressedTexture2D_7atfi")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0uw28"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x32_Flat_Black.png-508bd91f0825e5a8a862a0dbfc2ad690.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k5004"]
 texture = SubResource("CompressedTexture2D_0uw28")
@@ -1218,7 +1182,6 @@ texture = SubResource("CompressedTexture2D_0uw28")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n6gvj"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x32_Long_Black.png-9a873bc861ba33ab98bd61d2acd2555d.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gf2w"]
 texture = SubResource("CompressedTexture2D_n6gvj")
@@ -1230,7 +1193,6 @@ texture = SubResource("CompressedTexture2D_n6gvj")
 1:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_bke31"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x32_Medium_Black.png-637b0b47dd99512da5dab83251875fe3.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sxuw3"]
 texture = SubResource("CompressedTexture2D_bke31")
@@ -1238,7 +1200,6 @@ texture = SubResource("CompressedTexture2D_bke31")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ieac6"]
-load_path = "res://.godot/imported/Shadow_Sqare_16x32_Short_Black.png-4eec40d464931f494d7921d7230c64cb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hf7s8"]
 texture = SubResource("CompressedTexture2D_ieac6")
@@ -1246,14 +1207,12 @@ texture = SubResource("CompressedTexture2D_ieac6")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2hp6"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x24_Flat_Black.png-2a847ae42b88ff3be08d729bfe330911.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0akhc"]
 texture = SubResource("CompressedTexture2D_h2hp6")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pplgn"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x24_Long_Black.png-19ed51039515e3022750f44b7b0c90be.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l41lo"]
 texture = SubResource("CompressedTexture2D_pplgn")
@@ -1263,7 +1222,6 @@ texture = SubResource("CompressedTexture2D_pplgn")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hvmia"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x24_Medium_Black.png-7f635aeb815ec0de323b98788efb60d5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bnfos"]
 texture = SubResource("CompressedTexture2D_hvmia")
@@ -1273,14 +1231,12 @@ texture = SubResource("CompressedTexture2D_hvmia")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qmwpi"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x24_Short_Black.png-b79748e0568da1ca219af210797a8355.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t46mh"]
 texture = SubResource("CompressedTexture2D_qmwpi")
 0:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_44gcj"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x48_Flat_Black.png-d1f7e1502410bbc1402b3b1faa53df65.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n0ndd"]
 texture = SubResource("CompressedTexture2D_44gcj")
@@ -1289,7 +1245,6 @@ texture = SubResource("CompressedTexture2D_44gcj")
 0:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ayt8x"]
-load_path = "res://.godot/imported/Shadow_Round_16x32_Flat_Black.png-8adc306b4e5ef7744ac526764643f51c.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iowh4"]
 texture = SubResource("CompressedTexture2D_ayt8x")
@@ -1297,7 +1252,6 @@ texture = SubResource("CompressedTexture2D_ayt8x")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_x6koe"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x48_Long_Black.png-cf147e9167faf2cbf516b8e2b406b752.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n4scv"]
 texture = SubResource("CompressedTexture2D_x6koe")
@@ -1311,7 +1265,6 @@ texture = SubResource("CompressedTexture2D_x6koe")
 1:3/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h8s1p"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x48_Medium_Black.png-4a98cca9515b581118ce672e21c3b7da.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tpqdj"]
 texture = SubResource("CompressedTexture2D_h8s1p")
@@ -1323,7 +1276,6 @@ texture = SubResource("CompressedTexture2D_h8s1p")
 1:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hcc67"]
-load_path = "res://.godot/imported/Shadow_Sqare_24x48_Short_Black.png-d0bda177afb7cc6ada7401672cf8fa66.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_17xe2"]
 texture = SubResource("CompressedTexture2D_hcc67")
@@ -1332,7 +1284,6 @@ texture = SubResource("CompressedTexture2D_hcc67")
 0:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_nn3ph"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x16_Flat_Black.png-54be99b26d93ee929ebe42dbfadd05e5.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3y2kf"]
 texture = SubResource("CompressedTexture2D_nn3ph")
@@ -1340,7 +1291,6 @@ texture = SubResource("CompressedTexture2D_nn3ph")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g1d7i"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x16_Long_Black.png-4e12c8887673b3656d3dba9202c33007.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5s2ri"]
 texture = SubResource("CompressedTexture2D_g1d7i")
@@ -1352,7 +1302,6 @@ texture = SubResource("CompressedTexture2D_g1d7i")
 2:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ic4r"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x16_Medium_Black.png-cd4d4a0813edc054e0238cd776dd696d.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxkw0"]
 texture = SubResource("CompressedTexture2D_8ic4r")
@@ -1360,7 +1309,6 @@ texture = SubResource("CompressedTexture2D_8ic4r")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qmwns"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x16_Short_Black.png-fc887014cd7e7b4288866c80d2eb9dd7.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oej81"]
 texture = SubResource("CompressedTexture2D_qmwns")
@@ -1368,7 +1316,6 @@ texture = SubResource("CompressedTexture2D_qmwns")
 1:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n3vhq"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x32_Flat_Black.png-bd78857904378825388bc2d9df39b052.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2url6"]
 texture = SubResource("CompressedTexture2D_n3vhq")
@@ -1378,7 +1325,6 @@ texture = SubResource("CompressedTexture2D_n3vhq")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_3uhv8"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x32_Long_Black.png-03e87fce1a121e6b38d8c725f5a9238e.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_diid1"]
 texture = SubResource("CompressedTexture2D_3uhv8")
@@ -1393,7 +1339,6 @@ texture = SubResource("CompressedTexture2D_3uhv8")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ci5xp"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x32_Medium_Black.png-b2dc44c9f6a1ce4ca99baf001565013c.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sb12c"]
 texture = SubResource("CompressedTexture2D_ci5xp")
@@ -1403,7 +1348,6 @@ texture = SubResource("CompressedTexture2D_ci5xp")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_h2clt"]
-load_path = "res://.godot/imported/Shadow_Round_16x32_Long_Black.png-8e95a0abf60447425c0fa167a48b0326.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t7r78"]
 texture = SubResource("CompressedTexture2D_h2clt")
@@ -1415,7 +1359,6 @@ texture = SubResource("CompressedTexture2D_h2clt")
 1:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rg78w"]
-load_path = "res://.godot/imported/Shadow_Sqare_32x32_Short_Black.png-c25919dc08ba2bee87a2993da92f9e03.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xlwxk"]
 texture = SubResource("CompressedTexture2D_rg78w")
@@ -1425,7 +1368,6 @@ texture = SubResource("CompressedTexture2D_rg78w")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ugnwl"]
-load_path = "res://.godot/imported/Shadow_Sqare_40x40_Flat_Black.png-426f00c55d853e551a1d6999e7bd9ba3.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lu0ie"]
 texture = SubResource("CompressedTexture2D_ugnwl")
@@ -1435,7 +1377,6 @@ texture = SubResource("CompressedTexture2D_ugnwl")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_oftg5"]
-load_path = "res://.godot/imported/Shadow_Sqare_40x40_Long_Black.png-afc681e4ef37914e0530cee4db374f2d.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6esah"]
 texture = SubResource("CompressedTexture2D_oftg5")
@@ -1450,7 +1391,6 @@ texture = SubResource("CompressedTexture2D_oftg5")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ie0sk"]
-load_path = "res://.godot/imported/Shadow_Sqare_40x40_Medium_Black.png-4f23f2c09be1adc4c546406436af1027.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tjxht"]
 texture = SubResource("CompressedTexture2D_ie0sk")
@@ -1465,7 +1405,6 @@ texture = SubResource("CompressedTexture2D_ie0sk")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gc5qi"]
-load_path = "res://.godot/imported/Shadow_Sqare_40x40_Short_Black.png-5748f1ac01cb73c47d76dc7f9c4ed130.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lghx3"]
 texture = SubResource("CompressedTexture2D_gc5qi")
@@ -1475,7 +1414,6 @@ texture = SubResource("CompressedTexture2D_gc5qi")
 1:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xm8gu"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x24_Flat_Black.png-a92a446fc41b5373b4f0da91b8bb7900.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_cyopv"]
 texture = SubResource("CompressedTexture2D_xm8gu")
@@ -1484,7 +1422,6 @@ texture = SubResource("CompressedTexture2D_xm8gu")
 2:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2b3tt"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x24_Long_Black.png-0d434ce91f1e97bb51914e361d029e85.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_p1wk2"]
 texture = SubResource("CompressedTexture2D_2b3tt")
@@ -1498,7 +1435,6 @@ texture = SubResource("CompressedTexture2D_2b3tt")
 3:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f3jvu"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x24_Medium_Black.png-ac3320e29009ad020128657a6b315e04.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4o23n"]
 texture = SubResource("CompressedTexture2D_f3jvu")
@@ -1510,7 +1446,6 @@ texture = SubResource("CompressedTexture2D_f3jvu")
 2:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_o2pry"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x24_Short_Black.png-9f3f06c1f6b74681a788dcc1d757d6f1.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io3er"]
 texture = SubResource("CompressedTexture2D_o2pry")
@@ -1519,7 +1454,6 @@ texture = SubResource("CompressedTexture2D_o2pry")
 2:0/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lofnj"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x48_Flat_Black.png-a744965df73606e5935421b1864579bb.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwysl"]
 texture = SubResource("CompressedTexture2D_lofnj")
@@ -1534,7 +1468,6 @@ texture = SubResource("CompressedTexture2D_lofnj")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yhihr"]
-load_path = "res://.godot/imported/Shadow_Round_16x32_Medium_Black.png-21f235cde2d391aa5713a3a2a32cb8f1.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oe7lw"]
 texture = SubResource("CompressedTexture2D_yhihr")
@@ -1542,7 +1475,6 @@ texture = SubResource("CompressedTexture2D_yhihr")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p3i03"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x48_Long_Black.png-7c76a5f6fe519e19436c4963be57a8dc.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwdsy"]
 texture = SubResource("CompressedTexture2D_p3i03")
@@ -1564,7 +1496,6 @@ texture = SubResource("CompressedTexture2D_p3i03")
 3:3/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8ytoi"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x48_Medium_Black.png-0fcee7bf77f4265b5a895bbe76ab3fdd.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uob0g"]
 texture = SubResource("CompressedTexture2D_8ytoi")
@@ -1579,7 +1510,6 @@ texture = SubResource("CompressedTexture2D_8ytoi")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4am2k"]
-load_path = "res://.godot/imported/Shadow_Sqare_48x48_Short_Black.png-1fde20193f16cb0fd601e79acc991040.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_niut7"]
 texture = SubResource("CompressedTexture2D_4am2k")
@@ -1594,7 +1524,6 @@ texture = SubResource("CompressedTexture2D_4am2k")
 2:2/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6pr64"]
-load_path = "res://.godot/imported/Shadow_Round_16x32_Short_Black.png-201cfbd234817a09bd99df38d22761fa.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0em13"]
 texture = SubResource("CompressedTexture2D_6pr64")
@@ -1602,7 +1531,6 @@ texture = SubResource("CompressedTexture2D_6pr64")
 0:1/0 = 0
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p53y3"]
-load_path = "res://.godot/imported/Shadow_Round_24x24_Flat_Black.png-537caa5cd199b97b2180c5de50ccb447.ctex"
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jhlhd"]
 texture = SubResource("CompressedTexture2D_p53y3")
@@ -2407,4 +2335,6 @@ polygon = PackedVector2Array(-20, -61, -20, -45, -52, -45, -52, -13, -68, -13, -
 position = Vector2(376, 324)
 polygon = PackedVector2Array(-20, -61, -20, -45, -52, -45, -52, -13, -68, -13, -68, 29, -52, 29, -52, 61, -20, 61, -20, 77, 20, 77, 20, 61, 52, 61, 52, 30, 68, 30, 68, -15, 52, -15, 52, -45, 21, -45, 21, -62)
 
-[node name="Hud" parent="." unique_id=360316666 instance=ExtResource("81_2667m")]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1915508001]
+
+[node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("81_2667m")]
