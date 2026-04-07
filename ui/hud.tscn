@@ -1,0 +1,108 @@
+[gd_scene format=3 uid="uid://dgr4tmbotpoj"]
+
+[ext_resource type="Script" uid="uid://c16rcg0lbuic5" path="res://ui/hud.gd" id="1_0mwgc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh2we"]
+bg_color = Color(0.047058824, 0.40784314, 0.85490197, 1)
+
+[node name="Hud" type="Node2D" unique_id=360316666]
+script = ExtResource("1_0mwgc")
+
+[node name="WaterBar" type="Control" parent="." unique_id=512651764]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 120.0
+offset_bottom = 29.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="background" type="ColorRect" parent="WaterBar" unique_id=1891489357]
+layout_mode = 0
+offset_right = 111.0
+offset_bottom = 20.0
+color = Color(0.17641911, 0.17641908, 0.17641908, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="WaterBar" unique_id=1881814091]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 20.0
+color = Color(0.52156866, 0.31764707, 0.18039216, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="WaterBar/ColorRect" unique_id=635471442]
+layout_mode = 0
+offset_left = 108.0
+offset_right = 111.0
+offset_bottom = 20.0
+color = Color(0.51992935, 0.31875002, 0.1809732, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="WaterBar" unique_id=121213428]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 108.0
+offset_bottom = 3.0
+color = Color(0.52156866, 0.31764707, 0.18039216, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="WaterBar/ColorRect3" unique_id=1404784257]
+layout_mode = 0
+offset_top = 17.0
+offset_right = 105.0
+offset_bottom = 20.0
+color = Color(0.52156866, 0.31764707, 0.18039216, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="ProgressBar" type="ProgressBar" parent="WaterBar" unique_id=680837808]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 108.0
+offset_bottom = 17.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_wh2we")
+value = 100.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Health" type="HBoxContainer" parent="." unique_id=29275113]
+offset_left = 9.0
+offset_top = 40.0
+offset_right = 100.0
+offset_bottom = 55.0
+mouse_filter = 2
+
+[node name="ColorRect" type="ColorRect" parent="Health" unique_id=1915739787]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="Health" unique_id=1581849853]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="Health" unique_id=1004020576]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="Health" unique_id=439643124]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="Health" unique_id=574923938]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+color = Color(1, 0, 0, 1)
+
+[node name="Score" type="Label" parent="." unique_id=916535230]
+offset_left = 12.0
+offset_top = 250.0
+offset_right = 73.0
+offset_bottom = 273.0
+scale = Vector2(0.5, 0.5)
+text = "Score: 0"
