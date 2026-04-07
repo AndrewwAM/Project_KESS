@@ -6,7 +6,7 @@ func _ready() -> void:
 	body_exited.connect(_on_body_exited)
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("Player"):
+	if body.is_in_group("Player") && !body.get_node("WeaponPivot").get_node("Chorro").is_shooting:
 		body.get_node("TanqueAgua").can_reload = true
 
 func _on_body_exited(body: Node2D) -> void:

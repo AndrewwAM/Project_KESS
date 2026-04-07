@@ -21,7 +21,7 @@ scale = Vector2(0.17578125, 0.17578125)
 texture = ExtResource("1_8afob")
 
 [node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
-rotation = -24.96194
+rotation = -24.560944
 
 [node name="Chorro" parent="WeaponPivot" unique_id=2025990940 node_paths=PackedStringArray("tanque") instance=ExtResource("3_sglur")]
 tanque = NodePath("../../TanqueAgua")

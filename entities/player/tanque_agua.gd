@@ -7,22 +7,10 @@ signal empty()
 var current_water: float = 100.0
 var can_reload: bool = false
 
-func _ready() -> void:
-	var agua = get_tree().get_first_node_in_group("Agua")
-	agua.body_entered.connect(_on_enter_water)
-	agua.body_exited.connect(_on_leave_water)
-
 func _process(delta: float) -> void: #desesperado, pero funciona por ahora.
 	if Input.is_action_pressed("reload_water"):
-		reload(0.2)
-
-func _on_enter_water(body: Node2D) -> void:
-	if body.is_in_group("Player"): #Verificar si quien entró es el jugador
-		can_reload = true
-
-func _on_leave_water(body: Node2D) -> void:
-	if body.is_in_group("Player"): #Verificar si quien salió es el jugador
-		can_reload = false
+		if can_reload:
+			reload(0.2)
 
 func consume(amount: float) -> void:
 	if current_water <= 0: return
@@ -37,8 +25,6 @@ func consume(amount: float) -> void:
 		emit_signal("empty")
 
 func reload(amount: float) -> void:
-	if !can_reload: return
-	
 	if current_water == max_water: return # si ya está lleno, no hacer nada :)
 	
 	current_water += amount # pensaba que, en vez de recargar todo de una, que tenga que llenar progresivamente el tanque

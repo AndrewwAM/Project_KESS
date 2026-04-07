@@ -2380,7 +2380,6 @@ position = Vector2(966, 300)
 shape = SubResource("RectangleShape2D_irqx2")
 
 [node name="Player" parent="." unique_id=1288290645 instance=ExtResource("79_6pr64")]
-visible = false
 position = Vector2(230, 110)
 
 [node name="RechargeZones" type="Area2D" parent="." unique_id=215221725 groups=["Agua"]]
