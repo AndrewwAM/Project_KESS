@@ -22,6 +22,8 @@ var player: Node2D = null
 var time_passed: float = 0.0
 var hit_tween: Tween
 
+signal enemy_defeated
+
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("Player")
 

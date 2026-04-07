@@ -10,17 +10,17 @@ var health: int = 5
 var max_health: int = 5
 var score: int = 0 # pal gameover
 var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
-var water_max: float = 100.0 
+var water_max: float = 100.0
 var current_wave: int = 0 # pal gamover
 var current_kills: int = 0
 
 # --- Señales ---
 # Por lo que sé, estas cosas son ANUNCIOS de cambios de variables.
 signal health_changed(new_health: int)
-signal water_changed(new_amount: float) 
+signal water_changed(new_amount: float)
 signal score_changed(new_score: int)
 signal wave_changed(new_wave: int)
-signal damage_changed(new_damage: int)
+# signal damage_changed(new_damage: int)
 signal kill_count_changed(new_kills: int)
 signal game_over()
 signal game_won()
@@ -47,7 +47,7 @@ func take_damage(amount: int) -> void:
 	damage_taken += 1
 	#if health <= 0:
 		#trigger_game_over()
-	
+
 func heal(amount: int) -> void:
 	health = clamp(health + amount, 0, max_health)
 	emit_signal("health_changed", health)
@@ -60,8 +60,8 @@ func next_wave() -> void:
 
 func add_kill() -> void:
 	current_kills += 1
-	emit_signal("kills_changed", current_kills)
-	
+	emit_signal("kill_count_changed", current_kills)
+
 
 # --- Transiciones ---
 func trigger_game_over() -> void:
