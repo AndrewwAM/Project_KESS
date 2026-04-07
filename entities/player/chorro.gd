@@ -153,6 +153,9 @@ func _unhandled_input(event: InputEvent) -> void:
 		stop_shooting()
 
 func _physics_process(delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
+
 	handle_rotation(delta)
 
 	if is_shooting:
