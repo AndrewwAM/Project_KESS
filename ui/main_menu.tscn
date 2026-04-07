@@ -1,0 +1,181 @@
+[gd_scene format=3 uid="uid://dl4um2dlbs7lq"]
+
+[ext_resource type="Script" uid="uid://c2sc51xdqlivf" path="res://ui/main_menu.gd" id="1_arv2f"]
+[ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="1_p8ri8"]
+[ext_resource type="FontFile" uid="uid://5yutc0plivp" path="res://ui/fonts/Kenney Future Narrow.ttf" id="1_ubpvv"]
+[ext_resource type="PackedScene" uid="uid://cmywpe60sf3vd" path="res://levels/maps/patio.tscn" id="2_5klac"]
+[ext_resource type="Texture2D" uid="uid://c6jssmlo5x3qa" path="res://ui/elements/green/button_rectangle_depth_flat.svg" id="2_ubpvv"]
+[ext_resource type="Texture2D" uid="uid://bu0mjy28pwtki" path="res://ui/elements/green/button_rectangle_flat.svg" id="3_arv2f"]
+[ext_resource type="Texture2D" uid="uid://d2f3ao6mej2uj" path="res://ui/elements/blue/button_rectangle_depth_flat.svg" id="5_arv2f"]
+[ext_resource type="Texture2D" uid="uid://kq6h6en7iawk" path="res://ui/elements/blue/button_rectangle_flat.svg" id="6_5klac"]
+[ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="6_jiymt"]
+[ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="7_bgtsx"]
+[ext_resource type="Texture2D" uid="uid://dj7x2w1lewocd" path="res://ui/elements/red/icon_cross.svg" id="11_lsdqh"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="12_jiymt"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lsdqh"]
+font = ExtResource("1_ubpvv")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_kaxbk"]
+font = ExtResource("1_p8ri8")
+
+[sub_resource type="LabelSettings" id="LabelSettings_jiymt"]
+font = ExtResource("1_p8ri8")
+font_size = 14
+
+[node name="MainMenu" type="Control" unique_id=429336859]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_arv2f")
+game_scene = ExtResource("2_5klac")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1526986287]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.16862746, 0.16862746, 0.16862746, 1)
+
+[node name="MainContainer" type="CenterContainer" parent="." unique_id=679398146]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Layout" type="VBoxContainer" parent="MainContainer" unique_id=1607546418]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MainContainer/Layout" unique_id=578103643]
+layout_mode = 2
+text = "Summer Survivors"
+label_settings = SubResource("LabelSettings_lsdqh")
+horizontal_alignment = 1
+
+[node name="Spacing" type="MarginContainer" parent="MainContainer/Layout" unique_id=1858652224]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Buttons" type="VBoxContainer" parent="MainContainer/Layout" unique_id=1204438847]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="StartButton" type="TextureButton" parent="MainContainer/Layout/Buttons" unique_id=422638608]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_ubpvv")
+texture_pressed = ExtResource("3_arv2f")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="StartLabel" type="Label" parent="MainContainer/Layout/Buttons/StartButton" unique_id=1418245580]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jugar"
+label_settings = SubResource("LabelSettings_kaxbk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsButton" type="TextureButton" parent="MainContainer/Layout/Buttons" unique_id=366714192]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+texture_normal = ExtResource("5_arv2f")
+texture_pressed = ExtResource("6_5klac")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CreditsLabel" type="Label" parent="MainContainer/Layout/Buttons/CreditsButton" unique_id=893147032]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Creditos"
+label_settings = SubResource("LabelSettings_kaxbk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="TextureButton" parent="MainContainer/Layout/Buttons" unique_id=1290689119]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_jiymt")
+texture_pressed = ExtResource("7_bgtsx")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="ExitLabel" type="Label" parent="MainContainer/Layout/Buttons/ExitButton" unique_id=75154266]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "SALIR"
+label_settings = SubResource("LabelSettings_kaxbk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsPanel" type="Panel" parent="." unique_id=1156307783]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.2
+anchor_right = 0.8
+anchor_bottom = 0.8
+offset_left = 0.0799942
+offset_top = 0.099998474
+offset_right = 0.07998657
+offset_bottom = -0.040008545
+
+[node name="ColorRect" type="ColorRect" parent="CreditsPanel" unique_id=94291196]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08627451, 0.08627451, 0.08627451, 1)
+
+[node name="CreditsText" type="Label" parent="CreditsPanel" unique_id=1374291498]
+layout_mode = 0
+offset_left = 19.920006
+offset_top = 0.9000015
+offset_right = 224.92001
+offset_bottom = 159.79999
+text = "Hecho por:
+- Cristobal Espinoza
+- Andrés Águila
+- Lucas Mosquera
+
+Agradeciemientos a:
+- www.kenney.nl"
+label_settings = SubResource("LabelSettings_jiymt")
+vertical_alignment = 1
+
+[node name="CloseCreditsButton" type="Button" parent="CreditsPanel" unique_id=414194656]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 6.0
+offset_right = 276.0
+offset_bottom = 32.0
+icon = ExtResource("11_lsdqh")
+
+[node name="UIClickSound" type="AudioStreamPlayer" parent="." unique_id=936067309]
+stream = ExtResource("12_jiymt")
