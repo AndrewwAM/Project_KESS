@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://1f6kkn87hfqv" path="res://entities/enemies/speed_enemy.tscn" id="4_rkhqv"]
 [ext_resource type="PackedScene" uid="uid://fpw4f0fa5yqx" path="res://entities/enemies/tank_enemy.tscn" id="5_gh2sf"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="6_h6ui8"]
+[ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="6_j0fve"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://ui/hud.tscn" id="7_ndmgu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1q3l"]
@@ -144,6 +145,9 @@ position = Vector2(489.5, 126)
 shape = SubResource("RectangleShape2D_gd8l3")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2032067051]
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=1777219579 instance=ExtResource("6_j0fve")]
+visible = false
 
 [node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("7_ndmgu")]
 

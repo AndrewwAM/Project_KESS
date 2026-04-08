@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="6_jiymt"]
 [ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="7_bgtsx"]
 [ext_resource type="Texture2D" uid="uid://dj7x2w1lewocd" path="res://ui/elements/red/icon_cross.svg" id="11_lsdqh"]
-[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/Sounds/click-a.ogg" id="12_jiymt"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="12_jiymt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lsdqh"]
 font = ExtResource("1_ubpvv")
