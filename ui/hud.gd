@@ -3,16 +3,19 @@ extends Node2D
 @export var cone_icon: Texture2D
 @export var laser_icon: Texture2D
 @export var changing_mode_icon: Texture2D
-
 @onready var mode_icon_rect: TextureRect = $WaterBar/ModeIcon
 
-# Cuántos corazones tiene el jugador como máximo
-const MAX_HEALTH = 5
+@onready var health_bar: ProgressBar = $HealthBar/ProgressBar
+@onready var health_label: Label = $HealthBar/HealthLabel
+
+@onready var water_bar: ProgressBar = $WaterBar/ProgressBar
+@onready var water_label: Label = $WaterBar/WaterLabel
 
 func _ready() -> void:
 	# Inicializar valores visuales con los valores actuales del GameManager
-	$WaterBar/ProgressBar.max_value = GameManager.water_max
-	$WaterBar/ProgressBar.value = GameManager.water_amount
+	water_bar.max_value = GameManager.water_max
+	water_bar.value = GameManager.water_amount
+	water_label.text = str(int(GameManager.water_amount)) + " / " + str(int(GameManager.water_max))
 	$Score.text = "Score: " + str(GameManager.score)
 
 	GameManager.score_changed.connect(_on_score_changed)
@@ -29,22 +32,23 @@ func _ready() -> void:
 
 	_on_mode_changed(chorro.current_mode, chorro.is_switching)
 
+	player.health_changed.connect(_on_health_changed)
+	_on_health_changed(player.current_health, player.max_health)
 
 # Se ejecuta cada vez que GameManager emite water_changed
 func _on_water_changed(new_amount: float) -> void:
-	$WaterBar/ProgressBar.value = new_amount
+	water_bar.value = new_amount
+	water_label.text = str(int(new_amount)) + " / " + str(int(GameManager.water_max))
 
 # Se ejecuta cada vez que GameManager emite score_changed
 func _on_score_changed(new_score: int) -> void:
 	$Score.text = "Score: " + str(new_score)
 
 # Se ejecuta cada vez que GameManager emite health_changed
-func _on_health_changed(new_health: int) -> void:
-	# Recorre los 5 corazones y muestra u oculta según la vida actual
-	for i in range(MAX_HEALTH):
-		# get_child(i) obtiene el hijo número i del HBoxContainer
-		var heart = $Health.get_child(i)
-		heart.visible = i < new_health
+func _on_health_changed(current_health: float, max_health: float) -> void:
+	health_bar.value = current_health
+	health_bar.max_value = max_health
+	health_label.text = str(int(current_health)) + " / " + str(int(max_health))
 
 func _on_mode_changed(new_mode: int, is_switching: bool) -> void:
 	if is_switching:

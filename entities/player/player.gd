@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var life: float = 100.0
+@export var max_health: float = 100.0
 @export var speed: float = 150.0
 @onready var camera: Camera2D = $Camera2D
 
@@ -18,6 +18,9 @@ var knockback_velocity: Vector2 = Vector2.ZERO
 
 var last_direction: String = "down"
 var is_shooting: bool = false
+var current_health: float = max_health
+
+signal health_changed(current_health: float, max_health: float)
 
 func _process(_delta: float) -> void:
 	is_shooting = Input.is_action_pressed("shoot_main")
@@ -75,9 +78,11 @@ func get_cardinal_direction(direction: Vector2) -> String:
 		return "left"
 
 func take_damage(amount: float) -> void:
-	life -= amount
-	print("Player took damage, life now: ", life)
-	if life <= 0:
+	current_health -= amount
+
+	emit_signal("health_changed", current_health, max_health)
+
+	if current_health <= 0:
 		GameManager.trigger_game_over()
 		hide()
 		set_physics_process(false)

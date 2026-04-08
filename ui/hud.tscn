@@ -4,9 +4,23 @@
 [ext_resource type="Texture2D" uid="uid://dqflle1ltr82p" path="res://entities/player/cone_icon.png" id="2_546lt"]
 [ext_resource type="Texture2D" uid="uid://b3yta1lsto00n" path="res://entities/player/laser_icon.png" id="3_7ihmi"]
 [ext_resource type="Texture2D" uid="uid://p3uikft7tbr5" path="res://entities/player/changing_mode_icon.png" id="4_7ihmi"]
+[ext_resource type="FontFile" uid="uid://5yutc0plivp" path="res://ui/fonts/Kenney Future Narrow.ttf" id="5_en2x2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_en2x2"]
+bg_color = Color(0.36, 0.2196, 0.12600002, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wh2we"]
 bg_color = Color(0.047058824, 0.40784314, 0.85490197, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_q43x7"]
+font = ExtResource("5_en2x2")
+font_size = 13
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q43x7"]
+bg_color = Color(0.36078432, 0.21960784, 0.1254902, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1v5rv"]
+bg_color = Color(0.81, 0.14580001, 0.21221992, 1)
 
 [node name="Hud" type="Node2D" unique_id=360316666]
 script = ExtResource("1_0mwgc")
@@ -24,40 +38,9 @@ offset_bottom = 29.0
 mouse_filter = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="background" type="ColorRect" parent="WaterBar" unique_id=1891489357]
+[node name="Background" type="ColorRect" parent="WaterBar" unique_id=1891489357]
 layout_mode = 0
 offset_right = 111.0
-offset_bottom = 20.0
-color = Color(0.17641911, 0.17641908, 0.17641908, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect" type="ColorRect" parent="WaterBar" unique_id=1881814091]
-layout_mode = 0
-offset_right = 3.0
-offset_bottom = 20.0
-color = Color(0.52156866, 0.31764707, 0.18039216, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect" type="ColorRect" parent="WaterBar/ColorRect" unique_id=635471442]
-layout_mode = 0
-offset_left = 108.0
-offset_right = 111.0
-offset_bottom = 20.0
-color = Color(0.51992935, 0.31875002, 0.1809732, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect3" type="ColorRect" parent="WaterBar" unique_id=121213428]
-layout_mode = 0
-offset_left = 3.0
-offset_right = 108.0
-offset_bottom = 3.0
-color = Color(0.52156866, 0.31764707, 0.18039216, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="ColorRect3" type="ColorRect" parent="WaterBar/ColorRect3" unique_id=1404784257]
-layout_mode = 0
-offset_top = 17.0
-offset_right = 105.0
 offset_bottom = 20.0
 color = Color(0.52156866, 0.31764707, 0.18039216, 1)
 metadata/_edit_use_anchors_ = true
@@ -68,8 +51,9 @@ offset_left = 3.0
 offset_top = 3.0
 offset_right = 108.0
 offset_bottom = 17.0
+theme_override_styles/background = SubResource("StyleBoxFlat_en2x2")
 theme_override_styles/fill = SubResource("StyleBoxFlat_wh2we")
-value = 100.0
+value = 50.0
 show_percentage = false
 metadata/_edit_use_anchors_ = true
 
@@ -82,37 +66,55 @@ texture = ExtResource("2_546lt")
 expand_mode = 1
 stretch_mode = 4
 
-[node name="Health" type="HBoxContainer" parent="." unique_id=29275113]
+[node name="WaterLabel" type="Label" parent="WaterBar" unique_id=1569529135]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "100/100"
+label_settings = SubResource("LabelSettings_q43x7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HealthBar" type="Control" parent="." unique_id=1534351813]
+layout_mode = 3
+anchors_preset = 0
 offset_left = 9.0
-offset_top = 40.0
-offset_right = 100.0
-offset_bottom = 55.0
-mouse_filter = 2
+offset_top = 36.0
+offset_right = 120.0
+offset_bottom = 56.0
 
-[node name="ColorRect" type="ColorRect" parent="Health" unique_id=1915739787]
-custom_minimum_size = Vector2(15, 15)
-layout_mode = 2
-color = Color(1, 0, 0, 1)
+[node name="Background" type="ColorRect" parent="HealthBar" unique_id=916792409]
+layout_mode = 0
+offset_right = 111.0
+offset_bottom = 20.0
+color = Color(0.52156866, 0.31764707, 0.18039216, 1)
+metadata/_edit_use_anchors_ = true
 
-[node name="ColorRect2" type="ColorRect" parent="Health" unique_id=1581849853]
-custom_minimum_size = Vector2(15, 15)
-layout_mode = 2
-color = Color(1, 0, 0, 1)
+[node name="ProgressBar" type="ProgressBar" parent="HealthBar" unique_id=592551229]
+layout_mode = 1
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 108.0
+offset_bottom = 17.0
+theme_override_styles/background = SubResource("StyleBoxFlat_q43x7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_1v5rv")
+value = 100.0
+show_percentage = false
 
-[node name="ColorRect3" type="ColorRect" parent="Health" unique_id=1004020576]
-custom_minimum_size = Vector2(15, 15)
-layout_mode = 2
-color = Color(1, 0, 0, 1)
-
-[node name="ColorRect4" type="ColorRect" parent="Health" unique_id=439643124]
-custom_minimum_size = Vector2(15, 15)
-layout_mode = 2
-color = Color(1, 0, 0, 1)
-
-[node name="ColorRect5" type="ColorRect" parent="Health" unique_id=574923938]
-custom_minimum_size = Vector2(15, 15)
-layout_mode = 2
-color = Color(1, 0, 0, 1)
+[node name="HealthLabel" type="Label" parent="HealthBar" unique_id=2084206300]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "100/100"
+label_settings = SubResource("LabelSettings_q43x7")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Score" type="Label" parent="." unique_id=916535230]
 offset_left = 12.0
