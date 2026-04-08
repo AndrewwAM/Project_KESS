@@ -77,11 +77,16 @@ enum Modo {Cono, Laser}
 		laser_particle_lifetime_ratio = value
 		actualizar_laser()
 
+@export var laser_knockback_force: float = 1500.0
+
+var player: Node2D = null
+
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		actualizar_cono()
 		return
 
+	player = get_tree().get_first_node_in_group("Player")
 	laser_line.visible = false
 	cone_water_particles.emitting = false
 	stop_shooting()
@@ -89,7 +94,7 @@ func _ready() -> void:
 
 
 func actualizar_cono() -> void:
-	if not is_node_ready() or cone_mode == null:
+	if not is_node_ready() or cone_mode == null or player == null:
 		return
 
 	for child in cone_mode.get_children():
@@ -117,7 +122,7 @@ func actualizar_cono() -> void:
 		cone_water_particles.lifetime = (ray_length / cone_particle_speed) * cone_particle_lifetime_ratio
 
 func actualizar_laser() -> void:
-	if not is_node_ready() or laser_hitbox == null or laser_line == null:
+	if not is_node_ready() or laser_hitbox == null or laser_line == null or player == null:
 		print("No se puede actualizar el laser")
 		return
 	var shape = laser_hitbox.shape as RectangleShape2D
@@ -160,6 +165,7 @@ func _physics_process(delta: float) -> void:
 
 	if is_shooting:
 		apply_water_damage(delta)
+		apply_knockback(delta)
 
 func handle_rotation(delta: float) -> void:
 	if not pivot:
@@ -268,3 +274,10 @@ func apply_water_damage(delta: float) -> void:
 
 	else:
 		stop_shooting()
+
+func apply_knockback(delta: float) -> void:
+	if current_mode != PressureMode.LASER:
+		return
+
+	var knockback_dir = Vector2.LEFT.rotated(pivot.global_rotation)
+	player.knockback_velocity += knockback_dir * laser_knockback_force * delta

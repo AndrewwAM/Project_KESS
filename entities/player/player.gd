@@ -10,6 +10,10 @@ extends CharacterBody2D
 @export var camera_deadzone: float = 40.0 # El radio donde la cámara no se mueve
 @export var camera_smooth_speed: float = 8.0 # Qué tan rápido se suaviza el offset
 
+@export_group("Physics")
+@export var knockback_force: float = 10.0
+var knockback_velocity: Vector2 = Vector2.ZERO
+
 @onready var Animator: AnimatedSprite2D = $AnimatedSprite2D
 
 var last_direction: String = "down"
@@ -20,7 +24,8 @@ func _process(_delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("player_move_left", "player_move_right", "player_move_up", "player_move_down")
-	velocity = direction * speed
+	knockback_velocity = knockback_velocity.lerp(Vector2.ZERO, knockback_force * delta)
+	velocity = (direction * speed) + knockback_velocity
 	move_and_slide()
 
 	actualizar_camara(delta)
@@ -52,7 +57,7 @@ func update_animation(move_dir: Vector2, aim_dir: Vector2) -> void:
 		animation_direction = get_cardinal_direction(move_dir)
 		last_direction = animation_direction
 
-	if move_dir == Vector2.ZERO and not is_shooting:
+	if move_dir == Vector2.ZERO:
 		Animator.play("idle_" + animation_direction)
 	else:
 		Animator.play("player_move_" + animation_direction)
