@@ -4,12 +4,16 @@
 [ext_resource type="Script" uid="uid://djd4lhhssfn2t" path="res://autoloads/game_manager.gd" id="1_rkhqv"]
 [ext_resource type="Script" uid="uid://dphvr7ijr7lcv" path="res://levels/mechanics/water.gd" id="2_j0fve"]
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="3_rsvi7"]
+[ext_resource type="PackedScene" uid="uid://dvuoncnfp0hyo" path="res://levels/mechanics/recharg_zone.tscn" id="4_gh2sf"]
 [ext_resource type="PackedScene" uid="uid://1f6kkn87hfqv" path="res://entities/enemies/speed_enemy.tscn" id="4_rkhqv"]
 [ext_resource type="PackedScene" uid="uid://fpw4f0fa5yqx" path="res://entities/enemies/tank_enemy.tscn" id="5_gh2sf"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="6_h6ui8"]
 [ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="6_j0fve"]
 [ext_resource type="PackedScene" uid="uid://uowd5d88lvv3" path="res://ui/game_over_screen.tscn" id="6_rsvi7"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://ui/hud.tscn" id="7_ndmgu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ui8"]
+size = Vector2(47, 280)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1q3l"]
 size = Vector2(33, 109)
@@ -99,6 +103,12 @@ color = Color(0.039215688, 1, 1, 1)
 [node name="RechargeZones" type="Area2D" parent="." unique_id=905874008 groups=["Agua"]]
 collision_mask = 2
 script = ExtResource("2_j0fve")
+
+[node name="RechargZone" parent="RechargeZones" unique_id=619454915 instance=ExtResource("4_gh2sf")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RechargeZones/RechargZone" unique_id=1059962282]
+position = Vector2(256.5, 135)
+shape = SubResource("RectangleShape2D_h6ui8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RechargeZones" unique_id=1306109417]
 position = Vector2(256.5, 54.5)

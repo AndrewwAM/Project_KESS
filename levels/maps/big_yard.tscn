@@ -1,9 +1,13 @@
 [gd_scene format=4 uid="uid://mev8durgyrr4"]
 
+[ext_resource type="Script" uid="uid://djd4lhhssfn2t" path="res://autoloads/game_manager.gd" id="1_e5088"]
 [ext_resource type="Texture2D" uid="uid://cdxxpfnawhthe" path="res://levels/tilesets/Tileset_Ground.png" id="1_rb63n"]
 [ext_resource type="Texture2D" uid="uid://dxebtgqpxwvja" path="res://levels/tilesets/Tileset_Road.png" id="2_mqsvg"]
 [ext_resource type="Texture2D" uid="uid://b6jo2trbvnhsy" path="res://levels/tilesets/Tileset_Water.png" id="3_khace"]
 [ext_resource type="Texture2D" uid="uid://kqftstrwkeod" path="res://levels/tilesets/Tileset_Shadow.png" id="4_4am2k"]
+[ext_resource type="PackedScene" uid="uid://dvuoncnfp0hyo" path="res://levels/mechanics/recharg_zone.tscn" id="8_syceq"]
+[ext_resource type="PackedScene" uid="uid://uowd5d88lvv3" path="res://ui/game_over_screen.tscn" id="11_syceq"]
+[ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="12_2ttd4"]
 [ext_resource type="Texture2D" uid="uid://dsx6wwi6355es" path="res://levels/tilesets/Trees_Bushes.png" id="77_uonvw"]
 [ext_resource type="Texture2D" uid="uid://rhsi5sphno63" path="res://levels/tilesets/Rocks.png" id="78_luh8l"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="79_6pr64"]
@@ -1819,6 +1823,9 @@ distance = 9.25
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_2idnh"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_2ttd4"]
+radius = 78.10249
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d8dj5"]
 radius = 8.0
 height = 32.0
@@ -2007,8 +2014,11 @@ radius = 7.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_buiq7"]
 radius = 8.0
 
-[node name="BigYard" type="Node2D" unique_id=740542095]
+[node name="BigYard" type="Node2D" unique_id=740542095 node_paths=PackedStringArray("player", "game_over_screen")]
 y_sort_enabled = true
+script = ExtResource("1_e5088")
+player = NodePath("Player")
+game_over_screen = NodePath("CanvasLayer/GameOverScreen")
 
 [node name="MAP" type="Node2D" parent="." unique_id=796414050]
 y_sort_enabled = true
@@ -2049,12 +2059,12 @@ tile_map_data = PackedByteArray("AAAbABkAAAADAAMAAAAaABkAAAACAAMAAAAYABcAAAAAAAE
 tile_set = SubResource("TileSet_3n7x1")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=502783487]
-visible = false
 z_index = 2
 position = Vector2(-207, 135)
 navigation_polygon = SubResource("NavigationPolygon_4am2k")
 
 [node name="Bordes" type="StaticBody2D" parent="NavigationRegion2D" unique_id=1023023654]
+visible = false
 position = Vector2(213, -139)
 
 [node name="BordeNorte" type="CollisionShape2D" parent="NavigationRegion2D/Bordes" unique_id=2079286911]
@@ -2074,30 +2084,69 @@ position = Vector2(205, 717)
 shape = SubResource("WorldBoundaryShape2D_2idnh")
 
 [node name="Agua" type="StaticBody2D" parent="NavigationRegion2D" unique_id=513647110]
-visible = false
 position = Vector2(-255, -174)
 
 [node name="Colision Agua4" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=1713222361]
+visible = false
 position = Vector2(1113, 660)
 polygon = PackedVector2Array(8, -122.5, 48, -122.5, 48, -138.5, 80, -138.5, 80, -169.5, 96, -169.5, 96, -214.5, 80, -214.5, 80, -244.5, 49, -244.5, 49, -261.5, 8, -260.5, 8, -244.5, -24, -244.5, -24, -212.5, -40, -212.5, -40, -170.5, -24, -170.5, -24, -138.5, 8, -138.5)
 
+[node name="RechargZone" parent="NavigationRegion2D/Agua/Colision Agua4" unique_id=619454915 instance=ExtResource("8_syceq")]
+position = Vector2(274.0728, -315.91852)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/Agua/Colision Agua4/RechargZone" unique_id=1383334489]
+position = Vector2(-246.07281, 124.4185)
+shape = SubResource("CircleShape2D_2ttd4")
+
 [node name="Colision Agua" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=746263628]
+visible = false
 position = Vector2(186, 355.5)
 polygon = PackedVector2Array(8, -122.5, 48, -122.5, 48, -138.5, 80, -138.5, 80, -169.5, 96, -169.5, 96, -214.5, 80, -214.5, 80, -244.5, 49, -244.5, 49, -261.5, 8, -260.5, 8, -244.5, -24, -244.5, -24, -212.5, -40, -212.5, -40, -170.5, -24, -170.5, -24, -138.5, 8, -138.5)
+
+[node name="RechargZone" parent="NavigationRegion2D/Agua/Colision Agua" unique_id=2140101603 instance=ExtResource("8_syceq")]
+position = Vector2(274.0728, -315.91852)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/Agua/Colision Agua/RechargZone" unique_id=290084708]
+position = Vector2(-246.07281, 124.4185)
+shape = SubResource("CircleShape2D_2ttd4")
 
 [node name="Colision Agua2" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=1008125798]
 position = Vector2(372, 711)
 polygon = PackedVector2Array(45, -109.5, 85, -109.5, 85, -125.5, 117, -125.5, 117, -156.5, 133, -156.5, 133, -201.5, 117, -201.5, 117, -231.5, 86, -231.5, 86, -248.5, 45, -247.5, 45, -231.5, 13, -231.5, 13, -199.5, -3, -199.5, -3, -157.5, 13, -157.5, 13, -125.5, 45, -125.5)
 
+[node name="RechargZone" parent="NavigationRegion2D/Agua/Colision Agua2" unique_id=1208250475 instance=ExtResource("8_syceq")]
+visible = false
+position = Vector2(274.0728, -315.91852)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/Agua/Colision Agua2/RechargZone" unique_id=1722070326]
+position = Vector2(-209.07281, 134.9185)
+shape = SubResource("CircleShape2D_2ttd4")
+
 [node name="Colision Agua3" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=463621727]
 position = Vector2(372, 710)
 polygon = PackedVector2Array(446, -269.5, 486, -269.5, 486, -285.5, 518, -285.5, 518, -316.5, 534, -316.5, 534, -361.5, 518, -361.5, 518, -391.5, 487, -391.5, 487, -408.5, 446, -407.5, 446, -391.5, 414, -391.5, 414, -359.5, 398, -359.5, 398, -317.5, 414, -317.5, 414, -285.5, 446, -285.5)
+
+[node name="RechargZone" parent="NavigationRegion2D/Agua/Colision Agua3" unique_id=1650415837 instance=ExtResource("8_syceq")]
+visible = false
+position = Vector2(274.0728, -315.91852)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/Agua/Colision Agua3/RechargZone" unique_id=1962986233]
+position = Vector2(191.92719, -23.081497)
+shape = SubResource("CircleShape2D_2ttd4")
 
 [node name="Colision Agua5" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=633805439]
 position = Vector2(1033, 355)
 polygon = PackedVector2Array(8, -122.5, 48, -122.5, 48, -138.5, 80, -138.5, 80, -169.5, 96, -169.5, 96, -214.5, 80, -214.5, 80, -244.5, 49, -244.5, 49, -261.5, 8, -260.5, 8, -244.5, -24, -244.5, -24, -212.5, -40, -212.5, -40, -170.5, -24, -170.5, -24, -138.5, 8, -138.5)
 
+[node name="RechargZone" parent="NavigationRegion2D/Agua/Colision Agua5" unique_id=2053311220 instance=ExtResource("8_syceq")]
+position = Vector2(274.0728, -315.91852)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NavigationRegion2D/Agua/Colision Agua5/RechargZone" unique_id=2113169661]
+position = Vector2(-244.07281, 122.91852)
+shape = SubResource("CircleShape2D_2ttd4")
+
 [node name="Obstáculos" type="StaticBody2D" parent="NavigationRegion2D" unique_id=62517597]
+visible = false
 
 [node name="CollisionShape2D42" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=1034595808]
 position = Vector2(823, 380)
@@ -2392,3 +2441,9 @@ polygon = PackedVector2Array(-20, -61, -20, -45, -52, -45, -52, -13, -68, -13, -
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1915508001]
 
 [node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("81_2667m")]
+
+[node name="GameOverScreen" parent="CanvasLayer" unique_id=1587844308 instance=ExtResource("11_syceq")]
+visible = false
+
+[node name="PauseMenu" parent="CanvasLayer" unique_id=1777219579 instance=ExtResource("12_2ttd4")]
+visible = false

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dvuoncnfp0hyo"]
+
+[ext_resource type="Script" uid="uid://cmlpowd6whx3t" path="res://levels/mechanics/recharg_zone.gd" id="1_hlpay"]
+
+[node name="RechargZone" type="Area2D" unique_id=619454915]
+collision_mask = 2
+script = ExtResource("1_hlpay")

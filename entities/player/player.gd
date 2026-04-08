@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var max_health: float = 100.0
 @export var speed: float = 150.0
+@export var charge_speed: float = 20.0
 @onready var camera: Camera2D = $Camera2D
 
 @export_group("Configuración de Cámara")
@@ -15,15 +16,31 @@ extends CharacterBody2D
 var knockback_velocity: Vector2 = Vector2.ZERO
 
 @onready var Animator: AnimatedSprite2D = $AnimatedSprite2D
+@onready var tanque = $TanqueAgua
+@onready var chorro = $WeaponPivot/Chorro
 
 var last_direction: String = "down"
 var is_shooting: bool = false
+var is_reloading: bool = false
 var current_health: float = max_health
 
 signal health_changed(current_health: float, max_health: float)
 
-func _process(_delta: float) -> void:
-	is_shooting = Input.is_action_pressed("shoot_main")
+func _process(delta: float) -> void:
+	var reload_input = Input.is_action_pressed("reload_water")
+
+	if reload_input and not chorro.is_shooting and tanque.can_reload and not tanque.is_full():
+		is_reloading = true
+		tanque.reload(charge_speed * delta)
+	else:
+		is_reloading = false
+
+	if Input.is_action_pressed("shoot_main") and not is_reloading and tanque.has_water():
+		if not chorro.is_shooting:
+			chorro.start_shooting()
+	else:
+		if chorro.is_shooting:
+			chorro.stop_shooting()
 
 func _physics_process(delta: float) -> void:
 	var direction = Input.get_vector("player_move_left", "player_move_right", "player_move_up", "player_move_down")

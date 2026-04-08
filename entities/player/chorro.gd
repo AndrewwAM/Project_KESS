@@ -140,24 +140,22 @@ func actualizar_laser() -> void:
 			laser_line.add_point(Vector2.RIGHT * laser_length)
 
 func _unhandled_input(event: InputEvent) -> void:
+	if Engine.is_editor_hint():
+		return
+
 	# Cambiar modo con clic derecho
 	if event.is_action_pressed("shoot_alt") and !is_switching:
-		print("switching")
+		if player and player.get("is_reloading"):
+			return
+
 		is_switching = true
 		mode_changed.emit(current_mode, is_switching)
 		pause_shooting()
-		await get_tree().create_timer(switch_cooldown).timeout
-		print("switched")
-		is_switching=false
-		toggle_mode()
 
-	# Disparar con clic izquierdo (mantener)
-	if event.is_action_pressed("shoot_main"):
-		print("trying to shoot!")
-		if tanque.has_water():
-			start_shooting()
-	elif event.is_action_released("shoot_main"):
-		stop_shooting()
+		await get_tree().create_timer(switch_cooldown).timeout
+
+		is_switching = false
+		toggle_mode()
 
 func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
