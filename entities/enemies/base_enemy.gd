@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var life: float = 100.0
 @export var speed: float = 50.0
+@export var dps: float = 10.0
 @export var path_update_interval: float = 0.2
 var path_update_timer: float = 0.0
 
@@ -13,10 +14,9 @@ var path_update_timer: float = 0.0
 @export var immune_to_cone: bool = false
 @export var immune_to_laser: bool = false
 
-
-
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
+@onready var hitbox: Area2D = $Hitbox
 
 var player: Node2D = null
 var time_passed: float = 0.0
@@ -31,12 +31,12 @@ func _ready() -> void:
 	nav_agent.path_desired_distance = 4.0
 	nav_agent.target_desired_distance = 4.0
 
-func _physics_process(_delta: float) -> void:
+func _physics_process(delta: float) -> void:
 	if player == null:
 		return
 
 	# mejor pathfinding
-	path_update_timer += _delta
+	path_update_timer += delta
 	if path_update_timer >= path_update_interval:
 		nav_agent.target_position = player.global_position
 		path_update_timer = 0.0
@@ -52,6 +52,7 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * speed
 
 	move_and_slide()
+	_apply_damage(delta)
 
 func _process(delta: float) -> void:
 	var current_speed: float = get_real_velocity().length()
@@ -83,3 +84,9 @@ func _flash_damage() -> void:
 	hit_tween = create_tween()
 	sprite.modulate = Color.BLUE
 	hit_tween.tween_property(sprite, "modulate", Color.WHITE, 0.15)
+
+func _apply_damage(delta: float) -> void:
+	var bodies = hitbox.get_overlapping_bodies()
+	for body in bodies:
+		if body.has_method("take_damage"):
+			body.take_damage(dps * delta)

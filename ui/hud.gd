@@ -16,7 +16,6 @@ func _ready() -> void:
 	$Score.text = "Score: " + str(GameManager.score)
 
 	GameManager.score_changed.connect(_on_score_changed)
-	GameManager.health_changed.connect(_on_health_changed)
 
 	# Conectar señales
 	var player = get_tree().get_first_node_in_group("Player")

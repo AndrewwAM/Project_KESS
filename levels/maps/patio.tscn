@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://cmywpe60sf3vd"]
 
 [ext_resource type="PackedScene" uid="uid://ddm8ymoleugj3" path="res://levels/mechanics/spawner.tscn" id="1_g2ike"]
+[ext_resource type="Script" uid="uid://djd4lhhssfn2t" path="res://autoloads/game_manager.gd" id="1_rkhqv"]
 [ext_resource type="Script" uid="uid://dphvr7ijr7lcv" path="res://levels/mechanics/water.gd" id="2_j0fve"]
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="3_rsvi7"]
 [ext_resource type="PackedScene" uid="uid://1f6kkn87hfqv" path="res://entities/enemies/speed_enemy.tscn" id="4_rkhqv"]
 [ext_resource type="PackedScene" uid="uid://fpw4f0fa5yqx" path="res://entities/enemies/tank_enemy.tscn" id="5_gh2sf"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="6_h6ui8"]
 [ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="6_j0fve"]
+[ext_resource type="PackedScene" uid="uid://uowd5d88lvv3" path="res://ui/game_over_screen.tscn" id="6_rsvi7"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://ui/hud.tscn" id="7_ndmgu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_w1q3l"]
@@ -40,7 +42,10 @@ size = Vector2(498.5, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gd8l3"]
 size = Vector2(19, 294)
 
-[node name="Patio" type="Node2D" unique_id=1762634537]
+[node name="Patio" type="Node2D" unique_id=1762634537 node_paths=PackedStringArray("player", "game_over_screen")]
+script = ExtResource("1_rkhqv")
+player = NodePath("Player")
+game_over_screen = NodePath("CanvasLayer/GameOverScreen")
 
 [node name="SpawnerBasicos" parent="." unique_id=1968834125 instance=ExtResource("1_g2ike")]
 position = Vector2(360, 180)
@@ -145,6 +150,9 @@ position = Vector2(489.5, 126)
 shape = SubResource("RectangleShape2D_gd8l3")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2032067051]
+
+[node name="GameOverScreen" parent="CanvasLayer" unique_id=1587844308 instance=ExtResource("6_rsvi7")]
+visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1777219579 instance=ExtResource("6_j0fve")]
 visible = false

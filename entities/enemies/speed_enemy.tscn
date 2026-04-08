@@ -6,6 +6,7 @@
 scale = Vector2(0.8, 0.8)
 life = 30.0
 speed = 100.0
+dps = 5.0
 wobble_angle = 45.0
 wobble_speed = 1.0
 immune_to_laser = true

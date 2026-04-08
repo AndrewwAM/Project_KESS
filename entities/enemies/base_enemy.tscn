@@ -38,6 +38,7 @@ shape = SubResource("RectangleShape2D_ocmy6")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=519417134]
 visible = false
+collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=222664422]
 position = Vector2(1.1920929e-06, 1.1920929e-06)

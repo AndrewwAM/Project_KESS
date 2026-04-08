@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://uowd5d88lvv3"]
+
+[ext_resource type="Script" uid="uid://b6t37ucev57ae" path="res://ui/game_over_screen.gd" id="1_0dv5y"]
+[ext_resource type="FontFile" uid="uid://5yutc0plivp" path="res://ui/fonts/Kenney Future Narrow.ttf" id="1_sq8h3"]
+[ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="2_0dv5y"]
+[ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="3_mkoo4"]
+[ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="4_u68fc"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="5_tlk4d"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_5ybwy"]
+font = ExtResource("1_sq8h3")
+font_size = 21
+font_color = Color(0.93333334, 0.15294118, 0.2784314, 1)
+outline_size = 3
+outline_color = Color(0.8039216, 0.043137256, 0.16470589, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3bi63"]
+font = ExtResource("4_u68fc")
+
+[node name="GameOverScreen" type="CanvasLayer" unique_id=1587844308]
+process_mode = 3
+script = ExtResource("1_0dv5y")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1136382388]
+custom_minimum_size = Vector2(200, 100)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5019608)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=66717240]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -33.0
+offset_right = 62.0
+offset_bottom = 33.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GameOverLabel" type="Label" parent="ColorRect/VBoxContainer" unique_id=490619842]
+layout_mode = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_5ybwy")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuButton" type="TextureButton" parent="ColorRect/VBoxContainer" unique_id=1338881826]
+custom_minimum_size = Vector2(180, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("2_0dv5y")
+texture_pressed = ExtResource("3_mkoo4")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MainMenuLabel" type="Label" parent="ColorRect/VBoxContainer/MainMenuButton" unique_id=824712990]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "menú principal"
+label_settings = SubResource("LabelSettings_3bi63")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UIClickSound" type="AudioStreamPlayer" parent="." unique_id=411694628]
+stream = ExtResource("5_tlk4d")

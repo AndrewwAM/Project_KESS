@@ -73,3 +73,12 @@ func get_cardinal_direction(direction: Vector2) -> String:
 		return "up"
 	else:
 		return "left"
+
+func take_damage(amount: float) -> void:
+	life -= amount
+	print("Player took damage, life now: ", life)
+	if life <= 0:
+		GameManager.trigger_game_over()
+		hide()
+		set_physics_process(false)
+		set_process(false)

@@ -6,8 +6,6 @@ var state: GameState = GameState.PLAYING
 
 # Variables genéricas para trackear mas leseras :)
 var damage_taken: int = 0 # pal gameover
-var health: int = 5
-var max_health: int = 5
 var score: int = 0 # pal gameover
 var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
 var water_max: float = 100.0
@@ -19,7 +17,6 @@ var begin: bool = false
 
 # --- Señales ---
 # Por lo que sé, estas cosas son ANUNCIOS de cambios de variables.
-signal health_changed(new_health: int)
 signal water_changed(new_amount: float)
 signal score_changed(new_score: int)
 signal wave_changed(new_wave: int)
@@ -28,8 +25,8 @@ signal kill_count_changed(new_kills: int)
 signal game_over()
 signal game_won()
 
-
-
+@export var player: CharacterBody2D
+@export var game_over_screen: CanvasLayer
 
 # --- Agua ---
 # Acá es donde se pone divertida la cosa.
@@ -46,25 +43,12 @@ func add_score(points: int) -> void:
 	score += points
 	emit_signal("score_changed", score)
 
-# --- Daño ---
-func take_damage(amount: int) -> void:
-	health = clamp(health - amount, 0, max_health)
-	emit_signal("health_changed", health)
-	damage_taken += 1
-	#if health <= 0:
-		#trigger_game_over()
-
-func heal(amount: int) -> void:
-	health = clamp(health + amount, 0, max_health)
-	emit_signal("health_changed", health)
-
-
 # --- Oleadas ---
 func _ready() -> void:
 	if current_enemies <= 0:
 		next_wave()
-		
-		
+
+
 
 func next_wave() -> void:
 	current_wave += 1
@@ -97,4 +81,3 @@ func trigger_win() -> void:
 
 func restart() -> void:
 	get_tree().reload_current_scene()
-	
