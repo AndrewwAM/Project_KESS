@@ -1,19 +1,19 @@
 [gd_scene format=3 uid="uid://dbckofyj8auiy"]
 
-[ext_resource type="Texture2D" uid="uid://b3cxabd2gqxm" path="res://icon.svg" id="1_20vb3"]
 [ext_resource type="Script" uid="uid://dr8sflus8uibi" path="res://entities/enemies/base_enemy.gd" id="1_nwpjw"]
+[ext_resource type="Texture2D" uid="uid://dsx6wwi6355es" path="res://levels/tilesets/Trees_Bushes.png" id="2_nwpjw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_nwpjw"]
-radius = 40.0
+radius = 6.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ocmy6"]
-size = Vector2(133.33333, 133.33333)
+size = Vector2(16, 16)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_o6qfc"]
-radius = 60.0
+radius = 6.0
 
 [node name="BaseEnemy" type="CharacterBody2D" unique_id=1803823621]
-scale = Vector2(0.15, 0.15)
+scale = Vector2(0.5, 0.5)
 collision_layer = 4
 collision_mask = 5
 motion_mode = 1
@@ -21,7 +21,9 @@ script = ExtResource("1_nwpjw")
 wobble_speed = 0.1
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=929592925]
-texture = ExtResource("1_20vb3")
+texture = ExtResource("2_nwpjw")
+region_enabled = true
+region_rect = Rect2(291.00812, 1.870676, 40.10852, 29.316973)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=679577638]
 visible = false
@@ -31,7 +33,7 @@ shape = SubResource("CircleShape2D_nwpjw")
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=761721085]
-position = Vector2(1.390775e-06, -5.9604645e-07)
+position = Vector2(9.536743e-07, 0)
 shape = SubResource("RectangleShape2D_ocmy6")
 
 [node name="Hitbox" type="Area2D" parent="." unique_id=519417134]

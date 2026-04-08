@@ -81,5 +81,5 @@ func _flash_damage() -> void:
 		hit_tween.kill()
 
 	hit_tween = create_tween()
-	sprite.modulate = Color(0.8, 0.1, 0.1, 1.0)
+	sprite.modulate = Color.BLUE
 	hit_tween.tween_property(sprite, "modulate", Color.WHITE, 0.15)

@@ -2,9 +2,23 @@
 
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="1_dsk2p"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dsk2p"]
+radius = 16.0
+height = 48.0
+
 [node name="TankEnemy" unique_id=1803823621 instance=ExtResource("1_dsk2p")]
-scale = Vector2(0.25, 0.25)
+scale = Vector2(1, 1)
 life = 500.0
 speed = 10.0
 wobble_speed = 0.3
 immune_to_cone = true
+
+[node name="Sprite2D" parent="." index="0" unique_id=929592925]
+region_rect = Rect2(0.039505005, 0.83003235, 64.14162, 63.439117)
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=679577638]
+position = Vector2(0, 12)
+
+[node name="CollisionShape2D" parent="Hitbox" parent_id_path=PackedInt32Array(519417134) index="0" unique_id=222664422]
+position = Vector2(0, 4)
+shape = SubResource("CapsuleShape2D_dsk2p")

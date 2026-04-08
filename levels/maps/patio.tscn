@@ -43,13 +43,11 @@ size = Vector2(19, 294)
 
 [node name="SpawnerBasicos" parent="." unique_id=1968834125 instance=ExtResource("1_g2ike")]
 position = Vector2(360, 180)
-spawn_points = Array[Vector2]([Vector2(350, 90), Vector2(380, 100), Vector2(400, 130)])
 valid_waves = Array[int]([0, 1, 2, 3, 4])
 
 [node name="SpawnerTank" parent="." unique_id=666620450 instance=ExtResource("1_g2ike")]
 position = Vector2(360, 50)
 enemies_per_wave = 1
-spawn_points = Array[Vector2]([Vector2(300, 100)])
 max_waves = 4
 valid_waves = Array[int]([0, 1, 2])
 type = 2
@@ -110,9 +108,6 @@ position = Vector2(358, 130)
 [node name="SpeedEnemy" parent="." unique_id=982902031 instance=ExtResource("4_rkhqv")]
 position = Vector2(386, 202)
 
-[node name="TankEnemy" parent="." unique_id=457871494 instance=ExtResource("5_gh2sf")]
-position = Vector2(415, 100)
-
 [node name="Player" parent="." unique_id=1288290645 instance=ExtResource("6_h6ui8")]
 position = Vector2(136, 87)
 
@@ -151,3 +146,6 @@ shape = SubResource("RectangleShape2D_gd8l3")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2032067051]
 
 [node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("7_ndmgu")]
+
+[node name="TankEnemy" parent="." unique_id=1932620497 instance=ExtResource("5_gh2sf")]
+position = Vector2(422, 122)

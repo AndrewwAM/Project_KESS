@@ -3,8 +3,16 @@
 [ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="1_xlrrl"]
 
 [node name="SpeedEnemy" unique_id=1803823621 instance=ExtResource("1_xlrrl")]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.8, 0.8)
 life = 30.0
 speed = 100.0
-wobble_speed = 0.5
+wobble_angle = 45.0
+wobble_speed = 1.0
 immune_to_laser = true
+
+[node name="Sprite2D" parent="." index="0" unique_id=929592925]
+position = Vector2(-0.495, 0)
+region_rect = Rect2(48.98528, 81.83277, 14.071442, 14.183121)
+
+[node name="CollisionShape2D" parent="Hitbox" parent_id_path=PackedInt32Array(519417134) index="0" unique_id=222664422]
+position = Vector2(0, 0)
