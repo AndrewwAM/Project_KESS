@@ -1,12 +1,22 @@
 [gd_scene format=3 uid="uid://dn5fpd31io1jq"]
 
 [ext_resource type="Script" uid="uid://63gnwv8h6m6y" path="res://ui/pause_menu.gd" id="1_50142"]
-[ext_resource type="PackedScene" uid="uid://dl4um2dlbs7lq" path="res://ui/main_menu.tscn" id="2_ejwgg"]
+[ext_resource type="Texture2D" uid="uid://c6jssmlo5x3qa" path="res://ui/elements/green/button_rectangle_depth_flat.svg" id="2_6ap7o"]
+[ext_resource type="Texture2D" uid="uid://bu0mjy28pwtki" path="res://ui/elements/green/button_rectangle_flat.svg" id="3_j3kxr"]
+[ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="4_vovkw"]
+[ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="5_jyvtb"]
+[ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="6_fijdv"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="7_j3kxr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lpidc"]
+font = ExtResource("4_vovkw")
+
+[sub_resource type="LabelSettings" id="LabelSettings_b1mq0"]
+font = ExtResource("4_vovkw")
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=1777219579]
 process_mode = 3
 script = ExtResource("1_50142")
-main_menu_scene = ExtResource("2_ejwgg")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1774552876]
 custom_minimum_size = Vector2(200, 100)
@@ -33,10 +43,47 @@ offset_bottom = 33.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ResumeButton" type="Button" parent="ColorRect/VBoxContainer" unique_id=734113233]
+[node name="ResumeButton" type="TextureButton" parent="ColorRect/VBoxContainer" unique_id=615339256]
+custom_minimum_size = Vector2(180, 32)
 layout_mode = 2
-text = "Continuar"
+toggle_mode = true
+texture_normal = ExtResource("2_6ap7o")
+texture_pressed = ExtResource("3_j3kxr")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="MainMenuButton" type="Button" parent="ColorRect/VBoxContainer" unique_id=417313758]
+[node name="ResumeLabel" type="Label" parent="ColorRect/VBoxContainer/ResumeButton" unique_id=1411927386]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "continuar"
+label_settings = SubResource("LabelSettings_lpidc")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainMenuButton" type="TextureButton" parent="ColorRect/VBoxContainer" unique_id=235687397]
+custom_minimum_size = Vector2(120, 32)
 layout_mode = 2
-text = "Menú Principal"
+toggle_mode = true
+texture_normal = ExtResource("5_jyvtb")
+texture_pressed = ExtResource("6_fijdv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MainMenuLabel" type="Label" parent="ColorRect/VBoxContainer/MainMenuButton" unique_id=1890058597]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "menú principal"
+label_settings = SubResource("LabelSettings_b1mq0")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UIClickSound" type="AudioStreamPlayer" parent="." unique_id=988041156]
+stream = ExtResource("7_j3kxr")

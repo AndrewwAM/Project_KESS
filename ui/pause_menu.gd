@@ -5,6 +5,8 @@ extends CanvasLayer
 
 const MAIN_MENU_SCENE_PATH: String = "res://ui/main_menu.tscn"
 
+@onready var click_sound: AudioStreamPlayer = $UIClickSound
+
 func _ready() -> void:
 	hide()
 	resume_button.pressed.connect(_on_resume_button_pressed)
@@ -20,8 +22,11 @@ func toggle_pause() -> void:
 	visible = new_pause_state
 
 func _on_resume_button_pressed() -> void:
+	click_sound.play()
 	toggle_pause()
 
 func _on_main_menu_button_pressed() -> void:
+	click_sound.play()
+	await click_sound.finished
 	get_tree().paused = false
 	get_tree().change_scene_to_file(MAIN_MENU_SCENE_PATH)
