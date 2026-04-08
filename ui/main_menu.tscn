@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="6_jiymt"]
 [ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="7_bgtsx"]
 [ext_resource type="Texture2D" uid="uid://dj7x2w1lewocd" path="res://ui/elements/red/icon_cross.svg" id="11_lsdqh"]
-[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="12_jiymt"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/Sounds/click-a.ogg" id="12_jiymt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lsdqh"]
 font = ExtResource("1_ubpvv")
@@ -133,6 +133,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CreditsPanel" type="Panel" parent="." unique_id=1156307783]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.2
@@ -160,7 +161,7 @@ offset_top = 0.9000015
 offset_right = 224.92001
 offset_bottom = 159.79999
 text = "Hecho por:
-- Cristobal Espinoza
+- Cristóbal Espinoza
 - Andrés Águila
 - Lucas Mosquera
 

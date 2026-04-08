@@ -12,7 +12,10 @@ var score: int = 0 # pal gameover
 var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
 var water_max: float = 100.0
 var current_wave: int = 0 # pal gamover
+var max_waves: int = 5 # ESTO SE EDITA DESDE ACA OJO CUIDADO
 var current_kills: int = 0
+var current_enemies: int = 0 # enemigos vivos actuales.
+var begin: bool = false
 
 # --- Señales ---
 # Por lo que sé, estas cosas son ANUNCIOS de cambios de variables.
@@ -24,6 +27,9 @@ signal wave_changed(new_wave: int)
 signal kill_count_changed(new_kills: int)
 signal game_over()
 signal game_won()
+
+
+
 
 # --- Agua ---
 # Acá es donde se pone divertida la cosa.
@@ -54,14 +60,31 @@ func heal(amount: int) -> void:
 
 
 # --- Oleadas ---
+func _ready() -> void:
+	if current_enemies <= 0:
+		next_wave()
+		
+		
+
 func next_wave() -> void:
 	current_wave += 1
+	print("GameManager comienza nueva oleada, Oleada ",current_wave)
 	emit_signal("wave_changed", current_wave)
 
 func add_kill() -> void:
 	current_kills += 1
 	emit_signal("kill_count_changed", current_kills)
 
+func _on_enemy_spawned(amount: int) -> void:
+	current_enemies += amount
+	print("GameManager escuchó un spawn, enemigos restantes: ", current_enemies)
+
+func _on_enemy_kill(amount: int) -> void:
+	current_enemies -= amount
+	print("GameManager escuchó una kill, enemigos restantes: ", current_enemies)
+	if current_enemies <= 0 && max_waves > current_wave:
+		print("GameManager decide que una nueva oleada debería ocurrir.")
+		next_wave()
 
 # --- Transiciones ---
 func trigger_game_over() -> void:
@@ -74,3 +97,4 @@ func trigger_win() -> void:
 
 func restart() -> void:
 	get_tree().reload_current_scene()
+	
