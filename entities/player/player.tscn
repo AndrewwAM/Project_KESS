@@ -1,9 +1,152 @@
 [gd_scene format=3 uid="uid://dyp2utfpvnict"]
 
-[ext_resource type="Texture2D" uid="uid://b3cxabd2gqxm" path="res://icon.svg" id="1_8afob"]
 [ext_resource type="Script" uid="uid://dgbvtkj62qp0i" path="res://entities/player/player.gd" id="1_dovo2"]
+[ext_resource type="Texture2D" uid="uid://leqy3bd7y08d" path="res://levels/tilesets/Tileset_Urban.png" id="2_bls4j"]
 [ext_resource type="PackedScene" uid="uid://b22exnoxwavq5" path="res://entities/player/chorro.tscn" id="3_sglur"]
 [ext_resource type="PackedScene" uid="uid://cfq6xat4qb66f" path="res://entities/player/tanque_agua.tscn" id="4_bls4j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(384, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fkugw"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(368, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8fjmc"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(416, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qiwj3"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(400, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26q78"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(384, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bectd"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(384, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvtmh"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(368, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7thud"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(368, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1qjk"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(416, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j3ovn"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(416, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afbqv"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(416, 32, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gx6sm"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(400, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yqrof"]
+atlas = ExtResource("2_bls4j")
+region = Rect2(400, 32, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3wlsy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bls4j")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkugw")
+}],
+"loop": true,
+"name": &"idle_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8fjmc")
+}],
+"loop": true,
+"name": &"idle_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qiwj3")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26q78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bectd")
+}],
+"loop": true,
+"name": &"player_move_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wvtmh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkugw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7thud")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fkugw")
+}],
+"loop": true,
+"name": &"player_move_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a1qjk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3ovn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afbqv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j3ovn")
+}],
+"loop": true,
+"name": &"player_move_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gx6sm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yqrof")
+}],
+"loop": true,
+"name": &"player_move_up",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dovo2"]
 
@@ -12,13 +155,16 @@ collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_dovo2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=88689275]
-shape = SubResource("RectangleShape2D_dovo2")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=549295730]
+z_index = 20
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_3wlsy")
+animation = &"idle_down"
+frame_progress = 0.35937253
 
-[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=1452454401]
-position = Vector2(0, 1.4901161e-08)
-scale = Vector2(0.17578125, 0.17578125)
-texture = ExtResource("1_8afob")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=88689275]
+visible = false
+shape = SubResource("RectangleShape2D_dovo2")
 
 [node name="WeaponPivot" type="Node2D" parent="." unique_id=1187079156]
 rotation = -44.290302
@@ -28,11 +174,6 @@ tanque = NodePath("../../TanqueAgua")
 cone_angle_degrees = 90.0
 cone_particle_speed = 600.0
 cone_particle_lifetime_ratio = 0.9
-
-[node name="Sprite2D" type="Sprite2D" parent="WeaponPivot" unique_id=601655912]
-position = Vector2(150, 0)
-scale = Vector2(0.08, 0.08)
-texture = ExtResource("1_8afob")
 
 [node name="TanqueAgua" parent="." unique_id=1596794547 instance=ExtResource("4_bls4j")]
 

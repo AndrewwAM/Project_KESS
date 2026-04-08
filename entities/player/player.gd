@@ -10,21 +10,23 @@ extends CharacterBody2D
 @export var camera_deadzone: float = 40.0 # El radio donde la cámara no se mueve
 @export var camera_smooth_speed: float = 8.0 # Qué tan rápido se suaviza el offset
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+@onready var Animator: AnimatedSprite2D = $AnimatedSprite2D
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+var last_direction: String = "down"
+var is_shooting: bool = false
+
 func _process(_delta: float) -> void:
-	var direction = Input.get_vector("player_move_left", "player_move_right", "player_move_up", "player_move_down")
-	var current_speed = speed
-
-	velocity = direction * current_speed
-
-	move_and_slide()
+	is_shooting = Input.is_action_pressed("shoot_main")
 
 func _physics_process(delta: float) -> void:
+	var direction = Input.get_vector("player_move_left", "player_move_right", "player_move_up", "player_move_down")
+	velocity = direction * speed
+	move_and_slide()
+
 	actualizar_camara(delta)
+
+	var aim_direction = get_local_mouse_position().normalized()
+	update_animation(direction, aim_direction)
 
 func actualizar_camara(delta: float) -> void:
 	var mouse_local_pos: Vector2 = get_local_mouse_position()
@@ -38,3 +40,31 @@ func actualizar_camara(delta: float) -> void:
 		target_offset = limited_pos * camera_mouse_influence
 
 	camera.offset = camera.offset.lerp(target_offset, camera_smooth_speed * delta)
+
+
+func update_animation(move_dir: Vector2, aim_dir: Vector2) -> void:
+	var animation_direction: String = last_direction
+
+	if is_shooting:
+		animation_direction = get_cardinal_direction(aim_dir)
+		last_direction = animation_direction
+	elif move_dir != Vector2.ZERO:
+		animation_direction = get_cardinal_direction(move_dir)
+		last_direction = animation_direction
+
+	if move_dir == Vector2.ZERO and not is_shooting:
+		Animator.play("idle_" + animation_direction)
+	else:
+		Animator.play("player_move_" + animation_direction)
+
+func get_cardinal_direction(direction: Vector2) -> String:
+	var angle := direction.angle()
+
+	if angle >= -PI/4 and angle <= PI/4:
+		return "right"
+	elif angle > PI/4 and angle < 3*PI/4:
+		return "down"
+	elif angle <= -PI/4 and angle > -3*PI/4:
+		return "up"
+	else:
+		return "left"
