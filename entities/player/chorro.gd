@@ -80,6 +80,7 @@ enum Modo {Cono, Laser}
 @export var laser_knockback_force: float = 1500.0
 
 var player: Node2D = null
+signal mode_changed(new_mode: int, is_switching: bool)
 
 func _ready() -> void:
 	if Engine.is_editor_hint():
@@ -143,6 +144,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("shoot_alt") and !is_switching:
 		print("switching")
 		is_switching = true
+		mode_changed.emit(current_mode, is_switching)
 		pause_shooting()
 		await get_tree().create_timer(switch_cooldown).timeout
 		print("switched")
@@ -188,6 +190,8 @@ func toggle_mode() -> void:
 		current_rotation_speed = cone_rotation_speed
 		# Volver al azul claro
 		#cone_water_particles.process_material.color = Color(0.6, 0.9, 1.0)
+
+	mode_changed.emit(current_mode, is_switching)
 
 
 func start_shooting() -> void:
