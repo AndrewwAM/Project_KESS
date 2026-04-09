@@ -17,7 +17,7 @@ func spawn_specific_enemy(enemy_type: String) -> void:
 	if not ENEMY_SCENES.has(enemy_type):
 		return
 
-	print("Spawning enemy of type: " + enemy_type)
+	#print("Spawning enemy of type: " + enemy_type)
 	var enemy = ENEMY_SCENES[enemy_type].instantiate()
 
 	var parent_node = get_parent()

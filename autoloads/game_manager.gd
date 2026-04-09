@@ -12,11 +12,11 @@ enum WaveState { INACTIVE, ACTIVE, RESTING }
 
 # Oleadas: [base, tank, speed]
 @export var waves: Array = [
-	[20, 1, 5], # wave 1, 10 normales
-	[25, 1, 5], # wave 2, 10 normales y 1 tank
-	[20, 3, 10], # wave 3, 10 normales y 5 speedy
-	[30, 1, 15], # wave 4, 15 normales, 1 tank y 5 speedy
-	[35, 5, 15],# wave 5, 20 normales, 2 tank y 10 speedy
+	[20, 0, 0],
+	[25, 1, 0],
+	[20, 0, 10],
+	[30, 2, 15],
+	[35, 5, 20],
 ]
 
 var wave_state: WaveState = WaveState.INACTIVE
@@ -133,7 +133,7 @@ func prepare_spawn_queue(enemy_counts: Array) -> void:
 
 	enemies_to_spawn.shuffle()
 	total_enemies_in_wave = enemies_to_spawn.size()
-	current_enemies = 0
+	# current_enemies = 0
 
 	if not enemies_to_spawn.is_empty():
 		spawn_timer.start()

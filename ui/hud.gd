@@ -41,6 +41,7 @@ func _ready() -> void:
 
 func _on_enemies_changed(new_amount: int) -> void:
 	$EnemiesLeft.text = "Enemigos Restantes: " + str(new_amount)
+	#print("GameManager avisa de nueva cuenta de enemigos: ",new_amount)
 
 func _on_wave_changed(new_wave: int) -> void:
 	$CurrentWave.text = "Oleada Actual: " + str(new_wave)

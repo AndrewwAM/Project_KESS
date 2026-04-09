@@ -1829,7 +1829,7 @@ radius = 79.00633
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d8dj5"]
 radius = 8.0
-height = 32.0
+height = 22.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_quyyg"]
 radius = 7.0
@@ -2008,12 +2008,15 @@ radius = 15.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j5pjq"]
 radius = 8.0
+height = 22.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wxom6"]
-radius = 7.0
+radius = 8.0
+height = 22.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_buiq7"]
 radius = 8.0
+height = 20.0
 
 [node name="BigYard" type="Node2D" unique_id=740542095 node_paths=PackedStringArray("player", "game_over_screen")]
 y_sort_enabled = true
@@ -2144,10 +2147,9 @@ position = Vector2(28, -191)
 shape = SubResource("CircleShape2D_1qyd4")
 
 [node name="Obstáculos" type="StaticBody2D" parent="NavigationRegion2D" unique_id=62517597]
-visible = false
 
 [node name="CollisionShape2D42" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=1034595808]
-position = Vector2(823, 380)
+position = Vector2(822, 385)
 shape = SubResource("CapsuleShape2D_d8dj5")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=555556757]
@@ -2395,15 +2397,15 @@ position = Vector2(526, 286)
 shape = SubResource("CircleShape2D_404w7")
 
 [node name="CollisionShape2D45" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=2003658631]
-position = Vector2(278, 460)
+position = Vector2(278, 465)
 shape = SubResource("CapsuleShape2D_j5pjq")
 
 [node name="CollisionShape2D44" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=917038850]
-position = Vector2(454, 188)
+position = Vector2(454, 192)
 shape = SubResource("CapsuleShape2D_wxom6")
 
 [node name="CollisionShape2D43" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=2141650116]
-position = Vector2(966, 300)
+position = Vector2(966, 305)
 shape = SubResource("CapsuleShape2D_buiq7")
 
 [node name="Player" parent="." unique_id=1288290645 instance=ExtResource("79_6pr64")]
