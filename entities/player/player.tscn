@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://leqy3bd7y08d" path="res://levels/tilesets/Tileset_Urban.png" id="2_bls4j"]
 [ext_resource type="PackedScene" uid="uid://b22exnoxwavq5" path="res://entities/player/chorro.tscn" id="3_sglur"]
 [ext_resource type="PackedScene" uid="uid://cfq6xat4qb66f" path="res://entities/player/tanque_agua.tscn" id="4_bls4j"]
+[ext_resource type="AudioStream" uid="uid://dkavunwqwvri6" path="res://assets/audio/bubbles_reload.wav" id="5_fkugw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bls4j"]
 atlas = ExtResource("2_bls4j")
@@ -171,12 +172,18 @@ rotation = -44.290302
 [node name="Chorro" parent="WeaponPivot" unique_id=2025990940 node_paths=PackedStringArray("tanque") instance=ExtResource("3_sglur")]
 cone_volume_db = -5.0
 laser_volume_db = 3.0
+weapon_swap_volume_db = -25.0
 tanque = NodePath("../../TanqueAgua")
 cone_angle_degrees = 90.0
 cone_particle_speed = 600.0
 cone_particle_lifetime_ratio = 0.9
 
 [node name="TanqueAgua" parent="." unique_id=1596794547 instance=ExtResource("4_bls4j")]
+
+[node name="ReloadSFX" type="AudioStreamPlayer" parent="TanqueAgua" unique_id=1459927875]
+stream = ExtResource("5_fkugw")
+volume_db = -40.108
+pitch_scale = 0.85
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1083176454]
 position_smoothing_speed = 1.0

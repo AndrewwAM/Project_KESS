@@ -30,9 +30,11 @@ func _process(delta: float) -> void:
 	var reload_input = Input.is_action_pressed("reload_water")
 
 	if reload_input and not chorro.is_shooting and tanque.can_reload and not tanque.is_full():
+		tanque.reload_sfx_play()
 		is_reloading = true
 		tanque.reload(charge_speed * delta)
 	else:
+		tanque.reload_sfx_stop()
 		is_reloading = false
 
 	if Input.is_action_pressed("shoot_main") and not is_reloading and tanque.has_water():
