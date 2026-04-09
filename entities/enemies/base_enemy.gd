@@ -41,7 +41,7 @@ func _physics_process(delta: float) -> void:
 		nav_agent.target_position = player.global_position
 		path_update_timer = 0.0
 
-	if nav_agent.is_navigation_finished():
+	if nav_agent.is_navigation_finished() or not nav_agent.is_target_reachable():
 		velocity = Vector2.ZERO
 		return
 

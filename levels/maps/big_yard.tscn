@@ -2059,6 +2059,7 @@ tile_map_data = PackedByteArray("AAAbABkAAAADAAMAAAAaABkAAAACAAMAAAAYABcAAAAAAAE
 tile_set = SubResource("TileSet_3n7x1")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=502783487]
+visible = false
 z_index = 2
 position = Vector2(-207, 135)
 navigation_polygon = SubResource("NavigationPolygon_4am2k")

@@ -3,10 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ddm8ymoleugj3" path="res://levels/mechanics/spawner.tscn" id="1_g2ike"]
 [ext_resource type="Script" uid="uid://djd4lhhssfn2t" path="res://autoloads/game_manager.gd" id="1_rkhqv"]
 [ext_resource type="Script" uid="uid://dphvr7ijr7lcv" path="res://levels/mechanics/water.gd" id="2_j0fve"]
-[ext_resource type="PackedScene" uid="uid://dbckofyj8auiy" path="res://entities/enemies/base_enemy.tscn" id="3_rsvi7"]
 [ext_resource type="PackedScene" uid="uid://dvuoncnfp0hyo" path="res://levels/mechanics/recharg_zone.tscn" id="4_gh2sf"]
-[ext_resource type="PackedScene" uid="uid://1f6kkn87hfqv" path="res://entities/enemies/speed_enemy.tscn" id="4_rkhqv"]
-[ext_resource type="PackedScene" uid="uid://fpw4f0fa5yqx" path="res://entities/enemies/tank_enemy.tscn" id="5_gh2sf"]
 [ext_resource type="PackedScene" uid="uid://dyp2utfpvnict" path="res://entities/player/player.tscn" id="6_h6ui8"]
 [ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="6_j0fve"]
 [ext_resource type="PackedScene" uid="uid://uowd5d88lvv3" path="res://ui/game_over_screen.tscn" id="6_rsvi7"]
@@ -51,17 +48,6 @@ script = ExtResource("1_rkhqv")
 player = NodePath("Player")
 game_over_screen = NodePath("CanvasLayer/GameOverScreen")
 
-[node name="SpawnerBasicos" parent="." unique_id=1968834125 instance=ExtResource("1_g2ike")]
-position = Vector2(360, 180)
-valid_waves = Array[int]([0, 1, 2, 3, 4])
-
-[node name="SpawnerTank" parent="." unique_id=666620450 instance=ExtResource("1_g2ike")]
-position = Vector2(360, 50)
-enemies_per_wave = 1
-max_waves = 4
-valid_waves = Array[int]([0, 1, 2])
-type = 2
-
 [node name="Basic Background" type="Node2D" parent="." unique_id=1706732138]
 
 [node name="Pasto1" type="ColorRect" parent="Basic Background" unique_id=1342113710]
@@ -100,6 +86,9 @@ offset_bottom = 109.0
 mouse_filter = 2
 color = Color(0.039215688, 1, 1, 1)
 
+[node name="Player" parent="." unique_id=1288290645 instance=ExtResource("6_h6ui8")]
+position = Vector2(136, 87)
+
 [node name="RechargeZones" type="Area2D" parent="." unique_id=905874008 groups=["Agua"]]
 collision_mask = 2
 script = ExtResource("2_j0fve")
@@ -117,15 +106,6 @@ shape = SubResource("RectangleShape2D_w1q3l")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="RechargeZones" unique_id=863552801]
 position = Vector2(256.5, 207)
 shape = SubResource("RectangleShape2D_cl03m")
-
-[node name="BaseEnemy" parent="." unique_id=1803823621 instance=ExtResource("3_rsvi7")]
-position = Vector2(358, 130)
-
-[node name="SpeedEnemy" parent="." unique_id=982902031 instance=ExtResource("4_rkhqv")]
-position = Vector2(386, 202)
-
-[node name="Player" parent="." unique_id=1288290645 instance=ExtResource("6_h6ui8")]
-position = Vector2(136, 87)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=935810259]
 visible = false
@@ -169,5 +149,8 @@ visible = false
 
 [node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("7_ndmgu")]
 
-[node name="TankEnemy" parent="." unique_id=1932620497 instance=ExtResource("5_gh2sf")]
-position = Vector2(422, 122)
+[node name="Spawner" parent="." unique_id=1968834125 instance=ExtResource("1_g2ike")]
+position = Vector2(442, 23)
+
+[node name="Spawner2" parent="." unique_id=729825226 instance=ExtResource("1_g2ike")]
+position = Vector2(449, 248)

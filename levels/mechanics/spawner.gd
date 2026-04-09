@@ -6,69 +6,28 @@ const ENEMY_SCENES = {
 	"tank": preload("res://entities/enemies/tank_enemy.tscn")
 }
 
-@export var enemies_per_wave: int = 3 #editable obvio, igual podríá aumentar o disminuir por oleada.
-# @export var spawn_points: Array[Vector2] = [] # Para que puedan tener más de un solo spawn.
-@export var max_waves: int = 5 # also editable
-@export var valid_waves: Array[int] = [] # Esto es para que solo selectas oleadas hagan spawnear enemigos.
- # Tipo, si valid_waves es [1,2,5], solo spawnearán enemigos en las oleadas 1, 2 y 5 (para este spawner).
-# Probado, funciona pero hay que probar qué ocurre con múltiples spawners.
-# su inicio de variables en valores default.\
-
-#esto es feo pero funciona asi que no me lloren.
-var enemy_types: Array[String] = ["base", "speed", "tank"]
-@export var type: int = 0 # 0 es base, 1 es speed y 2 es tank.
-
+@export var radius: float = 30.0
 var current_scene: Node = null
-var enemies_alive: int = 0
-
-var current_wave: int = 0
-
-
 
 func _ready() -> void:
 	current_scene = get_tree().current_scene
-	#print("spawner ready")
-	spawn_wave()
-	
-	GameManager.wave_changed.connect(_on_wave_changed)
+	GameManager.register_spawner(self)
 
-func spawn_wave() -> void:
-	current_wave = GameManager.current_wave # test
-	
-	# Primero, la oleada que spawnea será la primera, luego la segunda y así.
-	var enemy_type: String = enemy_types[type] # desperate try?
-	
-	# current_wave += 1 # se hace así para que puedan haber infinitas oleadas.
-	
-	if current_wave not in valid_waves: #se valida si la oleada actual NO está en la lista de oleadas válidas.
-		return # si no lo está, se sube el counter y luego se retorna sin hacer nada más.
+func spawn_specific_enemy(enemy_type: String) -> void:
+	if not ENEMY_SCENES.has(enemy_type):
+		return
 
-	print("se va a spawnear el enemigo tipo: ", enemy_type)
-	enemies_alive += enemies_per_wave # en vez de igualar, se suma, ya que de esta forma se pueden spawnear enemigos antes de que todos sean derrotados
-	
-	# GameManager.next_wave() #info pal game manager.
-	# maybe unnecesary
-	
-	# ahora se spawnean los enemigos
-	for i in range(enemies_per_wave):
-		var enemy = ENEMY_SCENES[enemy_type].instantiate() #instanciar y posición de spawn
-		var spawn_position = global_position
-		enemy.global_position = spawn_position
-		#print("Enemigo instanciado y posición decidida: ", enemy.global_position)
+	print("Spawning enemy of type: " + enemy_type)
+	var enemy = ENEMY_SCENES[enemy_type].instantiate()
 
-		enemy.tree_exited.connect(_on_enemy_defeated) #escuchar para cuando sea derrotado
-		current_scene.call_deferred("add_child", enemy)
-		#print("enemigo spawneado")
-		
-	GameManager._on_enemy_spawned(enemies_per_wave)
+	var parent_node = get_parent()
+	parent_node.call_deferred("add_child", enemy)
 
-func _on_wave_changed(new_wave: int) -> void:
-	current_wave = new_wave
-	if current_wave in valid_waves:
-		spawn_wave()
+	var random_offset = Vector2(randf_range(-radius, radius), randf_range(-radius, radius))
+	var final_position = global_position + random_offset
+	enemy.set_deferred("global_position", final_position)
+
+	enemy.tree_exited.connect(_on_enemy_defeated)
 
 func _on_enemy_defeated() -> void: # no pongo killed o died pq no mueren, son apaciguados :)))
-	#print("enemigo derrotado!")
-	GameManager._on_enemy_kill(1)
-	if enemies_alive <= 0 && !(current_wave >= max_waves): # si todos fueron derrotados Y aún no pasa la última oleada.
-		spawn_wave()
+	GameManager.enemy_killed()
