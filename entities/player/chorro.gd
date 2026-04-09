@@ -33,7 +33,7 @@ var laser_water_consume = 30.0
 @export var tanque: Node
 var current_rotation_speed = cone_rotation_speed
 
-var damage_cone: float = 20.0
+var damage_cone: float = 70.0
 var damage_laser: float = 150.0
 
 enum Modo {Cono, Laser}

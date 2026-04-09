@@ -15,7 +15,7 @@ extends Control
 @onready var click_sound: AudioStreamPlayer = $UIClickSound
 
 var current_page: int = 0
-const GAME_SCENE_PATH: String = "res://levels/maps/patio.tscn"
+const GAME_SCENE_PATH: String = "res://levels/maps/big_yard.tscn"
 
 func _ready() -> void:
 	next_button.pressed.connect(_on_next_pressed)

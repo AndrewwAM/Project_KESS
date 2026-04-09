@@ -9,7 +9,7 @@ extends Control
 
 @onready var click_sound: AudioStreamPlayer = $UIClickSound
 
-const GAME_SCENE_PATH: String = "res://levels/maps/patio.tscn"
+const GAME_SCENE_PATH: String = "res://levels/maps/big_yard.tscn"
 const TUTORIAL_SCENE_PATH: String = "res://ui/tutorial_screen.tscn"
 
 # Called when the node enters the scene tree for the first time.
