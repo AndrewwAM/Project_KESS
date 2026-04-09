@@ -23,6 +23,7 @@ colors = PackedColorArray(1, 1, 1, 0.2509804, 1, 1, 1, 0)
 
 [node name="Chorro" type="Node2D" unique_id=2025990940]
 script = ExtResource("1_r32te")
+weapon_swap_volume_db = null
 ray_count = 9
 cone_angle_degrees = 70.0
 cone_particle_speed = 1500.0
@@ -67,5 +68,5 @@ pitch_scale = 1.92
 
 [node name="SwapSound" type="AudioStreamPlayer" parent="." unique_id=1540023087]
 stream = ExtResource("3_2hrn7")
-volume_db = -15.513
-pitch_scale = 1.64
+volume_db = -25.727
+pitch_scale = 1.37

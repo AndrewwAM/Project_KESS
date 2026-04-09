@@ -18,6 +18,7 @@ extends Node2D
 @export var cone_volume_pitch: float = 1.9
 @export var laser_volume_db: float = 5
 @export var laser_volume_pitch: float = 2
+@export var weapon_swap_volume_db: float = -25
 
 enum PressureMode { CONE, LASER }
 var current_mode: PressureMode = PressureMode.CONE
@@ -168,6 +169,7 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("shoot_alt") and !is_switching:
 		if player and player.get("is_reloading"):
 			return
+		play_swap_sound_loop()
 		is_switching = true
 		laser_guide.visible = false
 		cone_mode.visible = false
@@ -309,3 +311,14 @@ func apply_knockback(delta: float) -> void:
 
 	var knockback_dir = Vector2.LEFT.rotated(pivot.global_rotation)
 	player.knockback_velocity += knockback_dir * laser_knockback_force * delta
+	
+func play_swap_sound_loop() -> void:
+	
+	if not weapon_swap_sound.playing:
+
+		weapon_swap_sound.volume_db = weapon_swap_volume_db
+		weapon_swap_sound.play()
+		await get_tree().create_timer(0.3).timeout
+		weapon_swap_sound.play()
+		await get_tree().create_timer(0.3).timeout
+		weapon_swap_sound.play()
