@@ -16,7 +16,7 @@ var is_switching: bool = false
 var keep_shooting: bool = false
 var switch_cooldown = 1.0
 var cone_water_consume = 10.0
-var laser_water_consume = 25.0
+var laser_water_consume = 30.0
 
 @export var cone_rotation_speed: float = 6.0
 @export var laser_rotation_speed: float = 1.5
@@ -24,7 +24,7 @@ var laser_water_consume = 25.0
 var current_rotation_speed = cone_rotation_speed
 
 var damage_cone: float = 20.0
-var damage_laser: float = 50.0
+var damage_laser: float = 150.0
 
 enum Modo {Cono, Laser}
 
@@ -100,7 +100,7 @@ func actualizar_cono() -> void:
 
 	for child in cone_mode.get_children():
 		if child is RayCast2D:
-			child.free() # En @tool, free() es más inmediato que queue_free()
+			child.free()
 
 	var angle_rad = deg_to_rad(cone_angle_degrees)
 	var start_angle = -angle_rad / 2.0
@@ -179,15 +179,9 @@ func handle_rotation(delta: float) -> void:
 
 func toggle_mode() -> void:
 	if current_mode == PressureMode.CONE:
-		current_rotation_speed = laser_rotation_speed
 		current_mode = PressureMode.LASER
-		# (Opcional) Cambiar a un azul más oscuro para dar feedback visual
-		#cone_water_particles.process_material.color = Color(0.2, 0.4, 1.0)
 	else:
 		current_mode = PressureMode.CONE
-		current_rotation_speed = cone_rotation_speed
-		# Volver al azul claro
-		#cone_water_particles.process_material.color = Color(0.6, 0.9, 1.0)
 
 	mode_changed.emit(current_mode, is_switching)
 
@@ -204,19 +198,15 @@ func start_shooting() -> void:
 		set_cone_enabled(true)
 		laser_hitbox.set_deferred("disabled", true)
 	elif current_mode == PressureMode.LASER:
+		current_rotation_speed = laser_rotation_speed
 		laser_line.visible = true
 		set_cone_enabled(false)
 		laser_hitbox.set_deferred("disabled", false)
 
 func stop_shooting() -> void:
+	current_rotation_speed = cone_rotation_speed
 	is_shooting = false
 	keep_shooting = false
-	#if current_mode == PressureMode.CONE:
-	#	cone_water_particles.emitting = false
-	#else:
-	#	laser_water_particles.emitting = false
-
-	# Se apaga tanto partículas como hitboxes
 	laser_line.visible = false
 	cone_water_particles.emitting = false
 	set_cone_enabled(false)
@@ -252,7 +242,6 @@ func apply_water_damage(delta: float) -> void:
 
 		if current_mode == PressureMode.CONE:
 			current_damage = damage_cone * delta
-
 			consumo = cone_water_consume * delta
 
 			var hit_this_frame: Array = []
