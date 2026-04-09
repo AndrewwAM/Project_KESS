@@ -2,6 +2,7 @@
 extends Node2D
 
 @onready var cone_water_particles: GPUParticles2D = $ConeWaterParticles
+@onready var laser_guide: Line2D = $LaserGuide
 @onready var laser_line: Line2D = $LaserLine
 @onready var cone_mode: Node2D = $ConeMode
 @onready var laser_mode: Area2D = $LaserMode
@@ -88,6 +89,7 @@ func _ready() -> void:
 		return
 
 	player = get_tree().get_first_node_in_group("Player")
+	laser_guide.visible = false
 	laser_line.visible = false
 	cone_water_particles.emitting = false
 	stop_shooting()
@@ -113,6 +115,14 @@ func actualizar_cono() -> void:
 		ray.enabled = false
 		ray.set_collision_mask_value(3, true)
 		cone_mode.add_child(ray)
+		
+		# Puntos guia
+		var punto_guia = ColorRect.new()
+		punto_guia.size = Vector2(4.0, 4.0)
+		punto_guia.color = Color(0.6, 0.9, 1.0, 0.4)
+		
+		punto_guia.position = ray.target_position - (punto_guia.size / 2.0)
+		ray.add_child(punto_guia)
 
 	var cone_material = cone_water_particles.process_material as ParticleProcessMaterial
 	if cone_material:
@@ -147,8 +157,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("shoot_alt") and !is_switching:
 		if player and player.get("is_reloading"):
 			return
-
 		is_switching = true
+		laser_guide.visible = false
+		cone_mode.visible = false
 		mode_changed.emit(current_mode, is_switching)
 		pause_shooting()
 
@@ -180,7 +191,12 @@ func handle_rotation(delta: float) -> void:
 func toggle_mode() -> void:
 	if current_mode == PressureMode.CONE:
 		current_mode = PressureMode.LASER
+		
+		laser_guide.visible=true
+		cone_mode.visible=false
 	else:
+		laser_guide.visible = false
+		cone_mode.visible = true
 		current_mode = PressureMode.CONE
 
 	mode_changed.emit(current_mode, is_switching)
