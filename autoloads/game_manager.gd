@@ -203,3 +203,24 @@ func trigger_win() -> void:
 
 func restart() -> void:
 	get_tree().reload_current_scene()
+
+func reset_manager() -> void: # MANAGER NUKE
+
+	if spawn_timer:
+		spawn_timer.stop()
+		
+	spawners.clear()
+	
+	enemies_to_spawn.clear()
+	
+	state = GameState.PLAYING
+	wave_state = WaveState.INACTIVE
+	current_wave_index = 0
+	current_wave = 0
+	current_enemies = 0
+	current_kills = 0
+	
+	wave_timer = 0.0
+	rest_timer = 0.0
+	
+	water_amount = water_max

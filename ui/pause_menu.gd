@@ -28,5 +28,6 @@ func _on_resume_button_pressed() -> void:
 func _on_main_menu_button_pressed() -> void:
 	click_sound.play()
 	await click_sound.finished
+	GameManager.reset_manager()
 	get_tree().paused = false
 	get_tree().change_scene_to_file(MAIN_MENU_SCENE_PATH)
