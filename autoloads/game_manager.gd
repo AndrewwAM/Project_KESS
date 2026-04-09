@@ -12,11 +12,11 @@ enum WaveState { INACTIVE, ACTIVE, RESTING }
 
 # Oleadas: [base, tank, speed]
 @export var waves: Array = [
-	[10, 0, 0], # wave 1, 10 normales
-	[10, 1, 0], # wave 2, 10 normales y 1 tank
-	[10, 0, 5], # wave 3, 10 normales y 5 speedy
-	[15, 1, 5], # wave 4, 15 normales, 1 tank y 5 speedy
-	[20, 2, 10],# wave 5, 20 normales, 2 tank y 10 speedy
+	[20, 1, 5], # wave 1, 10 normales
+	[25, 1, 5], # wave 2, 10 normales y 1 tank
+	[20, 3, 10], # wave 3, 10 normales y 5 speedy
+	[30, 1, 15], # wave 4, 15 normales, 1 tank y 5 speedy
+	[35, 5, 15],# wave 5, 20 normales, 2 tank y 10 speedy
 ]
 
 var wave_state: WaveState = WaveState.INACTIVE
