@@ -1860,7 +1860,7 @@ radius = 6.0
 height = 26.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t32ct"]
-radius = 8.0
+radius = 6.0
 height = 26.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_atbh5"]
@@ -2068,7 +2068,6 @@ tile_map_data = PackedByteArray("AAAYABIAAAAAAAAAAAAYABMAAAAAAAEAAAAZABIAAAABAAA
 tile_set = SubResource("TileSet_y5wpv")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=502783487]
-visible = false
 z_index = 2
 position = Vector2(-207, 135)
 navigation_polygon = SubResource("NavigationPolygon_4am2k")
@@ -2094,6 +2093,7 @@ position = Vector2(205, 717)
 shape = SubResource("WorldBoundaryShape2D_2idnh")
 
 [node name="Agua" type="StaticBody2D" parent="NavigationRegion2D" unique_id=513647110]
+visible = false
 position = Vector2(-255, -174)
 
 [node name="Colision Agua4" type="CollisionPolygon2D" parent="NavigationRegion2D/Agua" unique_id=1713222361]
@@ -2192,7 +2192,7 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_luttj")
 
 [node name="CollisionShape2D30" type="CollisionShape2D" parent="NavigationRegion2D/Obstáculos" unique_id=851907342]
-position = Vector2(631, 293)
+position = Vector2(631, 295)
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_t32ct")
 
