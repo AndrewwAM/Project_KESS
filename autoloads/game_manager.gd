@@ -40,7 +40,7 @@ signal rest_started(rest_time: float)
 
 # Variables genéricas para trackear mas leseras :)
 var damage_taken: int = 0 # pal gameover, never used lol
-# var score: int = 0 # pal gameover 
+# var score: int = 0 # pal gameover
 var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
 var water_max: float = 100.0
 var current_wave: int = 0 # pal gamover
@@ -64,7 +64,7 @@ signal game_won()
 
 func _ready() -> void:
 	await get_tree().process_frame
-	
+
 	spawn_timer = Timer.new()
 	spawn_timer.wait_time = spawn_interval
 	spawn_timer.connect("timeout", Callable(self, "_on_spawn_timer_timeout"))
@@ -80,7 +80,9 @@ func _process(delta: float) -> void:
 		wave_timer -= delta
 		emit_signal("wave_timer_changed", wave_timer)
 
-		if wave_timer <= 0.0 or (current_enemies <= 0 and enemies_to_spawn.is_empty()):
+		var is_last_wave = current_wave_index >= waves.size() - 1
+		var no_more_enemies = current_enemies <= 0 and enemies_to_spawn.is_empty()
+		if ((wave_timer <= 0.0 or no_more_enemies) and not is_last_wave) or (is_last_wave and no_more_enemies):
 			end_wave()
 
 	elif wave_state == WaveState.RESTING:
