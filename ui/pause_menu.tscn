@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="4_vovkw"]
 [ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="5_jyvtb"]
 [ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="6_fijdv"]
-[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="7_j3kxr"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/Sounds/click-a.ogg" id="7_j3kxr"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lpidc"]
 font = ExtResource("4_vovkw")

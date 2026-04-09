@@ -183,16 +183,16 @@ func add_kill() -> void:
 	current_kills += 1
 	emit_signal("kill_count_changed", current_kills)
 
-func _on_enemy_spawned(amount: int) -> void:
-	current_enemies += amount
-	print("GameManager escuchó un spawn, enemigos restantes: ", current_enemies)
+#func _on_enemy_spawned(amount: int) -> void:
+	#current_enemies += amount
+	#print("GameManager escuchó un spawn, enemigos restantes: ", current_enemies)
 
-func _on_enemy_kill(amount: int) -> void:
-	current_enemies -= amount
-	print("GameManager escuchó una kill, enemigos restantes: ", current_enemies)
-	if current_enemies <= 0 and max_waves > current_wave:
-		print("GameManager decide que una nueva oleada debería ocurrir.")
-		next_wave()
+#func _on_enemy_kill(amount: int) -> void:
+	#current_enemies -= amount
+	#print("GameManager escuchó una kill, enemigos restantes: ", current_enemies)
+	#if current_enemies <= 0 and max_waves > current_wave:
+		#print("GameManager decide que una nueva oleada debería ocurrir.")
+		#next_wave()
 
 # --- Transiciones ---
 func trigger_game_over() -> void:
@@ -219,7 +219,7 @@ func reset_manager() -> void: # MANAGER NUKE
 	wave_state = WaveState.INACTIVE
 	current_wave_index = 0
 	current_wave = 0
-	current_enemies = 0
+	#current_enemies = 0
 	current_kills = 0
 	
 	wave_timer = 0.0
