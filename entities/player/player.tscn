@@ -170,6 +170,8 @@ shape = SubResource("RectangleShape2D_dovo2")
 rotation = -44.290302
 
 [node name="Chorro" parent="WeaponPivot" unique_id=2025990940 node_paths=PackedStringArray("tanque") instance=ExtResource("3_sglur")]
+cone_volume_db = -5.0
+laser_volume_db = 3.0
 tanque = NodePath("../../TanqueAgua")
 cone_angle_degrees = 90.0
 cone_particle_speed = 600.0

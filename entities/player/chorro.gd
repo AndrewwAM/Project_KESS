@@ -9,6 +9,15 @@ extends Node2D
 @onready var laser_hitbox: CollisionShape2D = $LaserMode/LaserHitbox
 @onready var pivot: Node2D = get_parent() as Node2D
 
+# AUDIO, NO SUBIR O SUFRIR LAS CONSECUENCIAS
+@onready var water_sound: AudioStreamPlayer = $WaterSound
+@onready var weapon_swap_sound: AudioStreamPlayer = $SwapSound
+
+@export_group("Configuración de Sonido")
+@export var cone_volume_db: float = 0
+@export var cone_volume_pitch: float = 1.9
+@export var laser_volume_db: float = 5
+@export var laser_volume_pitch: float = 2
 
 enum PressureMode { CONE, LASER }
 var current_mode: PressureMode = PressureMode.CONE
@@ -92,6 +101,8 @@ func _ready() -> void:
 	laser_guide.visible = false
 	laser_line.visible = false
 	cone_water_particles.emitting = false
+	water_sound.volume_db = cone_volume_db
+	water_sound.pitch_scale = cone_volume_pitch
 	stop_shooting()
 	actualizar_cono()
 
@@ -194,10 +205,14 @@ func toggle_mode() -> void:
 		
 		laser_guide.visible=true
 		cone_mode.visible=false
+		water_sound.volume_db = laser_volume_db
+		water_sound.pitch_scale = laser_volume_pitch
 	else:
 		laser_guide.visible = false
 		cone_mode.visible = true
 		current_mode = PressureMode.CONE
+		water_sound.volume_db = cone_volume_db
+		water_sound.pitch_scale = cone_volume_pitch
 
 	mode_changed.emit(current_mode, is_switching)
 
@@ -208,7 +223,11 @@ func start_shooting() -> void:
 		return
 
 	is_shooting = true
-
+	if not water_sound.playing:
+		# Check pro-timpanos
+		water_sound.volume_db = cone_volume_db if current_mode == PressureMode.CONE else laser_volume_db
+		water_sound.play()
+		
 	if current_mode == PressureMode.CONE:
 		cone_water_particles.restart()
 		set_cone_enabled(true)
@@ -220,6 +239,7 @@ func start_shooting() -> void:
 		laser_hitbox.set_deferred("disabled", false)
 
 func stop_shooting() -> void:
+	water_sound.stop()
 	current_rotation_speed = cone_rotation_speed
 	is_shooting = false
 	keep_shooting = false
@@ -230,7 +250,8 @@ func stop_shooting() -> void:
 
 func pause_shooting() -> void:
 	is_shooting = false
-
+	water_sound.stop()
+	current_rotation_speed = cone_rotation_speed
 	laser_line.visible = false
 	cone_water_particles.emitting = false
 	set_cone_enabled(false)

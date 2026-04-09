@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://b22exnoxwavq5"]
 
 [ext_resource type="Script" uid="uid://cubttoq83b2ao" path="res://entities/player/chorro.gd" id="1_r32te"]
+[ext_resource type="AudioStream" uid="uid://8vy1ty2nm0fq" path="res://assets/audio/water_stream.wav" id="2_2hrn7"]
+[ext_resource type="AudioStream" uid="uid://cpu4mqfdb8rlj" path="res://assets/audio/rattle.wav" id="3_2hrn7"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7gq7y"]
 particle_flag_disable_z = true
@@ -58,3 +60,12 @@ points = PackedVector2Array(0, 0, 500, 0)
 width = 5.0
 default_color = Color(1, 1, 1, 0.2)
 gradient = SubResource("Gradient_a6rhb")
+
+[node name="WaterSound" type="AudioStreamPlayer" parent="." unique_id=1469573836]
+stream = ExtResource("2_2hrn7")
+pitch_scale = 1.92
+
+[node name="SwapSound" type="AudioStreamPlayer" parent="." unique_id=1540023087]
+stream = ExtResource("3_2hrn7")
+volume_db = -15.513
+pitch_scale = 1.64
