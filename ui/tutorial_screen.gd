@@ -15,7 +15,7 @@ extends Control
 @onready var click_sound: AudioStreamPlayer = $UIClickSound
 
 var current_page: int = 0
-const GAME_SCENE_PATH: String = "res://levels/maps/big_yard.tscn"
+const GAME_SCENE_PATH: String = "res://levels/maps/patio.tscn"
 
 func _ready() -> void:
 	next_button.pressed.connect(_on_next_pressed)
@@ -43,6 +43,7 @@ func _on_start_pressed() -> void:
 	start_button.mouse_filter = Control.MOUSE_FILTER_IGNORE
 
 	click_sound.play()
+	await click_sound.finished
 	
 	var error: int = get_tree().change_scene_to_file(GAME_SCENE_PATH)
 	if error != OK:

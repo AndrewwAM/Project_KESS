@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dn5fpd31io1jq" path="res://ui/pause_menu.tscn" id="6_j0fve"]
 [ext_resource type="PackedScene" uid="uid://uowd5d88lvv3" path="res://ui/game_over_screen.tscn" id="6_rsvi7"]
 [ext_resource type="PackedScene" uid="uid://dgr4tmbotpoj" path="res://ui/hud.tscn" id="7_ndmgu"]
+[ext_resource type="PackedScene" uid="uid://craty07v7seaq" path="res://ui/win_screen.tscn" id="7_rsvi7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ui8"]
 size = Vector2(47, 280)
@@ -145,6 +146,9 @@ shape = SubResource("RectangleShape2D_gd8l3")
 visible = false
 
 [node name="PauseMenu" parent="CanvasLayer" unique_id=1777219579 instance=ExtResource("6_j0fve")]
+visible = false
+
+[node name="WinScreen" parent="CanvasLayer" unique_id=101807148 instance=ExtResource("7_rsvi7")]
 visible = false
 
 [node name="Hud" parent="CanvasLayer" unique_id=360316666 instance=ExtResource("7_ndmgu")]

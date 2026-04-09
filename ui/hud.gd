@@ -16,11 +16,15 @@ func _ready() -> void:
 	water_bar.max_value = GameManager.water_max
 	water_bar.value = GameManager.water_amount
 	water_label.text = str(int(GameManager.water_amount)) + " / " + str(int(GameManager.water_max))
-	$Score.text = "Score: " + str(GameManager.score)
-
-	GameManager.score_changed.connect(_on_score_changed)
+	$EnemiesLeft.text = "Enemigos Restantes: " + str(GameManager.current_enemies)
+	$CurrentWave.text = "Oleada Actual: " + str(GameManager.current_wave)
 
 	# Conectar señales
+	GameManager.enemies_changed.connect(_on_enemies_changed)
+	GameManager.wave_changed.connect(_on_wave_changed)
+	#GameManager.score_changed.connect(_on_score_changed)
+	
+
 	var player = get_tree().get_first_node_in_group("Player")
 	if player == null:
 		return
@@ -35,14 +39,20 @@ func _ready() -> void:
 	player.health_changed.connect(_on_health_changed)
 	_on_health_changed(player.current_health, player.max_health)
 
+func _on_enemies_changed(new_amount: int) -> void:
+	$EnemiesLeft.text = "Enemigos Restantes: " + str(new_amount)
+
+func _on_wave_changed(new_wave: int) -> void:
+	$CurrentWave.text = "Oleada Actual: " + str(new_wave)
+
 # Se ejecuta cada vez que GameManager emite water_changed
 func _on_water_changed(new_amount: float) -> void:
 	water_bar.value = new_amount
 	water_label.text = str(int(new_amount)) + " / " + str(int(GameManager.water_max))
 
 # Se ejecuta cada vez que GameManager emite score_changed
-func _on_score_changed(new_score: int) -> void:
-	$Score.text = "Score: " + str(new_score)
+#func _on_score_changed(new_score: int) -> void:
+	#$Score.text = "Score: " + str(new_score)
 
 # Se ejecuta cada vez que GameManager emite health_changed
 func _on_health_changed(current_health: float, max_health: float) -> void:

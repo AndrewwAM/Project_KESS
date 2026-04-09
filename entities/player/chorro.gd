@@ -25,7 +25,7 @@ var is_shooting: bool = false
 var is_switching: bool = false
 var keep_shooting: bool = false
 var switch_cooldown = 1.0
-var cone_water_consume = 10.0
+var cone_water_consume = 5.0
 var laser_water_consume = 30.0
 
 @export var cone_rotation_speed: float = 6.0

@@ -156,7 +156,6 @@ motion_mode = 1
 script = ExtResource("1_dovo2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=549295730]
-z_index = 20
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_3wlsy")
 animation = &"idle_down"

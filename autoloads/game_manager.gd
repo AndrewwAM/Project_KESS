@@ -12,11 +12,11 @@ enum WaveState { INACTIVE, ACTIVE, RESTING }
 
 # Oleadas: [base, tank, speed]
 @export var waves: Array = [
-	[10, 0, 0],
-	[10, 1, 0],
-	[10, 0, 5],
-	[15, 1, 5],
-	[20, 2, 10],
+	[10, 0, 0], # wave 1, 10 normales
+	[10, 1, 0], # wave 2, 10 normales y 1 tank
+	[10, 0, 5], # wave 3, 10 normales y 5 speedy
+	[15, 1, 5], # wave 4, 15 normales, 1 tank y 5 speedy
+	[20, 2, 10],# wave 5, 20 normales, 2 tank y 10 speedy
 ]
 
 var wave_state: WaveState = WaveState.INACTIVE
@@ -39,8 +39,8 @@ signal wave_timer_changed(time_left: float)
 signal rest_started(rest_time: float)
 
 # Variables genéricas para trackear mas leseras :)
-var damage_taken: int = 0 # pal gameover
-var score: int = 0 # pal gameover
+var damage_taken: int = 0 # pal gameover, never used lol
+# var score: int = 0 # pal gameover 
 var water_amount: float = 100.0 # Partes sin tanque lleno pq estabas regando obviamente.
 var water_max: float = 100.0
 var current_wave: int = 0 # pal gamover
@@ -52,8 +52,9 @@ var begin: bool = false
 # --- Señales ---
 # Por lo que sé, estas cosas son ANUNCIOS de cambios de variables.
 signal water_changed(new_amount: float)
-signal score_changed(new_score: int)
+# signal score_changed(new_score: int)
 signal kill_count_changed(new_kills: int)
+signal enemies_changed(new_amount: int)
 signal game_over()
 signal game_won()
 
@@ -62,12 +63,14 @@ signal game_won()
 @export var game_over_screen: CanvasLayer
 
 func _ready() -> void:
+	await get_tree().process_frame
+	
 	spawn_timer = Timer.new()
 	spawn_timer.wait_time = spawn_interval
 	spawn_timer.connect("timeout", Callable(self, "_on_spawn_timer_timeout"))
 	add_child(spawn_timer)
 
-	call_deferred("start_next_wave")
+	GameManager.start_next_wave()
 
 func _process(delta: float) -> void:
 	if state != GameState.PLAYING:
@@ -144,9 +147,11 @@ func _on_spawn_timer_timeout() -> void:
 
 	spawner_index += 1
 	current_enemies += 1
+	emit_signal("enemies_changed", current_enemies)
 
 func enemy_killed() -> void:
 	current_enemies -= 1
+	emit_signal("enemies_changed", current_enemies)
 	add_kill()
 
 	if current_enemies <= 0 and enemies_to_spawn.is_empty() and wave_state == WaveState.ACTIVE:
@@ -163,9 +168,9 @@ func refill_water(amount: float) -> void:
 	emit_signal("water_changed", water_amount)
 
 # --- Score ---
-func add_score(points: int) -> void:
-	score += points
-	emit_signal("score_changed", score)
+#func add_score(points: int) -> void:
+	#score += points
+	#emit_signal("score_changed", score)
 
 func next_wave() -> void:
 	current_wave += 1
