@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://c2sc51xdqlivf" path="res://ui/main_menu.gd" id="1_arv2f"]
 [ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="1_p8ri8"]
 [ext_resource type="FontFile" uid="uid://5yutc0plivp" path="res://ui/fonts/Kenney Future Narrow.ttf" id="1_ubpvv"]
-[ext_resource type="PackedScene" uid="uid://cmywpe60sf3vd" path="res://levels/maps/patio.tscn" id="2_5klac"]
 [ext_resource type="Texture2D" uid="uid://c6jssmlo5x3qa" path="res://ui/elements/green/button_rectangle_depth_flat.svg" id="2_ubpvv"]
 [ext_resource type="Texture2D" uid="uid://bu0mjy28pwtki" path="res://ui/elements/green/button_rectangle_flat.svg" id="3_arv2f"]
 [ext_resource type="Texture2D" uid="uid://d2f3ao6mej2uj" path="res://ui/elements/blue/button_rectangle_depth_flat.svg" id="5_arv2f"]
@@ -11,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dq46jiow027j3" path="res://ui/elements/red/button_rectangle_depth_flat.svg" id="6_jiymt"]
 [ext_resource type="Texture2D" uid="uid://3requjnjssh" path="res://ui/elements/red/button_rectangle_flat.svg" id="7_bgtsx"]
 [ext_resource type="Texture2D" uid="uid://dj7x2w1lewocd" path="res://ui/elements/red/icon_cross.svg" id="11_lsdqh"]
-[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/sounds/click-a.ogg" id="12_jiymt"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/Sounds/click-a.ogg" id="12_jiymt"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_lsdqh"]
 font = ExtResource("1_ubpvv")
@@ -32,7 +31,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_arv2f")
-game_scene = ExtResource("2_5klac")
 
 [node name="Background" type="ColorRect" parent="." unique_id=1526986287]
 layout_mode = 1

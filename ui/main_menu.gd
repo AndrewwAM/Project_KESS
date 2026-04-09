@@ -10,6 +10,7 @@ extends Control
 @onready var click_sound: AudioStreamPlayer = $UIClickSound
 
 const GAME_SCENE_PATH: String = "res://levels/maps/patio.tscn"
+const TUTORIAL_SCENE_PATH: String = "res://ui/tutorial_screen.tscn"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -26,10 +27,14 @@ func _on_start_button_pressed() -> void:
 
 	click_sound.play()
 	await click_sound.finished
-
-	var error: int = get_tree().change_scene_to_file(GAME_SCENE_PATH)
-	if error != OK:
-		printerr("Error al cargar la escena de juego. Código: ", error)
+	if GameManager.show_tutorial:
+		var error: int = get_tree().change_scene_to_file(TUTORIAL_SCENE_PATH)
+		if error != OK:
+			printerr("Error al cargar la escena del tutorial. Código: ", error)
+	else:
+		var error: int = get_tree().change_scene_to_file(GAME_SCENE_PATH)
+		if error != OK:
+			printerr("Error al cargar la escena del tutorial. Código: ", error)
 
 func _on_credits_button_pressed() -> void:
 	click_sound.play()

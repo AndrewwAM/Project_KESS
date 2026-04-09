@@ -1,0 +1,232 @@
+[gd_scene format=3 uid="uid://gtrvev6fnaht"]
+
+[ext_resource type="Script" uid="uid://bc5qox1tdp3of" path="res://ui/tutorial_screen.gd" id="1_n0ion"]
+[ext_resource type="FontFile" uid="uid://5yutc0plivp" path="res://ui/fonts/Kenney Future Narrow.ttf" id="1_vvbav"]
+[ext_resource type="FontFile" uid="uid://c1v2mx0pmuind" path="res://ui/fonts/Kenney Future.ttf" id="2_icxbn"]
+[ext_resource type="Texture2D" uid="uid://bn0hgu2o2h37p" path="res://ui/elements/red/button_round_depth_flat.svg" id="4_pre7s"]
+[ext_resource type="AudioStream" uid="uid://2hd6t2o0gfd" path="res://ui/Sounds/click-a.ogg" id="4_uhuwg"]
+[ext_resource type="Texture2D" uid="uid://cvmxg4jbfhi7x" path="res://ui/elements/red/button_round_flat.svg" id="5_tcgqg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_icxbn"]
+line_spacing = 2.0
+font = ExtResource("1_vvbav")
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_1266j"]
+line_spacing = 2.0
+font = ExtResource("1_vvbav")
+font_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_n0ion"]
+line_spacing = 2.0
+font = ExtResource("1_vvbav")
+font_size = 10
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_uhuwg"]
+load_path = "res://.godot/imported/button_rectangle_depth_line.svg-9e067bf00c9554a62ed96bde23e8ca1b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pre7s"]
+load_path = "res://.godot/imported/button_rectangle_line.svg-febac431c7d3033350528c59e6cd4e38.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_pre7s"]
+font = ExtResource("2_icxbn")
+font_color = Color(0.11, 0.11, 0.11, 1)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a4lmw"]
+load_path = "res://.godot/imported/button_rectangle_depth_flat.svg-73f589a4043b58794841a6717d5dd64f.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ru7na"]
+load_path = "res://.godot/imported/button_rectangle_flat.svg-522f81c819fe204908e593deb596d08d.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_tcgqg"]
+font = ExtResource("2_icxbn")
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n0ion"]
+load_path = "res://.godot/imported/button_round_depth_flat.svg-65fb34961a77741c0b097265e872fefa.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tcgqg"]
+load_path = "res://.godot/imported/button_round_flat.svg-dc0ee1d68ed673ebe01a4ca4624e6757.ctex"
+
+[sub_resource type="LabelSettings" id="LabelSettings_a4lmw"]
+font = ExtResource("2_icxbn")
+font_size = 7
+
+[node name="TutorialScreen" type="Control" unique_id=1811743452]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_n0ion")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1786322076]
+layout_mode = 0
+offset_right = 480.0
+offset_bottom = 270.0
+color = Color(0.16862746, 0.16862746, 0.16862746, 1)
+
+[node name="MainContainer" type="CenterContainer" parent="." unique_id=133964052]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 481.0
+offset_bottom = 269.0
+
+[node name="Layout" type="VBoxContainer" parent="MainContainer" unique_id=1612681900]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+
+[node name="Context" type="Label" parent="MainContainer/Layout" unique_id=647010814]
+visible = false
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+text = "Eres un joven que estaba regando su jardín, debido al extremo calor, las plantas desesperadamente te atacarán para quitarte tu agua.
+¡Rocíales agua para apaciguarlas y no ser derrotado!
+
+
+"
+label_settings = SubResource("LabelSettings_icxbn")
+horizontal_alignment = 1
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="Controls" type="Label" parent="MainContainer/Layout" unique_id=1081572598]
+visible = false
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+text = "
+Para moverte usa las teclas WASD.
+
+Para rociar agua simplemente apunta y dispara con Click Izquierdo.
+
+Para recargar tu agua, colocate junto a una fuente de agua, apreta y mantén la tecla R.
+
+Para cambiar de modo entre spray y jet apreta click derecho."
+label_settings = SubResource("LabelSettings_1266j")
+horizontal_alignment = 1
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="EnemyLabeling" type="Label" parent="MainContainer/Layout" unique_id=401816424]
+visible = false
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+text = "¡Tendrás que sobrevivir a cinco oleadas cada vez más dificiles de plantas locas!
+
+Los arboles solo son afectados por agua jet.
+Los arbustos chicos solo son afectados por el spray.
+Los arbustos medianos reciben cualquiera.
+"
+label_settings = SubResource("LabelSettings_n0ion")
+horizontal_alignment = 1
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="Preparation" type="Label" parent="MainContainer/Layout" unique_id=227502999]
+custom_minimum_size = Vector2(5, 5)
+layout_mode = 2
+text = "No podrás recuperar vida durante las oleadas, solo recuperarás un poco entre oleadas.
+¡Aprovecha esas instancias para reposicionarte y recargar agua!
+¡Buena suerte!"
+label_settings = SubResource("LabelSettings_n0ion")
+horizontal_alignment = 1
+autowrap_mode = 3
+autowrap_trim_flags = 0
+
+[node name="ButtonLayout" type="HBoxContainer" parent="MainContainer/Layout" unique_id=1535306172]
+layout_mode = 2
+alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="MainContainer/Layout/ButtonLayout" unique_id=2073990576]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = SubResource("CompressedTexture2D_uhuwg")
+texture_pressed = SubResource("CompressedTexture2D_pre7s")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="BackLabel" type="Label" parent="MainContainer/Layout/ButtonLayout/BackButton" unique_id=738845986]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+label_settings = SubResource("LabelSettings_pre7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NextButton" type="TextureButton" parent="MainContainer/Layout/ButtonLayout" unique_id=1215489387]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = SubResource("CompressedTexture2D_uhuwg")
+texture_pressed = SubResource("CompressedTexture2D_pre7s")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="NextLabel" type="Label" parent="MainContainer/Layout/ButtonLayout/NextButton" unique_id=623845452]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Next"
+label_settings = SubResource("LabelSettings_pre7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="TextureButton" parent="MainContainer/Layout/ButtonLayout" unique_id=797736821]
+custom_minimum_size = Vector2(120, 32)
+layout_mode = 2
+toggle_mode = true
+texture_normal = SubResource("CompressedTexture2D_a4lmw")
+texture_pressed = SubResource("CompressedTexture2D_ru7na")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="StartLabel" type="Label" parent="MainContainer/Layout/ButtonLayout/StartButton" unique_id=814176972]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Jugar"
+label_settings = SubResource("LabelSettings_tcgqg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Checkbox" type="HBoxContainer" parent="MainContainer/Layout" unique_id=177831855]
+layout_mode = 2
+alignment = 1
+
+[node name="Disabled" type="TextureButton" parent="MainContainer/Layout/Checkbox" unique_id=1459756749]
+visible = false
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_stretch_ratio = 0.1
+texture_normal = ExtResource("4_pre7s")
+texture_pressed = ExtResource("5_tcgqg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Enabled" type="TextureButton" parent="MainContainer/Layout/Checkbox" unique_id=1476613732]
+custom_minimum_size = Vector2(15, 15)
+layout_mode = 2
+size_flags_stretch_ratio = 0.1
+texture_normal = SubResource("CompressedTexture2D_n0ion")
+texture_pressed = SubResource("CompressedTexture2D_tcgqg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="StartLabel" type="Label" parent="MainContainer/Layout/Checkbox" unique_id=191518356]
+layout_mode = 2
+text = "Mostrar Tutorial"
+label_settings = SubResource("LabelSettings_a4lmw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UIClickSound" type="AudioStreamPlayer" parent="." unique_id=1852209142]
+stream = ExtResource("4_uhuwg")

@@ -30,6 +30,9 @@ var total_enemies_in_wave: int = 0
 var spawner_index: int = 0
 var spawn_timer: Timer
 
+# tutorial
+var show_tutorial: bool = true
+
 # Para UI
 signal wave_changed(new_wave: int)
 signal wave_timer_changed(time_left: float)
